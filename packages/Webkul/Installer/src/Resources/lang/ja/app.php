@@ -1,0 +1,1008 @@
+<?php
+
+return [
+    'seeders' => [
+        'attribute' => [
+            'attribute-families' => [
+                'default' => 'デフォルト',
+            ],
+
+            'attribute-groups' => [
+                'description' => '説明',
+                'general' => '一般',
+                'inventories' => '在庫',
+                'meta-description' => 'メタ説明',
+                'price' => '価格',
+                'rma' => 'RMA',
+                'settings' => '設定',
+                'shipping' => '配送',
+            ],
+
+            'attributes' => [
+                'allow-rma' => 'RMAを許可',
+                'brand' => 'ブランド',
+                'color' => '色',
+                'cost' => 'コスト',
+                'description' => '説明',
+                'featured' => '注目',
+                'guest-checkout' => 'ゲストチェックアウト',
+                'height' => '高さ',
+                'length' => '長さ',
+                'manage-stock' => '在庫管理',
+                'meta-description' => 'メタ説明',
+                'meta-keywords' => 'メタキーワード',
+                'meta-title' => 'メタタイトル',
+                'name' => '名前',
+                'new' => '新規',
+                'price' => '価格',
+                'product-number' => '製品番号',
+                'rma-rules' => 'RMA規則',
+                'short-description' => '短い説明',
+                'size' => 'サイズ',
+                'sku' => 'SKU',
+                'special-price' => '特別価格',
+                'special-price-from' => '特別価格 開始',
+                'special-price-to' => '特別価格 終了',
+                'status' => 'ステータス',
+                'tax-category' => '税カテゴリー',
+                'url-key' => 'URLキー',
+                'visible-individually' => '個別に表示',
+                'weight' => '重さ',
+                'width' => '幅',
+            ],
+
+            'attribute-options' => [
+                'black' => '黒',
+                'green' => '緑',
+                'l' => 'L',
+                'm' => 'M',
+                'red' => '赤',
+                's' => 'S',
+                'white' => '白',
+                'xl' => 'XL',
+                'yellow' => '黄色',
+            ],
+        ],
+
+        'category' => [
+            'categories' => [
+                'description' => 'ルートカテゴリの説明',
+                'name' => 'ルート',
+            ],
+        ],
+
+        'cms' => [
+            'pages' => [
+                'about-us' => [
+                    'content' => '会社概要ページのコンテンツ',
+                    'title' => '会社概要',
+                ],
+
+                'contact-us' => [
+                    'content' => 'お問い合わせページのコンテンツ',
+                    'title' => 'お問い合わせ',
+                ],
+
+                'customer-service' => [
+                    'content' => 'カスタマーサービスページのコンテンツ',
+                    'title' => 'カスタマーサービス',
+                ],
+
+                'payment-policy' => [
+                    'content' => '支払いポリシー ページのコンテンツ',
+                    'title' => '支払いポリシー',
+                ],
+
+                'privacy-policy' => [
+                    'content' => 'プライバシーポリシー ページのコンテンツ',
+                    'title' => 'プライバシーポリシー',
+                ],
+
+                'refund-policy' => [
+                    'content' => '返品ポリシー ページのコンテンツ',
+                    'title' => '返品ポリシー',
+                ],
+
+                'return-policy' => [
+                    'content' => '返却ポリシー ページのコンテンツ',
+                    'title' => '返却ポリシー',
+                ],
+
+                'shipping-policy' => [
+                    'content' => '配送ポリシー ページのコンテンツ',
+                    'title' => '配送ポリシー',
+                ],
+
+                'terms-conditions' => [
+                    'content' => '利用規約ページのコンテンツ',
+                    'title' => '利用規約',
+                ],
+
+                'terms-of-use' => [
+                    'content' => '利用規約ページのコンテンツ',
+                    'title' => '利用規約',
+                ],
+
+                'whats-new' => [
+                    'content' => '新着情報ページのコンテンツ',
+                    'title' => '新着情報',
+                ],
+            ],
+        ],
+
+        'core' => [
+            'channels' => [
+                'meta-description' => 'デモストアのメタ説明',
+                'meta-keywords' => 'デモストアのメタキーワード',
+                'meta-title' => 'デモストア',
+                'name' => 'デフォルト',
+            ],
+
+            'currencies' => [
+                'AED' => 'アラブ首長国連邦ディルハム',
+                'ARS' => 'アルゼンチンペソ',
+                'AUD' => 'オーストラリアドル',
+                'BDT' => 'バングラデシュタカ',
+                'BHD' => 'バーレーンディナール',
+                'BRL' => 'ブラジルレアル',
+                'CAD' => 'カナダドル',
+                'CHF' => 'スイスフラン',
+                'CLP' => 'チリペソ',
+                'CNY' => '中国元',
+                'COP' => 'コロンビアペソ',
+                'CZK' => 'チェココルナ',
+                'DKK' => 'デンマーククローネ',
+                'DZD' => 'アルジェリアディナール',
+                'EGP' => 'エジプトポンド',
+                'EUR' => 'ユーロ',
+                'FJD' => 'フィジードル',
+                'GBP' => '英国ポンド',
+                'HKD' => '香港ドル',
+                'HUF' => 'ハンガリーフォリント',
+                'IDR' => 'インドネシアルピア',
+                'ILS' => 'イスラエル新シェケル',
+                'INR' => 'インドルピー',
+                'JOD' => 'ヨルダンディナール',
+                'JPY' => '日本円',
+                'KRW' => '韓国ウォン',
+                'KWD' => 'クウェートディナール',
+                'KZT' => 'カザフスタンテンゲ',
+                'LBP' => 'レバノンポンド',
+                'LKR' => 'スリランカルピー',
+                'LYD' => 'リビアディナール',
+                'MAD' => 'モロッコディルハム',
+                'MUR' => 'モーリシャスルピー',
+                'MXN' => 'メキシコペソ',
+                'MYR' => 'マレーシアリンギット',
+                'NGN' => 'ナイジェリアナイラ',
+                'NOK' => 'ノルウェークローネ',
+                'NPR' => 'ネパールルピー',
+                'NZD' => 'ニュージーランドドル',
+                'OMR' => 'オマーンリアル',
+                'PAB' => 'パナマバルボア',
+                'PEN' => 'ペルーニューソル',
+                'PHP' => 'フィリピンペソ',
+                'PKR' => 'パキスタンルピー',
+                'PLN' => 'ポーランドズウォティ',
+                'PYG' => 'パラグアイグアラニ',
+                'QAR' => 'カタールリアル',
+                'RON' => 'ルーマニアレウ',
+                'RUB' => 'ロシアルーブル',
+                'SAR' => 'サウジアラビアリヤル',
+                'SEK' => 'スウェーデンクローナ',
+                'SGD' => 'シンガポールドル',
+                'THB' => 'タイバーツ',
+                'TND' => 'チュニジアディナール',
+                'TRY' => 'トルコリラ',
+                'TWD' => '新台湾ドル',
+                'UAH' => 'ウクライナフリヴニャ',
+                'USD' => 'アメリカドル',
+                'UZS' => 'ウズベキスタンソム',
+                'VES' => 'ベネズエラボリバル',
+                'VND' => 'ベトナムドン',
+                'XAF' => 'CFAフラン BEAC',
+                'XOF' => 'CFAフラン BCEAO',
+                'ZAR' => '南アフリカランド',
+                'ZMW' => 'ザンビアクワチャ',
+            ],
+
+            'locales' => [
+                'ar' => 'アラビア語',
+                'bn' => 'ベンガル語',
+                'ca' => 'カタルーニャ語',
+                'de' => 'ドイツ語',
+                'en' => '英語',
+                'es' => 'スペイン語',
+                'fa' => 'ペルシャ語',
+                'fr' => 'フランス語',
+                'he' => 'ヘブライ語',
+                'hi_IN' => 'ヒンディー語',
+                'id' => 'インドネシア語',
+                'it' => 'イタリア語',
+                'ja' => '日本語',
+                'nl' => 'オランダ語',
+                'pl' => 'ポーランド語',
+                'pt_BR' => 'ブラジルポルトガル語',
+                'ro' => 'ルーマニア語',
+                'ru' => 'ロシア語',
+                'sin' => 'シンハラ語',
+                'tr' => 'トルコ語',
+                'uk' => 'ウクライナ語',
+                'zh_CN' => '中国語',
+            ],
+        ],
+
+        'customer' => [
+            'customer-groups' => [
+                'general' => '一般',
+                'guest' => 'ゲスト',
+                'wholesale' => '卸売',
+            ],
+        ],
+
+        'inventory' => [
+            'inventory-sources' => [
+                'name' => 'デフォルト',
+            ],
+        ],
+
+        'shop' => [
+            'theme-customizations' => [
+                'bold-collections' => [
+                    'content' => [
+                        'btn-title' => 'コレクションを表示',
+                        'description' => '新しいボールドコレクションを紹介します！ 大胆なデザインと鮮やかなステートメントでスタイルを引き立てましょう。 ワードローブを再定義する印象的なパターンと大胆な色を探索します。 途方もないものを受け入れる準備をしましょう！',
+                        'title' => '新しいボールドコレクションに備えて',
+                    ],
+
+                    'name' => 'ボールドコレクション',
+                ],
+
+                'bold-collections-2' => [
+                    'content' => [
+                        'btn-title' => 'コレクションを見る',
+                        'description' => '私たちのボールドコレクションは、大胆なデザインと印象的で鮮やかな色で、あなたのワードローブを再定義するためにここにあります。大胆なパターンから力強い色調まで、これは普通を抜け出し、非凡に踏み込むチャンスです。',
+                        'title' => '新しいコレクションで大胆さを解き放とう！',
+                    ],
+
+                    'name' => 'ボールドコレクション',
+                ],
+
+                'book-tickets' => [
+                    'name' => 'チケットを予約',
+
+                    'options' => [
+                        'title' => 'チケットを予約',
+                    ],
+                ],
+
+                'categories-collections' => [
+                    'name' => 'カテゴリーコレクション',
+                ],
+
+                'footer-links' => [
+                    'name' => 'フッターリンク',
+
+                    'options' => [
+                        'about-us' => '当社について',
+                        'contact-us' => 'お問い合わせ',
+                        'customer-service' => 'カスタマーサービス',
+                        'payment-policy' => '支払いポリシー',
+                        'privacy-policy' => 'プライバシーポリシー',
+                        'refund-policy' => '返金ポリシー',
+                        'return-policy' => '返品ポリシー',
+                        'shipping-policy' => '配送ポリシー',
+                        'terms-conditions' => '利用条件',
+                        'terms-of-use' => '利用規約',
+                        'whats-new' => '新着情報',
+                    ],
+                ],
+
+                'game-container' => [
+                    'content' => [
+                        'sub-title-1' => '私たちのコレクション',
+                        'sub-title-2' => '私たちのコレクション',
+                        'title' => '新アイテムでゲームを楽しむ！',
+                    ],
+
+                    'name' => 'ゲームコンテナ',
+                ],
+
+                'image-carousel' => [
+                    'name' => 'イメージカルーセル',
+
+                    'sliders' => [
+                        'title' => '新コレクションに備えて',
+                    ],
+                ],
+
+                'kids-collection' => [
+                    'name' => 'キッズコレクション',
+
+                    'options' => [
+                        'title' => 'キッズコレクション',
+                    ],
+                ],
+
+                'mens-collection' => [
+                    'name' => 'メンズコレクション',
+
+                    'options' => [
+                        'title' => 'メンズコレクション',
+                    ],
+                ],
+
+                'offer-information' => [
+                    'content' => [
+                        'title' => '初回注文で最大40％OFF ショッピングを今すぐ開始',
+                    ],
+
+                    'name' => '特売情報',
+                ],
+
+                'services-content' => [
+                    'description' => [
+                        'emi-available-info' => 'すべての主要クレジットカードで費用のかからないEMIが利用可能です',
+                        'free-shipping-info' => 'すべての注文で送料無料をお楽しみください',
+                        'product-replace-info' => '簡単な製品交換が可能です！',
+                        'time-support-info' => 'チャットやメールでの専用24/7サポート',
+                    ],
+
+                    'name' => 'サービスコンテンツ',
+
+                    'title' => [
+                        'emi-available' => 'EMI利用可能',
+                        'free-shipping' => '送料無料',
+                        'product-replace' => '製品の交換',
+                        'time-support' => '24/7サポート',
+                    ],
+                ],
+
+                'top-collections' => [
+                    'content' => [
+                        'sub-title-1' => '私たちのコレクション',
+                        'sub-title-2' => '私たちのコレクション',
+                        'sub-title-3' => '私たちのコレクション',
+                        'sub-title-4' => '私たちのコレクション',
+                        'sub-title-5' => '私たちのコレクション',
+                        'sub-title-6' => '私たちのコレクション',
+                        'title' => '新アイテムでゲームを楽しむ！',
+                    ],
+
+                    'name' => 'トップコレクション',
+                ],
+
+                'womens-collection' => [
+                    'name' => 'レディースコレクション',
+
+                    'options' => [
+                        'title' => 'レディースコレクション',
+                    ],
+                ],
+            ],
+        ],
+
+        'user' => [
+            'roles' => [
+                'description' => 'このロールのユーザーにはすべてのアクセス権があります',
+                'name' => '管理者',
+            ],
+
+            'users' => [
+                'name' => '例',
+            ],
+        ],
+
+        'sample-categories' => [
+            'category-translation' => [
+                '2' => [
+                    'description' => '<p>メンズ</p>',
+                    'meta-description' => '',
+                    'meta-keywords' => '',
+                    'meta-title' => '',
+                    'name' => 'メンズ',
+                    'slug' => 'mens',
+                    'url-path' => 'men',
+                ],
+
+                '3' => [
+                    'description' => '<p>キッズ</p>',
+                    'meta-description' => '',
+                    'meta-keywords' => '',
+                    'meta-title' => '',
+                    'name' => 'キッズ',
+                    'slug' => 'kids',
+                    'url-path' => 'kids',
+                ],
+
+                '4' => [
+                    'description' => '<p>レディース</p>',
+                    'meta-description' => '',
+                    'meta-keywords' => '',
+                    'meta-title' => '',
+                    'name' => 'レディース',
+                    'slug' => 'womens',
+                    'url-path' => 'woman',
+                ],
+
+                '5' => [
+                    'description' => '<p>フォーマルウェア</p>',
+                    'meta-description' => '',
+                    'meta-keywords' => '',
+                    'meta-title' => '',
+                    'name' => 'フォーマルウェア',
+                    'slug' => 'formal-wear-men',
+                    'url-path' => 'men/formal-wear-men',
+                ],
+
+                '6' => [
+                    'description' => '<p>カジュアルウェア</p>',
+                    'meta-description' => '',
+                    'meta-keywords' => '',
+                    'meta-title' => '',
+                    'name' => 'カジュアルウェア',
+                    'slug' => 'casual-wear-men',
+                    'url-path' => 'men/casual-wear-men',
+                ],
+
+                '7' => [
+                    'description' => '<p>アクティブウェア</p>',
+                    'meta-description' => '',
+                    'meta-keywords' => '',
+                    'meta-title' => '',
+                    'name' => 'アクティブウェア',
+                    'slug' => 'active-wear',
+                    'url-path' => 'men/active-wear',
+                ],
+
+                '8' => [
+                    'description' => '<p>フットウェア</p>',
+                    'meta-description' => '',
+                    'meta-keywords' => '',
+                    'meta-title' => '',
+                    'name' => 'フットウェア',
+                    'slug' => 'footwear',
+                    'url-path' => 'men/footwear',
+                ],
+
+                '9' => [
+                    'description' => '<p>女の子の服</p>',
+                    'meta-description' => '',
+                    'meta-keywords' => '',
+                    'meta-title' => '',
+                    'name' => '女の子の服',
+                    'slug' => 'formal-wear-female',
+                    'url-path' => 'woman/formal-wear-female',
+                ],
+
+                '10' => [
+                    'description' => '<p>男の子の服</p>',
+                    'meta-description' => '',
+                    'meta-keywords' => '',
+                    'meta-title' => '',
+                    'name' => '男の子の服',
+                    'slug' => 'casual-wear-female',
+                    'url-path' => 'woman/casual-wear-female',
+                ],
+
+                '11' => [
+                    'description' => '<p>女の子の靴</p>',
+                    'meta-description' => '',
+                    'meta-keywords' => '',
+                    'meta-title' => '',
+                    'name' => '女の子の靴',
+                    'slug' => 'active-wear-female',
+                    'url-path' => 'woman/active-wear-female',
+                ],
+
+                '12' => [
+                    'description' => '<p>男の子の靴</p>',
+                    'meta-description' => '',
+                    'meta-keywords' => '',
+                    'meta-title' => '',
+                    'name' => '男の子の靴',
+                    'slug' => 'footwear-female',
+                    'url-path' => 'woman/footwear-female',
+                ],
+
+                '13' => [
+                    'description' => '<p>フォーマルウェア</p>',
+                    'meta-description' => '',
+                    'meta-keywords' => '',
+                    'meta-title' => 'フォーマルウェア',
+                    'name' => 'フォーマルウェア',
+                    'slug' => 'girls-clothing',
+                    'url-path' => 'kids/girls-clothing',
+                ],
+
+                '14' => [
+                    'description' => '<p>カジュアルウェア</p>',
+                    'meta-description' => 'カジュアルファッション',
+                    'meta-keywords' => '',
+                    'meta-title' => 'カジュアルウェア',
+                    'name' => 'カジュアルウェア',
+                    'slug' => 'boys-clothing',
+                    'url-path' => 'kids/boys-clothing',
+                ],
+
+                '15' => [
+                    'description' => '<p>アクティブウェア</p>',
+                    'meta-description' => 'アクティブウェアコレクション',
+                    'meta-keywords' => '',
+                    'meta-title' => 'アクティブウェア',
+                    'name' => 'アクティブウェア',
+                    'slug' => 'girls-footwear',
+                    'url-path' => 'kids/girls-footwear',
+                ],
+
+                '16' => [
+                    'description' => '<p>フットウェア</p>',
+                    'meta-description' => 'フットウェアコレクション',
+                    'meta-keywords' => '',
+                    'meta-title' => 'フットウェア',
+                    'name' => 'フットウェア',
+                    'slug' => 'boys-footwear',
+                    'url-path' => 'kids/boys-footwear',
+                ],
+
+                '17' => [
+                    'description' => '<p>ウェルネス</p>',
+                    'meta-description' => '',
+                    'meta-keywords' => '',
+                    'meta-title' => '',
+                    'name' => 'ウェルネス',
+                    'slug' => 'wellness',
+                    'url-path' => 'wellness',
+                ],
+
+                '18' => [
+                    'description' => '<p>ダウンロード可能なヨガチュートリアル</p>',
+                    'meta-description' => '',
+                    'meta-keywords' => '',
+                    'meta-title' => '',
+                    'name' => 'ダウンロード可能なヨガチュートリアル',
+                    'slug' => 'downloadable-yoga-tutorial',
+                    'url-path' => 'wellness/downloadable-yoga-tutorial',
+                ],
+
+                '19' => [
+                    'description' => '<p>電子書籍</p>',
+                    'meta-description' => '電子書籍コレクション',
+                    'meta-keywords' => '',
+                    'meta-title' => '電子書籍コレクション',
+                    'name' => '電子書籍',
+                    'slug' => 'e-books',
+                    'url-path' => 'wellness/e-books',
+                ],
+
+                '20' => [
+                    'description' => '<p>映画パス</p>',
+                    'meta-description' => '追加料金なしで毎月10本の映画の魔法に浸りましょう。',
+                    'meta-keywords' => '',
+                    'meta-title' => 'CineXperience 月額映画パス',
+                    'name' => '映画パス',
+                    'slug' => 'movie-pass',
+                    'url-path' => 'wellness/movie-pass',
+                ],
+
+                '21' => [
+                    'description' => '<p>予約</p>',
+                    'meta-description' => '',
+                    'meta-keywords' => '',
+                    'meta-title' => '',
+                    'name' => '予約',
+                    'slug' => 'bookings',
+                    'url-path' => '',
+                ],
+
+                '22' => [
+                    'description' => '<p>予約予約</p>',
+                    'meta-description' => '',
+                    'meta-keywords' => '',
+                    'meta-title' => '',
+                    'name' => '予約予約',
+                    'slug' => 'appointment-booking',
+                    'url-path' => '',
+                ],
+
+                '23' => [
+                    'description' => '<p>イベント予約</p>',
+                    'meta-description' => '',
+                    'meta-keywords' => '',
+                    'meta-title' => '',
+                    'name' => 'イベント予約',
+                    'slug' => 'event-booking',
+                    'url-path' => '',
+                ],
+
+                '24' => [
+                    'description' => '<p>コミュニティホール予約</p>',
+                    'meta-description' => '',
+                    'meta-keywords' => '',
+                    'meta-title' => '',
+                    'name' => 'コミュニティホール予約',
+                    'slug' => 'community-hall-bookings',
+                    'url-path' => '',
+                ],
+
+                '25' => [
+                    'description' => '<p>テーブル予約</p>',
+                    'meta-description' => '',
+                    'meta-keywords' => '',
+                    'meta-title' => '',
+                    'name' => 'テーブル予約',
+                    'slug' => 'table-booking',
+                    'url-path' => '',
+                ],
+
+                '26' => [
+                    'description' => '<p>レンタル予約</p>',
+                    'meta-description' => '',
+                    'meta-keywords' => '',
+                    'meta-title' => '',
+                    'name' => 'レンタル予約',
+                    'slug' => 'rental-booking',
+                    'url-path' => '',
+                ],
+
+                '27' => [
+                    'description' => '<p>電子機器</p>',
+                    'meta-description' => '',
+                    'meta-keywords' => '',
+                    'meta-title' => '',
+                    'name' => '電子機器',
+                    'slug' => 'electronics',
+                    'url-path' => '',
+                ],
+
+                '28' => [
+                    'description' => '<p>携帯電話とアクセサリー</p>',
+                    'meta-description' => '',
+                    'meta-keywords' => '',
+                    'meta-title' => '',
+                    'name' => '携帯電話とアクセサリー',
+                    'slug' => 'mobile-phones-accessories',
+                    'url-path' => '',
+                ],
+
+                '29' => [
+                    'description' => '<p>ノートパソコンとタブレット</p>',
+                    'meta-description' => '',
+                    'meta-keywords' => '',
+                    'meta-title' => '',
+                    'name' => 'ノートパソコンとタブレット',
+                    'slug' => 'laptops-tablets',
+                    'url-path' => '',
+                ],
+
+                '30' => [
+                    'description' => '<p>オーディオ機器</p>',
+                    'meta-description' => '',
+                    'meta-keywords' => '',
+                    'meta-title' => '',
+                    'name' => 'オーディオ機器',
+                    'slug' => 'audio-devices',
+                    'url-path' => '',
+                ],
+
+                '31' => [
+                    'description' => '<p>スマートホームと自動化</p>',
+                    'meta-description' => '',
+                    'meta-keywords' => '',
+                    'meta-title' => '',
+                    'name' => 'スマートホームと自動化',
+                    'slug' => 'smart-home-automation',
+                    'url-path' => '',
+                ],
+
+                '32' => [
+                    'description' => '<p>家庭用品</p>',
+                    'meta-description' => '',
+                    'meta-keywords' => '',
+                    'meta-title' => '',
+                    'name' => '家庭用品',
+                    'slug' => 'household',
+                    'url-path' => '',
+                ],
+
+                '33' => [
+                    'description' => '<p>キッチン家電</p>',
+                    'meta-description' => '',
+                    'meta-keywords' => '',
+                    'meta-title' => '',
+                    'name' => 'キッチン家電',
+                    'slug' => 'kitchen-appliances',
+                    'url-path' => '',
+                ],
+
+                '34' => [
+                    'description' => '<p>調理器具とダイニング</p>',
+                    'meta-description' => '',
+                    'meta-keywords' => '',
+                    'meta-title' => '',
+                    'name' => '調理器具とダイニング',
+                    'slug' => 'cookware-dining',
+                    'url-path' => '',
+                ],
+
+                '35' => [
+                    'description' => '<p>家具とインテリア</p>',
+                    'meta-description' => '',
+                    'meta-keywords' => '',
+                    'meta-title' => '',
+                    'name' => '家具とインテリア',
+                    'slug' => 'furniture-decor',
+                    'url-path' => '',
+                ],
+
+                '36' => [
+                    'description' => '<p>掃除用品</p>',
+                    'meta-description' => '',
+                    'meta-keywords' => '',
+                    'meta-title' => '',
+                    'name' => '掃除用品',
+                    'slug' => 'cleaning-supplies',
+                    'url-path' => '',
+                ],
+
+                '37' => [
+                    'description' => '<p>本と文房具</p>',
+                    'meta-description' => '',
+                    'meta-keywords' => '',
+                    'meta-title' => '',
+                    'name' => '本と文房具',
+                    'slug' => 'books-stationery',
+                    'url-path' => '',
+                ],
+
+                '38' => [
+                    'description' => '<p>フィクションとノンフィクション</p>',
+                    'meta-description' => '',
+                    'meta-keywords' => '',
+                    'meta-title' => '',
+                    'name' => 'フィクションとノンフィクション',
+                    'slug' => 'fiction-non-fiction-books',
+                    'url-path' => '',
+                ],
+
+                '39' => [
+                    'description' => '<p>教育と学術</p>',
+                    'meta-description' => '',
+                    'meta-keywords' => '',
+                    'meta-title' => '',
+                    'name' => '教育と学術',
+                    'slug' => 'educational-academic',
+                    'url-path' => '',
+                ],
+
+                '40' => [
+                    'description' => '<p>オフィス用品</p>',
+                    'meta-description' => '',
+                    'meta-keywords' => '',
+                    'meta-title' => '',
+                    'name' => 'オフィス用品',
+                    'slug' => 'office-supplies',
+                    'url-path' => '',
+                ],
+
+                '41' => [
+                    'description' => '<p>アートとクラフト素材</p>',
+                    'meta-description' => '',
+                    'meta-keywords' => '',
+                    'meta-title' => '',
+                    'name' => 'アートとクラフト素材',
+                    'slug' => 'art-craft-materials',
+                    'url-path' => '',
+                ],
+            ],
+        ],
+    ],
+
+    'installer' => [
+        'middleware' => [
+            'already-installed' => 'アプリケーションは既にインストールされています。',
+        ],
+
+        'index' => [
+            'create-administrator' => [
+                'admin' => '管理者',
+                'bagisto' => 'Bagisto',
+                'confirm-password' => 'パスワードの確認',
+                'email' => 'メール',
+                'email-address' => 'admin@example.com',
+                'password' => 'パスワード',
+                'title' => '管理者の作成',
+            ],
+
+            'environment-configuration' => [
+                'algerian-dinar' => 'アルジェリアディナール（DZD）',
+                'allowed-currencies' => '許可された通貨',
+                'allowed-locales' => '許可されたロケール',
+                'application-name' => 'アプリケーション名',
+                'argentine-peso' => 'アルゼンチンペソ（ARS）',
+                'australian-dollar' => 'オーストラリアドル（AUD）',
+                'bagisto' => 'Bagisto',
+                'bangladeshi-taka' => 'バングラデシュタカ（BDT）',
+                'bahraini-dinar' => 'バーレーンディナール（BHD）',
+                'brazilian-real' => 'ブラジルレアル（BRL）',
+                'british-pound-sterling' => '英国ポンドスターリング（GBP）',
+                'canadian-dollar' => 'カナダドル（CAD）',
+                'cfa-franc-bceao' => 'CFAフランBCEAO（XOF）',
+                'cfa-franc-beac' => 'CFAフランBEAC（XAF）',
+                'chilean-peso' => 'チリペソ（CLP）',
+                'chinese-yuan' => '中国元（CNY）',
+                'colombian-peso' => 'コロンビアペソ（COP）',
+                'czech-koruna' => 'チェココルナ（CZK）',
+                'danish-krone' => 'デンマーククローネ（DKK）',
+                'database-connection' => 'データベース接続',
+                'database-hostname' => 'データベースホスト名',
+                'database-name' => 'データベース名',
+                'database-password' => 'データベースパスワード',
+                'database-port' => 'データベースポート',
+                'database-prefix' => 'データベースプレフィックス',
+                'database-prefix-help' => 'プレフィックスは4文字で構成され、文字、数字、アンダースコアのみを含むことができます。',
+                'database-username' => 'データベースユーザー名',
+                'default-currency' => 'デフォルト通貨',
+                'default-locale' => 'デフォルトロケール',
+                'default-timezone' => 'デフォルトタイムゾーン',
+                'default-url' => 'デフォルトURL',
+                'default-url-link' => 'https://localhost',
+                'egyptian-pound' => 'エジプトポンド（EGP）',
+                'euro' => 'ユーロ（EUR）',
+                'fijian-dollar' => 'フィジードル（FJD）',
+                'hong-kong-dollar' => '香港ドル（HKD）',
+                'hungarian-forint' => 'ハンガリーフォリント（HUF）',
+                'indian-rupee' => 'インドルピー（INR）',
+                'indonesian-rupiah' => 'インドネシアルピア（IDR）',
+                'israeli-new-shekel' => 'イスラエル新シェケル（ILS）',
+                'japanese-yen' => '日本円（JPY）',
+                'jordanian-dinar' => 'ヨルダンディナール（JOD）',
+                'kazakhstani-tenge' => 'カザフスタンテンゲ（KZT）',
+                'kuwaiti-dinar' => 'クウェートディナール（KWD）',
+                'lebanese-pound' => 'レバノンポンド（LBP）',
+                'libyan-dinar' => 'リビアディナール（LYD）',
+                'malaysian-ringgit' => 'マレーシアリンギット（MYR）',
+                'mauritian-rupee' => 'モーリシャスルピー（MUR）',
+                'mexican-peso' => 'メキシコペソ（MXN）',
+                'moroccan-dirham' => 'モロッコディルハム（MAD）',
+                'mysql' => 'Mysql',
+                'nepalese-rupee' => 'ネパールルピー（NPR）',
+                'new-taiwan-dollar' => '新台湾ドル（TWD）',
+                'new-zealand-dollar' => 'ニュージーランドドル（NZD）',
+                'nigerian-naira' => 'ナイジェリアナイラ（NGN）',
+                'norwegian-krone' => 'ノルウェークローネ（NOK）',
+                'omani-rial' => 'オマーンリアル（OMR）',
+                'pakistani-rupee' => 'パキスタンルピー（PKR）',
+                'panamanian-balboa' => 'パナマバルボア（PAB）',
+                'paraguayan-guarani' => 'パラグアイグアラニ（PYG）',
+                'peruvian-nuevo-sol' => 'ペルーニューソル（PEN）',
+                'pgsql' => 'pgSQL',
+                'philippine-peso' => 'フィリピンペソ（PHP）',
+                'polish-zloty' => 'ポーランドズウォティ（PLN）',
+                'qatari-rial' => 'カタールリアル（QAR）',
+                'romanian-leu' => 'ルーマニアレウ（RON）',
+                'russian-ruble' => 'ロシアルーブル（RUB）',
+                'saudi-riyal' => 'サウジリヤル（SAR）',
+                'select-timezone' => 'タイムゾーンを選択',
+                'singapore-dollar' => 'シンガポールドル（SGD）',
+                'south-african-rand' => '南アフリカランド（ZAR）',
+                'south-korean-won' => '韓国ウォン（KRW）',
+                'sqlsrv' => 'SQLSRV',
+                'sri-lankan-rupee' => 'スリランカルピー（LKR）',
+                'swedish-krona' => 'スウェーデンクローナ（SEK）',
+                'swiss-franc' => 'スイスフラン（CHF）',
+                'thai-baht' => 'タイバーツ（THB）',
+                'title' => 'ストアの設定',
+                'tunisian-dinar' => 'チュニジアディナール（TND）',
+                'turkish-lira' => 'トルコリラ（TRY）',
+                'ukrainian-hryvnia' => 'ウクライナフリヴニャ（UAH）',
+                'united-arab-emirates-dirham' => 'アラブ首長国連邦ディルハム（AED）',
+                'united-states-dollar' => '米ドル（USD）',
+                'uzbekistani-som' => 'ウズベキスタンソム（UZS）',
+                'venezuelan-bolívar' => 'ベネズエラボリバル（VEF）',
+                'vietnamese-dong' => 'ベトナムドン（VND）',
+                'warning-message' => '注意！ デフォルトのシステム言語とデフォルトの通貨の設定は永久的なものであり、一度設定すると変更できません。',
+                'zambian-kwacha' => 'ザンビアクワチャ（ZMW）',
+            ],
+
+            'sample-products' => [
+                'no' => 'いいえ',
+                'note' => '注: インデックス作成時間は選択したロケールの数によって異なります。このプロセスは完了までに最大2分かかる場合があります。ロケールを追加する場合は、サーバーおよびPHPの最大実行時間を増やすか、リクエストタイムアウトを回避するためにCLIインストーラーをご利用ください。',
+                'sample-products' => 'サンプル製品',
+                'title' => 'サンプル製品',
+                'yes' => 'はい',
+            ],
+
+            'installation-processing' => [
+                'bagisto' => 'Bagistoのインストール',
+                'bagisto-info' => 'データベーステーブルの作成中、これには数分かかることがあります',
+                'title' => 'インストール',
+            ],
+
+            'installation-completed' => [
+                'admin-panel' => '管理パネル',
+                'bagisto-forums' => 'Bagistoフォーラム',
+                'customer-panel' => '顧客パネル',
+                'explore-bagisto-extensions' => 'Bagisto拡張機能の探索',
+                'title' => 'インストールが完了しました',
+                'title-info' => 'Bagistoがシステムに正常にインストールされました。',
+            ],
+
+            'ready-for-installation' => [
+                'create-database-tables' => 'データベーステーブルを作成',
+                'drop-existing-tables' => '既存のテーブルを削除',
+                'install' => 'インストール',
+                'install-info' => 'インストール用のBagisto',
+                'install-info-button' => '以下のボタンをクリックしてください',
+                'populate-database-tables' => 'データベーステーブルを作成する',
+                'start-installation' => 'インストールを開始',
+                'title' => 'インストール準備完了',
+            ],
+
+            'start' => [
+                'language' => 'インストールウィザードの言語',
+                'locale' => 'ロケール',
+                'main' => '開始',
+                'select-locale' => 'ロケールを選択',
+                'title' => 'Bagistoのインストール',
+                'welcome-title' => 'Bagistoへようこそ',
+            ],
+
+            'server-requirements' => [
+                'calendar' => 'カレンダー',
+                'ctype' => 'cType',
+                'curl' => 'cURL',
+                'dom' => 'dom',
+                'fileinfo' => 'fileInfo',
+                'filter' => 'フィルター',
+                'gd' => 'GD',
+                'hash' => 'ハッシュ',
+                'intl' => 'intl',
+                'json' => 'JSON',
+                'mbstring' => 'mbstring',
+                'openssl' => 'OpenSSL',
+                'pcre' => 'pcre',
+                'pdo' => 'pdo',
+                'php' => 'PHP',
+                'php-version' => ':version 以上',
+                'session' => 'セッション',
+                'title' => 'サーバーの要件',
+                'tokenizer' => 'トークン生成',
+                'xml' => 'XML',
+            ],
+
+            'arabic' => 'アラビア語',
+            'back' => '戻る',
+            'bagisto' => 'Bagisto',
+            'bagisto-info' => 'コミュニティプロジェクト by',
+            'bagisto-logo' => 'Bagistoロゴ',
+            'bengali' => 'ベンガル語',
+            'catalan' => 'カタルーニャ語',
+            'chinese' => '中国語',
+            'continue' => '続行',
+            'dutch' => 'オランダ語',
+            'english' => '英語',
+            'french' => 'フランス語',
+            'german' => 'ドイツ語',
+            'hebrew' => 'ヘブライ語',
+            'hindi' => 'ヒンディー語',
+            'indonesian' => 'インドネシア語',
+            'installation-description' => 'Bagistoのインストールには通常、いくつかのステップが含まれます。 ここにBagistoのインストールプロセスの一般的な概要があります',
+            'installation-info' => 'ここにいてくれてうれしいです！',
+            'installation-title' => 'Bagistoインストールへようこそ',
+            'italian' => 'イタリア語',
+            'japanese' => '日本語',
+            'persian' => 'ペルシャ語',
+            'polish' => 'ポーランド語',
+            'portuguese' => 'ブラジルポルトガル語',
+            'romanian' => 'ルーマニア語',
+            'russian' => 'ロシア語',
+            'sinhala' => 'シンハラ語',
+            'spanish' => 'スペイン語',
+            'title' => 'Bagistoインストーラ',
+            'turkish' => 'トルコ語',
+            'ukrainian' => 'ウクライナ語',
+            'webkul' => 'Webkul',
+        ],
+    ],
+];

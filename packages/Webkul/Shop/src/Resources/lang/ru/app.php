@@ -1,0 +1,1882 @@
+<?php
+
+return [
+    'customers' => [
+        'forgot-password' => [
+            'already-sent' => 'Письмо для сброса пароля уже отправлено.',
+            'back' => 'Вернуться к входу?',
+            'bagisto' => 'Багисто',
+            'email' => 'Электронная почта',
+            'email-not-exist' => 'Мы не можем найти пользователя с этим адресом электронной почты.',
+            'footer' => '© Авторское право 2010 - :current_year, Webkul Software (зарегистрировано в Индии). Все права защищены.',
+            'forgot-password-text' => 'Если вы забыли свой пароль, восстановите его, введя свой адрес электронной почты.',
+            'page-title' => 'Забыли пароль?',
+            'reset-link-sent' => 'Мы отправили вам ссылку для сброса пароля на вашу электронную почту.',
+            'sign-in-button' => 'Войти',
+            'submit' => 'Сбросить пароль',
+            'title' => 'Восстановление пароля',
+        ],
+
+        'reset-password' => [
+            'back-link-title' => 'Вернуться к входу',
+            'bagisto' => 'Багисто',
+            'confirm-password' => 'Подтвердите пароль',
+            'email' => 'Зарегистрированная почта',
+            'footer' => '© Авторское право 2010 - :current_year, Webkul Software (зарегистрировано в Индии). Все права защищены.',
+            'password' => 'Пароль',
+            'submit-btn-title' => 'Сбросить пароль',
+            'title' => 'Сброс пароля',
+        ],
+
+        'login-form' => [
+            'bagisto' => 'Багисто',
+            'button-title' => 'Войти',
+            'create-your-account' => 'Создайте свой аккаунт',
+            'email' => 'Электронная почта',
+            'footer' => '© Авторское право 2010 - :current_year, Webkul Software (зарегистрировано в Индии). Все права защищены.',
+            'forgot-pass' => 'Забыли пароль?',
+            'form-login-text' => 'Если у вас есть аккаунт, войдите, используя свой адрес электронной почты.',
+            'invalid-credentials' => 'Пожалуйста, проверьте свои учетные данные и попробуйте снова.',
+            'new-customer' => 'Новый клиент?',
+            'not-activated' => 'Ваш аккаунт ожидает одобрения администратора',
+            'page-title' => 'Вход для клиентов',
+            'password' => 'Пароль',
+            'resend-verification' => 'Повторно отправить письмо подтверждения',
+            'show-password' => 'Показать пароль',
+            'title' => 'Войти',
+            'verify-first' => 'Сначала подтвердите свой адрес электронной почты.',
+        ],
+
+        'signup-form' => [
+            'account-exists' => 'Уже есть аккаунт?',
+            'bagisto' => 'Багисто',
+            'button-title' => 'Зарегистрироваться',
+            'click-here' => 'Нажмите здесь',
+            'confirm-pass' => 'Подтвердите пароль',
+            'email' => 'Электронная почта',
+            'first-name' => 'Имя',
+            'footer' => '© Авторское право 2010 - :current_year, Webkul Software (зарегистрировано в Индии). Все права защищены.',
+            'form-signup-text' => 'Если вы новичок в нашем магазине, мы рады видеть вас как участника.',
+            'last-name' => 'Фамилия',
+            'page-title' => 'Стать пользователем',
+            'password' => 'Пароль',
+            'sign-in-button' => 'Войти',
+            'subscribe-to-newsletter' => 'Подписаться на рассылку',
+            'success' => 'Аккаунт успешно создан.',
+            'success-verify' => 'Аккаунт успешно создан, на вашу почту отправлено письмо с подтверждением.',
+            'terms-conditions' => 'Условия и положения',
+            'verification-not-sent' => 'Ошибка! Проблема с отправкой письма с подтверждением, попробуйте позже.',
+            'verification-sent' => 'Письмо с подтверждением отправлено',
+            'verified' => 'Ваш аккаунт подтвержден, попробуйте войти сейчас.',
+            'verify-failed' => 'Мы не можем подтвердить вашу почтовую учетную запись.',
+        ],
+
+        'account' => [
+            'home' => 'Главная',
+
+            'profile' => [
+                'index' => [
+                    'delete' => 'Удалить',
+                    'delete-failed' => 'Ошибка при удалении клиента.',
+                    'delete-profile' => 'Удалить профиль',
+                    'delete-success' => 'Клиент успешно удален',
+                    'dob' => 'Дата рождения',
+                    'edit' => 'Редактировать',
+                    'edit-success' => 'Профиль успешно обновлен',
+                    'email' => 'Email',
+                    'enter-password' => 'Введите ваш пароль',
+                    'first-name' => 'Имя',
+                    'gender' => 'Пол',
+                    'last-name' => 'Фамилия',
+                    'order-pending' => 'Невозможно удалить учетную запись клиента, так как есть ожидающие или обрабатываемые заказы.',
+                    'title' => 'Профиль',
+                    'unmatched' => 'Старый пароль не совпадает.',
+                    'wrong-password' => 'Неправильный пароль!',
+                ],
+
+                'edit' => [
+                    'confirm-password' => 'Подтвердите пароль',
+                    'current-password' => 'Текущий пароль',
+                    'dob' => 'Дата рождения',
+                    'edit' => 'Редактировать',
+                    'edit-profile' => 'Редактировать профиль',
+                    'email' => 'Email',
+                    'female' => 'Женский',
+                    'first-name' => 'Имя',
+                    'gender' => 'Пол',
+                    'last-name' => 'Фамилия',
+                    'male' => 'Мужской',
+                    'new-password' => 'Новый пароль',
+                    'other' => 'Другой',
+                    'phone' => 'Телефон',
+                    'save' => 'Сохранить',
+                    'subscribe-to-newsletter' => 'Подписаться на рассылку',
+                ],
+            ],
+
+            'addresses' => [
+                'index' => [
+                    'add-address' => 'Добавить адрес',
+                    'create-success' => 'Адрес успешно добавлен.',
+                    'default-address' => 'Адрес по умолчанию',
+                    'default-delete' => 'Адрес по умолчанию не может быть изменен.',
+                    'delete' => 'Удалить',
+                    'delete-success' => 'Адрес успешно удален',
+                    'edit' => 'Редактировать',
+                    'edit-success' => 'Адрес успешно обновлен.',
+                    'empty-address' => 'Вы еще не добавили адрес в свою учетную запись.',
+                    'security-warning' => 'Обнаружена подозрительная активность!!!',
+                    'set-as-default' => 'Установить по умолчанию',
+                    'title' => 'Адрес',
+                    'update-success' => 'Адрес успешно обновлен.',
+                ],
+
+                'create' => [
+                    'add-address' => 'Добавить адрес',
+                    'city' => 'Город',
+                    'company-name' => 'Название компании',
+                    'country' => 'Страна',
+                    'email' => 'Email',
+                    'first-name' => 'Имя',
+                    'last-name' => 'Фамилия',
+                    'phone' => 'Телефон',
+                    'post-code' => 'Почтовый индекс',
+                    'save' => 'Сохранить',
+                    'select-country' => 'Выберите страну',
+                    'set-as-default' => 'Установить по умолчанию',
+                    'state' => 'Область',
+                    'street-address' => 'Улица и номер дома',
+                    'title' => 'Адрес',
+                    'vat-id' => 'Идентификационный номер НДС',
+                ],
+
+                'edit' => [
+                    'city' => 'Город',
+                    'company-name' => 'Название компании',
+                    'country' => 'Страна',
+                    'edit' => 'Редактировать',
+                    'email' => 'Email',
+                    'first-name' => 'Имя',
+                    'last-name' => 'Фамилия',
+                    'phone' => 'Телефон',
+                    'post-code' => 'Почтовый индекс',
+                    'select-country' => 'Выберите страну',
+                    'state' => 'Область',
+                    'street-address' => 'Улица и номер дома',
+                    'title' => 'Адрес',
+                    'update-btn' => 'Обновить',
+                    'vat-id' => 'Идентификационный номер НДС',
+                ],
+            ],
+
+            'orders' => [
+                'action' => 'Действие',
+                'action-view' => 'Просмотр',
+                'empty-order' => 'Вы еще не заказывали ни одного продукта',
+                'order' => 'Заказ',
+                'order-date' => 'Дата заказа',
+                'order-id' => 'ID заказа',
+                'pay-by' => 'Оплата через - :method',
+                'pay-via' => 'Оплата через',
+                'subtotal' => 'Подытог',
+                'title' => 'Заказы',
+                'total' => 'Всего',
+
+                'status' => [
+                    'title' => 'Статус',
+
+                    'options' => [
+                        'canceled' => 'Отменен',
+                        'closed' => 'Закрыт',
+                        'completed' => 'Завершен',
+                        'fraud' => 'Мошенничество',
+                        'pending' => 'В ожидании',
+                        'pending-payment' => 'Ожидание оплаты',
+                        'processing' => 'Обработка',
+                    ],
+
+                    'canceled' => 'Отменено',
+                    'closed' => 'Закрыто',
+                    'completed' => 'Завершено',
+                    'fraud' => 'Мошенничество',
+                    'pending' => 'В ожидании',
+                    'pending-payment' => 'Ожидание оплаты',
+                    'processing' => 'В обработке',
+                ],
+
+                'view' => [
+                    'billing-address' => 'Адрес оплаты',
+
+                    'booking-cancellation-not-allowed' => [
+                        'title' => 'Элементы бронирования не будут отменены',
+                        'description' => 'Этот заказ содержит продукты бронирования, помеченные как не подлежащие отмене. Отмена заказа приведет к отмене только оставшихся элементов; элементы бронирования останутся активными. Обратитесь в службу поддержки, если вам нужна помощь с элементами бронирования.',
+                    ],
+
+                    'cancel-btn-title' => 'Отменить',
+                    'cancel-confirm-msg' => 'Вы уверены, что хотите отменить этот заказ?',
+                    'cancel-error' => 'Ваш заказ не может быть отменен.',
+                    'cancel-success' => 'Ваш заказ был отменен',
+                    'contact' => 'Контакт',
+                    'item-invoiced' => 'Товар выставлен в счет',
+                    'item-refunded' => 'Товар возвращен',
+                    'item-shipped' => 'Товар отправлен',
+                    'item-ordered' => 'Товар заказан',
+                    'order' => 'Заказ',
+                    'order-id' => 'ID заказа',
+                    'page-title' => 'Заказ #:order_id',
+                    'payment-method' => 'Способ оплаты',
+                    'reorder-booking-skipped' => 'Продукты бронирования были пропущены при повторном заказе. Пожалуйста, забронируйте их снова с новыми датами и временными интервалами.',
+                    'reorder-btn-title' => 'Повторить заказ',
+                    'shipping-address' => 'Адрес доставки',
+                    'shipping-method' => 'Способ доставки',
+                    'shipping-and-payment' => 'Детали доставки и оплаты',
+                    'status' => 'Статус',
+                    'title' => 'Просмотр',
+                    'total' => 'Всего',
+
+                    'information' => [
+                        'discount' => 'Скидка',
+                        'excl-tax' => 'Без налога:',
+                        'grand-total' => 'Общая сумма',
+                        'info' => 'Информация',
+                        'item-canceled' => 'Отменено (:qty_canceled)',
+                        'item-refunded' => 'Возвращено (:qty_refunded)',
+                        'invoiced-item' => 'Выставлено в счет (:qty_invoiced)',
+                        'item-shipped' => 'отправлено (:qty_shipped)',
+                        'item-status' => 'Статус товара',
+                        'ordered-item' => 'Заказано (:qty_ordered)',
+                        'placed-on' => 'Размещено',
+                        'price' => 'Цена',
+                        'product-name' => 'Название',
+                        'shipping-handling' => 'Доставка и обработка',
+                        'shipping-handling-excl-tax' => 'Доставка и обработка (без налога)',
+                        'shipping-handling-incl-tax' => 'Доставка и обработка (с налогом)',
+                        'sku' => 'Артикул',
+                        'subtotal' => 'Подытог',
+                        'subtotal-excl-tax' => 'Подытог (без налога)',
+                        'subtotal-incl-tax' => 'Подытог (с налогом)',
+                        'order-summary' => 'Сводка заказа',
+                        'tax' => 'Налог',
+                        'tax-amount' => 'Сумма налога',
+                        'tax-percent' => 'Процент налога',
+                        'total-due' => 'Итого к оплате',
+                        'total-paid' => 'Всего оплачено',
+                        'total-refunded' => 'Всего возвращено',
+                    ],
+
+                    'invoices' => [
+                        'discount' => 'Скидка',
+                        'excl-tax' => 'Без налога:',
+                        'grand-total' => 'Общая сумма',
+                        'individual-invoice' => 'Счет #:invoice_id',
+                        'invoices' => 'Счета',
+                        'price' => 'Цена',
+                        'print' => 'Печать',
+                        'product-name' => 'Название',
+                        'products-ordered' => 'Заказанные товары',
+                        'qty' => 'Кол-во',
+                        'shipping-handling-excl-tax' => 'Доставка и обработка (без налога)',
+                        'shipping-handling-incl-tax' => 'Доставка и обработка (с налогом)',
+                        'shipping-handling' => 'Доставка и обработка',
+                        'sku' => 'Артикул',
+                        'subtotal-excl-tax' => 'Подытог (без налога)',
+                        'subtotal-incl-tax' => 'Подытог (с налогом)',
+                        'subtotal' => 'Подытог',
+                        'tax' => 'Налог',
+                        'tax-amount' => 'Сумма налога',
+                    ],
+
+                    'shipments' => [
+                        'individual-shipment' => 'Отгрузка #:shipment_id',
+                        'product-name' => 'Название',
+                        'qty' => 'Кол-во',
+                        'shipments' => 'Отгрузки',
+                        'sku' => 'Артикул',
+                        'subtotal' => 'Подытог',
+                        'tracking-number' => 'Номер отслеживания',
+                    ],
+
+                    'refunds' => [
+                        'adjustment-fee' => 'Плата за корректировку',
+                        'adjustment-refund' => 'Корректировка возврата',
+                        'discount' => 'Скидка',
+                        'grand-total' => 'Общая сумма',
+                        'individual-refund' => 'Возврат #:refund_id',
+                        'no-result-found' => 'Мы не смогли найти никаких записей.',
+                        'order-summary' => 'Сводка заказа',
+                        'price' => 'Цена',
+                        'product-name' => 'Название',
+                        'qty' => 'Кол-во',
+                        'refunds' => 'Возвраты',
+                        'shipping-handling' => 'Доставка и обработка',
+                        'shipping-handling-excl-tax' => 'Доставка и обработка (без налога)',
+                        'shipping-handling-incl-tax' => 'Доставка и обработка (с налогом)',
+                        'sku' => 'Артикул',
+                        'subtotal' => 'Подытог',
+                        'subtotal-excl-tax' => 'Подытог (без налога)',
+                        'subtotal-incl-tax' => 'Подытог (с налогом)',
+                        'tax' => 'Налог',
+                        'tax-amount' => 'Сумма налога',
+                    ],
+                ],
+
+                'invoice-pdf' => [
+                    'bank-details' => 'Банковские реквизиты',
+                    'bill-to' => 'Выставить счет',
+                    'contact-number' => 'Контактный номер',
+                    'contact' => 'Контакт',
+                    'date' => 'Дата счета',
+                    'discount' => 'Скидка',
+                    'excl-tax' => 'Без налога:',
+                    'grand-total' => 'Общая сумма',
+                    'invoice-id' => 'ID счета',
+                    'invoice' => 'Счет',
+                    'order-date' => 'Дата заказа',
+                    'order-id' => 'ID заказа',
+                    'payment-method' => 'Способ оплаты',
+                    'payment-terms' => 'Условия оплаты',
+                    'price' => 'Цена',
+                    'product-name' => 'Название товара',
+                    'qty' => 'Количество',
+                    'ship-to' => 'Адрес доставки',
+                    'shipping-handling-excl-tax' => 'Стоимость доставки и обработки (без налога)',
+                    'shipping-handling-incl-tax' => 'Стоимость доставки и обработки (с налогом)',
+                    'shipping-handling' => 'Стоимость доставки и обработки',
+                    'shipping-method' => 'Способ доставки',
+                    'sku' => 'Артикул',
+                    'subtotal-excl-tax' => 'Подытог (без налога)',
+                    'subtotal-incl-tax' => 'Подытог (с налогом)',
+                    'subtotal' => 'Подытог',
+                    'tax-amount' => 'Сумма налога',
+                    'tax' => 'Налог',
+                    'vat-number' => 'Номер НДС',
+                ],
+            ],
+
+            'reviews' => [
+                'empty-review' => 'Вы еще не оставили ни одного отзыва',
+                'title' => 'Отзывы',
+            ],
+
+            'downloadable-products' => [
+                'available' => 'Доступный',
+                'completed' => 'Завершенный',
+                'date' => 'Дата',
+                'download-error' => 'Срок действия ссылки для скачивания истек.',
+                'empty-product' => 'У вас нет продукта для загрузки',
+                'expired' => 'Истек',
+                'name' => 'Продукты для скачивания',
+                'orderId' => 'ID заказа',
+                'payment-error' => 'Оплата не была произведена за эту загрузку.',
+                'pending' => 'В ожидании',
+                'records-found' => 'Запись(и) найдены',
+                'remaining-downloads' => 'Оставшиеся загрузки',
+                'status' => 'Статус',
+                'title' => 'Заголовок',
+            ],
+
+            'wishlist' => [
+                'color' => 'Цвет',
+                'delete-all' => 'Удалить все',
+                'empty' => 'На странице списка желаний еще нет товаров.',
+                'move-to-cart' => 'Переместить в корзину',
+                'moved' => 'Товар успешно перемещен в корзину',
+                'moved-success' => 'Товар успешно перемещен в корзину',
+                'page-title' => 'Список желаний',
+                'product-removed' => 'Товар больше не доступен, так как был удален администратором',
+                'profile' => 'Профиль',
+                'remove' => 'Удалить',
+                'remove-all-success' => 'Все товары из вашего списка желаний были удалены',
+                'remove-fail' => 'Товар не может быть удален из списка желаний',
+                'removed' => 'Товар успешно удален из списка желаний',
+                'see-details' => 'Подробнее',
+                'success' => 'Товар успешно добавлен в список желаний',
+                'title' => 'Список желаний',
+            ],
+
+            'gdpr' => [
+                'create-success' => 'Запрос успешно создан',
+                'revoked-successfully' => 'Запрос успешно отозван',
+                'success-verify' => 'Успех! Письмо для подтверждения отправлено.',
+                'success-verify-email-unsent' => 'Успех! Письмо для подтверждения не отправлено.',
+                'unable-to-sent' => 'Невозможно отправить письмо.',
+
+                'index' => [
+                    'create-btn' => 'Создать запрос',
+                    'html' => 'HTML',
+                    'pdf' => 'PDF',
+                    'title' => 'Запросы данных GDPR',
+
+                    'modal' => [
+                        'message' => 'Сообщение',
+                        'save' => 'Сохранить',
+                        'title' => 'Создать новый запрос',
+
+                        'type' => [
+                            'choose' => 'Выбрать',
+                            'delete' => 'Удалить',
+                            'title' => 'Тип',
+                            'update' => 'Обновить',
+                        ],
+                    ],
+
+                    'datagrid' => [
+                        'completed' => 'Завершено',
+                        'date' => 'Дата',
+                        'declined' => 'Отклонено',
+                        'delete' => 'Удалить',
+                        'id' => 'ID',
+                        'message' => 'Сообщение',
+                        'pending' => 'В ожидании',
+                        'processing' => 'В обработке',
+                        'revoke-btn' => 'Отозвать',
+                        'revoked' => 'Отозвано',
+                        'status' => 'Статус',
+                        'type' => 'Тип',
+                        'update' => 'Обновить',
+                    ],
+                ],
+
+                'pdf' => [
+                    'title' => 'Просмотр магазина по умолчанию',
+
+                    'account-info' => [
+                        'dob' => 'Дата рождения',
+                        'email' => 'Электронная почта',
+                        'first-name' => 'Имя',
+                        'gender' => 'Пол',
+                        'last-name' => 'Фамилия',
+                        'phone' => 'Телефон',
+                        'title' => 'Информация об аккаунте',
+                    ],
+
+                    'address-info' => [
+                        'address' => 'Адрес',
+                        'address1' => 'Адрес 1',
+                        'address2' => 'Адрес 2',
+                        'city' => 'Город',
+                        'company' => 'Компания',
+                        'country' => 'Страна',
+                        'first-name' => 'Имя',
+                        'last-name' => 'Фамилия',
+                        'phone' => 'Телефон',
+                        'postcode' => 'Почтовый индекс',
+                        'state' => 'Штат/регион',
+                        'title' => 'Адресная информация',
+                        'vat-id' => 'ИНН',
+                    ],
+
+                    'order-info' => [
+                        'amount' => 'Сумма',
+                        'order-id' => 'ID заказа',
+                        'product-name' => 'Название продукта',
+                        'qty' => 'Количество',
+                        'shipping' => 'Доставка',
+                        'sku' => 'SKU',
+                        'status' => 'Статус',
+                        'title' => 'Информация о заказе',
+                        'type' => 'Тип',
+                    ],
+                ],
+            ],
+
+            'rma' => [
+                'index' => [
+                    'title' => 'RMA',
+                    'action' => 'Действие',
+
+                    'datagrid' => [
+                        'id' => 'ID RMA',
+                        'order-ref' => 'Номер заказа',
+                        'rma-status' => 'Статус запроса',
+                        'create' => 'Дата создания',
+                        'quantity' => 'Количество',
+                    ],
+                ],
+
+                'create' => [
+                    'action' => 'Действие',
+                    'sku' => 'SKU',
+                    'price' => 'Цена',
+                    'current-order-quantity' => 'Текущее количество заказа',
+                    'product-already-raw' => 'Все товары этого продукта уже были запрошены для возврата/отмены',
+                    'resolution-type' => 'Тип решения',
+                    'select' => 'Выбрать',
+                    'return' => 'Возврат/Возмещение',
+                    'cancel-items' => 'Отменить товары',
+                    'product-delivery-status' => 'Статус доставки товара',
+                    'package-condition' => 'Состояние упаковки',
+                    'open' => 'Открыт',
+                    'packed' => 'Упакован',
+                    'return-pickup-address' => 'Адрес забора возврата',
+                    'return-pickup-time' => 'Время забора возврата',
+                    'morning' => 'Утро (10–13)',
+                    'afternoon' => 'День (14–17)',
+                    'evening' => 'Вечер (18–21)',
+                    'images' => 'Изображения',
+                ],
+
+                'view' => [
+                    'id' => 'ID RMA',
+                    'enter-message' => 'Введите сообщение здесь',
+                    'add-attachments' => 'Добавить вложения',
+                    'send-message-btn' => 'Отправить сообщение',
+                    'attachment' => 'Вложение',
+                    'download' => 'Скачать',
+                    'allowed-file-types' => 'Разрешенные типы файлов',
+                    'remove' => 'Удалить',
+                ],
+
+                'terms' => [
+                    'terms' => 'Я согласен с условиями',
+                    'read' => 'Прочитать условия',
+                ],
+            ],
+        ],
+    ],
+
+    'components' => [
+        'accordion' => [
+            'default-content' => 'Содержимое по умолчанию',
+            'default-header' => 'Заголовок по умолчанию',
+        ],
+
+        'drawer' => [
+            'default-toggle' => 'Переключатель по умолчанию',
+        ],
+
+        'media' => [
+            'index' => [
+                'add-attachments' => 'Добавить вложения',
+                'add-image' => 'Добавить изображение/видео',
+                'invalid-file-type' => 'Выбранный тип файла не разрешён.',
+            ],
+        ],
+
+        'layouts' => [
+            'header' => [
+                'desktop' => [
+                    'top' => [
+                        'default-locale' => 'Язык по умолчанию',
+                    ],
+
+                    'bottom' => [
+                        'all' => 'Все',
+                        'back-button' => 'Назад к главному меню',
+                        'bagisto' => 'Багисто',
+                        'categories' => 'Категории',
+                        'compare' => 'Сравнить',
+                        'dropdown-text' => 'Управление корзиной, заказами и избранным',
+                        'logout' => 'Выйти',
+                        'orders' => 'Заказы',
+                        'profile' => 'Профиль',
+                        'search' => 'Поиск',
+                        'search-text' => 'Искать товары здесь',
+                        'sign-in' => 'Войти',
+                        'sign-up' => 'Зарегистрироваться',
+                        'submit' => 'Отправить',
+                        'welcome' => 'Добро пожаловать',
+                        'welcome-guest' => 'Добро пожаловать, гость',
+                        'wishlist' => 'Избранное',
+                    ],
+                ],
+
+                'mobile' => [
+                    'account' => 'Аккаунт',
+                    'back-button' => 'Назад к главному меню',
+                    'bagisto' => 'Багисто',
+                    'compare' => 'Сравнить',
+                    'currencies' => 'Валюты',
+                    'dropdown-text' => 'Управление корзиной, заказами и избранным',
+                    'locales' => 'Языки',
+                    'login' => 'Вход или регистрация',
+                    'logout' => 'Выйти',
+                    'orders' => 'Заказы',
+                    'profile' => 'Профиль',
+                    'search' => 'Поиск',
+                    'search-text' => 'Искать товары здесь',
+                    'sign-in' => 'Войти',
+                    'sign-up' => 'Зарегистрироваться',
+                    'welcome' => 'Добро пожаловать',
+                    'welcome-guest' => 'Добро пожаловать, гость',
+                    'wishlist' => 'Избранное',
+                ],
+            ],
+
+            'webmcp' => [
+                'add-to-wishlist' => 'Добавьте товар в список желаний покупателя по названию.',
+                'add-to-wishlist-query' => 'Название товара или URL-ключ для добавления в список желаний.',
+                'proceed-to-checkout' => 'Откройте страницу оформления заказа, чтобы оформить заказ на товары из корзины.',
+                'search-products' => 'Найдите товары в каталоге магазина по ключевому слову и откройте подходящие результаты.',
+                'search-products-query' => 'Ключевые слова или название товара для поиска в каталоге.',
+                'subscribe-newsletter' => 'Подпишите адрес электронной почты на рассылку магазина.',
+                'subscribe-newsletter-email' => 'Адрес электронной почты для подписки на рассылку.',
+                'view-cart' => 'Откройте страницу корзины, чтобы покупатель мог просмотреть добавленные товары.',
+                'view-product' => 'Откройте страницу с подробной информацией о товаре по его названию.',
+                'view-product-query' => 'Название товара или URL-ключ для открытия.',
+                'view-wishlist' => 'Откройте страницу списка желаний, чтобы просмотреть сохранённые товары покупателя.',
+            ],
+
+            'footer' => [
+                'about-us' => 'О нас',
+                'contact-us' => 'Свяжитесь с нами',
+                'currency' => 'Валюта',
+                'customer-service' => 'Служба поддержки',
+                'email' => 'Электронная почта',
+                'footer-content' => 'Содержимое футера',
+                'footer-text' => '© Авторское право 2010 - :current_year, Webkul Software (зарегистрировано в Индии). Все права защищены.',
+                'locale' => 'Язык',
+                'newsletter-text' => 'Подготовьтесь к нашей интересной рассылке!',
+                'order-return' => 'Заказ и возврат',
+                'payment-policy' => 'Политика оплаты',
+                'privacy-cookies-policy' => 'Политика конфиденциальности и файлов cookie',
+                'shipping-policy' => 'Политика доставки',
+                'subscribe' => 'Подписаться',
+                'subscribe-newsletter' => 'Подписаться на рассылку',
+                'subscribe-stay-touch' => 'Подписаться, чтобы оставаться на связи.',
+                'whats-new' => 'Что нового',
+            ],
+
+            'cookie' => [
+                'index' => [
+                    'privacy-policy' => 'Политика конфиденциальности',
+                    'reject' => 'Отклонить',
+                    'accept' => 'Принять',
+                    'learn-more-and-customize' => 'Узнать больше и настроить',
+                ],
+
+                'consent' => [
+                    'your-cookie-consent-preferences' => 'Ваши предпочтения в отношении файлов cookie',
+                    'save-and-continue' => 'Сохранить и продолжить',
+                    'strictly-necessary' => 'Строго необходимые',
+                    'basic-interactions' => 'Основные взаимодействия и функциональности',
+                    'experience-enhancement' => 'Улучшение опыта',
+                    'measurements' => 'Измерение',
+                    'targeting-and-advertising' => 'Таргетинг и реклама',
+                ],
+            ],
+        ],
+
+        'datagrid' => [
+            'toolbar' => [
+                'length-of' => ':length из',
+                'results' => ':total Результаты',
+                'selected' => ':total Выбрано',
+
+                'mass-actions' => [
+                    'must-select-a-mass-action' => 'Вы должны выбрать массовое действие.',
+                    'must-select-a-mass-action-option' => 'Вы должны выбрать опцию массового действия.',
+                    'no-records-selected' => 'Не выбрано ни одной записи.',
+                    'select-action' => 'Выберите действие',
+                ],
+
+                'search' => [
+                    'title' => 'Поиск',
+                ],
+
+                'filter' => [
+                    'apply-filter' => 'Применить фильтры',
+                    'title' => 'Фильтр',
+
+                    'dropdown' => [
+                        'select' => 'Выбрать',
+
+                        'searchable' => [
+                            'at-least-two-chars' => 'Введите хотя бы 2 символа...',
+                            'no-results' => 'Результаты не найдены...',
+                        ],
+                    ],
+
+                    'custom-filters' => [
+                        'clear-all' => 'Очистить все',
+                    ],
+                ],
+            ],
+
+            'table' => [
+                'actions' => 'Действия',
+                'next-page' => 'Следующая страница',
+                'no-records-available' => 'Нет доступных записей.',
+                'of' => 'из :total записей',
+                'page-navigation' => 'Навигация по страницам',
+                'page-number' => 'Номер страницы',
+                'previous-page' => 'Предыдущая страница',
+                'showing' => 'Показано :firstItem',
+                'to' => 'до :lastItem',
+            ],
+        ],
+
+        'modal' => [
+            'default-content' => 'Содержимое по умолчанию',
+            'default-header' => 'Заголовок по умолчанию',
+
+            'confirm' => [
+                'agree-btn' => 'Согласиться',
+                'disagree-btn' => 'Не соглашаться',
+                'message' => 'Вы уверены, что хотите выполнить это действие?',
+                'title' => 'Вы уверены?',
+            ],
+        ],
+
+        'products' => [
+            'card' => [
+                'add-to-cart' => 'Добавить в Корзину',
+                'add-to-compare' => 'Добавить в Список Сравнения',
+                'add-to-compare-success' => 'Товар успешно добавлен в список сравнения.',
+                'add-to-wishlist' => 'Добавить в Список Желаемого',
+                'already-in-compare' => 'Товар уже добавлен в список сравнения.',
+                'new' => 'Новинка',
+                'review-description' => 'Будьте первым, кто оставит отзыв о продукте',
+                'sale' => 'Распродажа',
+            ],
+
+            'carousel' => [
+                'next' => 'Следующий',
+                'previous' => 'Предыдущий',
+                'view-all' => 'Показать Все',
+            ],
+
+            'ratings' => [
+                'title' => 'Рейтинги',
+            ],
+        ],
+
+        'range-slider' => [
+            'max-range' => 'Максимальный Диапазон',
+            'min-range' => 'Минимальный Диапазон',
+            'range' => 'Диапазон:',
+        ],
+
+        'carousel' => [
+            'image-slide' => 'Изображение Слайда',
+            'next' => 'Следующий',
+            'previous' => 'Предыдущий',
+        ],
+
+        'quantity-changer' => [
+            'decrease-quantity' => 'Уменьшить Количество',
+            'increase-quantity' => 'Увеличить Количество',
+            'remove-item' => 'Удалить товар',
+        ],
+    ],
+
+    'products' => [
+        'prices' => [
+            'grouped' => [
+                'starting-at' => 'Начиная с',
+            ],
+
+            'configurable' => [
+                'as-low-as' => 'От',
+            ],
+        ],
+
+        'sort-by' => [
+            'title' => 'Сортировать по',
+        ],
+
+        'view' => [
+            'type' => [
+                'simple' => [
+                    'customizable-options' => [
+                        'none' => 'Ничего',
+                        'total-amount' => 'Общая сумма',
+                    ],
+                ],
+
+                'configurable' => [
+                    'select-options' => 'Пожалуйста, выберите опцию',
+                    'select-above-options' => 'Пожалуйста, выберите вышеуказанные опции',
+                ],
+
+                'bundle' => [
+                    'none' => 'Нет',
+                    'total-amount' => 'Общая сумма',
+                ],
+
+                'downloadable' => [
+                    'links' => 'Ссылки',
+                    'sample' => 'Пример',
+                    'samples' => 'Примеры',
+                ],
+
+                'grouped' => [
+                    'name' => 'Название',
+                ],
+
+                'booking' => [
+                    'location' => 'Местоположение',
+                    'view-on-map' => 'Посмотреть на карте',
+
+                    'cancellation-not-allowed' => [
+                        'title' => 'Отмена не разрешена',
+                        'description' => 'После оформления этого бронирования его нельзя отменить. Пожалуйста, внимательно проверьте детали перед оформлением заказа.',
+                    ],
+
+                    'default' => [
+                        'slot-duration-in-minutes' => ':minutes минут',
+                        'slot-duration' => 'Продолжительность слота',
+                    ],
+
+                    'appointment' => [
+                        'closed' => 'Закрыто',
+                        'see-details' => 'Посмотреть детали',
+                        'slot-duration' => 'Продолжительность слота',
+                        'slot-duration-in-minutes' => ':minutes минут',
+                        'today-availability' => 'Доступность сегодня',
+                    ],
+
+                    'event' => [
+                        'book-your-ticket' => 'Забронируйте билет',
+                        'title' => 'Событие на :',
+                        'total-price' => 'Общая цена',
+                        'summary-title' => 'Ваше бронирование',
+                        'ticket-line' => ':name (:count × :price)',
+                        'base-fee-line' => 'Базовая плата (:count × :price)',
+                        'ticket' => 'билет',
+                        'tickets' => 'билеты',
+                        'total' => 'Итого',
+                        'select-tickets-hint' => 'Выберите количество билетов, чтобы увидеть итоговую сумму.',
+                        'starting-from' => 'От',
+                        'base-fee-note' => 'Включает базовую плату + самый дешёвый билет. Итог обновляется в зависимости от выбора билетов.',
+                    ],
+
+                    'rental' => [
+                        'choose-rent-option' => 'Выберите вариант аренды',
+                        'daily-basis' => 'На ежедневной основе',
+                        'from' => 'С',
+                        'hourly-basis' => 'На почасовой основе',
+                        'rent-an-item' => 'Арендовать предмет',
+                        'select-date' => 'Выберите дату',
+                        'select-rent-time' => 'Выберите время аренды',
+                        'select-slot' => 'Выберите слот',
+                        'select-time-slot' => 'Выберите временной слот',
+                        'slot' => 'Слот',
+                        'no-slots-available' => 'Нет доступных слотов',
+                        'to' => 'До',
+                        'summary-title' => 'Ваша аренда',
+                        'base-rental-fee' => 'Базовая плата за аренду',
+                        'daily-rate-line' => 'Дневная ставка (:count × :rate)',
+                        'hourly-rate-line' => 'Почасовая ставка (:count × :rate)',
+                        'day' => 'день',
+                        'days' => 'дн.',
+                        'hour' => 'час',
+                        'hours' => 'ч.',
+                        'total' => 'Итого',
+                        'select-dates-hint' => 'Выберите даты аренды, чтобы увидеть итоговую сумму.',
+                        'starting-from' => 'От',
+                        'rental-fee-note' => 'Включает базовую плату + минимальную ставку аренды. Итог обновляется в зависимости от выбранной продолжительности.',
+                    ],
+
+                    'table' => [
+                        'book-a-table' => 'Забронировать столик',
+                        'closed' => 'Закрыто',
+                        'slot-duration' => 'Продолжительность слота',
+                        'slot-duration-in-minutes' => ':minutes минут',
+                        'slots-for-all-days' => 'Показать на все дни',
+                        'special-notes' => 'Особые запросы/заметки',
+                        'today-availability' => 'Доступность сегодня',
+                    ],
+
+                    'slots' => [
+                        'book-an-appointment' => 'Записаться на прием',
+                        'date' => 'Дата',
+                        'no-slots-available' => 'Нет доступных слотов',
+                        'select-slot' => 'Выберите слот',
+                        'title' => 'Слот',
+                    ],
+                ],
+            ],
+
+            'gallery' => [
+                'product-image' => 'Изображение продукта',
+                'thumbnail-image' => 'Миниатюра изображения',
+            ],
+
+            'reviews' => [
+                'attachments' => 'Вложения',
+                'cancel' => 'Отменить',
+                'comment' => 'Комментарий',
+                'customer-review' => 'Отзывы клиентов',
+                'empty-review' => 'Отзывов не найдено, будьте первым, кто оставит отзыв о продукте',
+                'failed-to-upload' => 'Не удалось загрузить изображение',
+                'load-more' => 'Загрузить еще',
+                'name' => 'Имя',
+                'rating' => 'Рейтинг',
+                'ratings' => 'Рейтинги',
+                'submit-review' => 'Отправить отзыв',
+                'success' => 'Отзыв успешно отправлен.',
+                'title' => 'Заголовок',
+                'translate' => 'Перевести',
+                'translating' => 'Перевод...',
+                'write-a-review' => 'Написать отзыв',
+            ],
+
+            'contact-us' => [
+                'about' => 'Напишите нам, и мы ответим вам как можно скорее',
+                'desc' => 'Что у вас на уме?',
+                'describe-here' => 'Опишите здесь',
+                'email' => 'Электронная почта',
+                'message' => 'Сообщение',
+                'name' => 'Имя',
+                'phone-number' => 'Номер телефона',
+                'submit' => 'Отправить',
+                'title' => 'Свяжитесь с нами',
+            ],
+
+            'add-to-cart' => 'Добавить в корзину',
+            'add-to-compare' => 'Продукт добавлен в список сравнения.',
+            'add-to-wishlist' => 'Добавить в Список Желаемого',
+            'additional-information' => 'Дополнительная информация',
+            'already-in-compare' => 'Продукт уже добавлен в список сравнения.',
+            'buy-now' => 'Купить сейчас',
+            'compare' => 'Сравнить',
+            'description' => 'Описание',
+            'related-product-title' => 'Связанные продукты',
+            'review' => 'Отзывы',
+            'tax-inclusive' => 'Включая все налоги',
+            'up-sell-title' => 'Мы нашли другие продукты, которые вам могут понравиться!',
+        ],
+
+        'type' => [
+            'abstract' => [
+                'offers' => 'Купите :qty по цене :price каждый и сэкономьте :discount',
+            ],
+        ],
+
+        'booking' => [
+            'closed' => 'Закрыто',
+
+            'cart' => [
+                'booking-from' => 'Бронирование с',
+                'booking-location' => 'Местоположение',
+                'booking-till' => 'Бронирование до',
+                'charged-per' => 'Оплата за',
+                'daily' => 'Ежедневно',
+                'event-from' => 'Событие с',
+                'event-location' => 'Место проведения',
+                'event-ticket' => 'Билет на событие',
+                'event-till' => 'Событие до',
+                'guest-limit' => 'Лимит гостей на стол',
+                'hourly' => 'Почасовая основа',
+
+                'integrity' => [
+                    'event' => [
+                        'expired' => 'Это событие истекло.',
+                        'exceeds_available' => 'Для этого мероприятия доступно только :qty билетов.',
+                        'sold_out' => 'Билеты на это мероприятие распроданы.',
+                        'ticket_exceeds_available' => 'Доступно только :qty билетов ":ticket".',
+                        'ticket_sold_out' => 'Билеты ":ticket" распроданы.',
+                    ],
+
+                    'missing_options' => 'Отсутствуют варианты для этого продукта.',
+                    'inventory_warning' => 'Запрошенное количество недоступно, попробуйте позже.',
+                    'rental_unavailable' => 'Этот товар для аренды недоступен на выбранные даты.',
+                    'select_hourly_duration' => 'Выберите продолжительность не менее одного часа.',
+                ],
+
+                'per-guest' => 'За гостя',
+                'per-table' => 'За стол',
+                'rent-from' => 'Аренда с',
+                'rent-till' => 'Аренда до',
+                'rent-type' => 'Тип аренды',
+                'renting_type' => 'Тип аренды',
+                'special-note' => 'Особые запросы/заметки',
+            ],
+
+            'per-ticket-price' => ':price за билет',
+        ],
+    ],
+
+    'categories' => [
+        'filters' => [
+            'clear-all' => 'Очистить все',
+            'filter' => 'Фильтр',
+            'filters' => 'Фильтры:',
+
+            'search' => [
+                'load-more' => 'Загрузить больше',
+                'loading' => 'Загрузка...',
+                'no-options-available' => 'Нет доступных опций.',
+                'results-info' => 'Показано :currentCount из :totalCount опций',
+                'title' => 'Поиск',
+            ],
+
+            'sort' => 'Сортировка',
+        ],
+
+        'toolbar' => [
+            'grid' => 'Сетка',
+            'list' => 'Список',
+            'show' => 'Показать',
+        ],
+
+        'view' => [
+            'empty' => 'В этой категории нет доступных товаров',
+            'load-more' => 'Загрузить еще',
+        ],
+    ],
+
+    'search' => [
+        'title' => 'Вот результаты для : :query',
+        'suggest' => 'Искать вместо этого',
+        'results' => 'Результаты поиска',
+
+        'images' => [
+            'index' => [
+                'only-images-allowed' => 'Разрешены только изображения (.jpeg, .jpg, .png, ..).',
+                'search' => 'Поиск',
+                'size-limit-error' => 'Ошибка ограничения размера',
+                'something-went-wrong' => 'Что-то пошло не так, пожалуйста, попробуйте позже.',
+            ],
+
+            'results' => [
+                'analyzed-keywords' => 'Проанализированные ключевые слова:',
+            ],
+        ],
+    ],
+
+    'compare' => [
+        'already-added' => 'Товар уже добавлен в список сравнения',
+        'delete-all' => 'Удалить все',
+        'empty-text' => 'У вас нет товаров в списке сравнения',
+        'item-add-success' => 'Товар успешно добавлен в список сравнения',
+        'product-compare' => 'Сравнение товаров',
+        'remove-all-success' => 'Все товары успешно удалены.',
+        'remove-error' => 'Что-то пошло не так. Попробуйте еще раз позже.',
+        'remove-success' => 'Товар успешно удален.',
+        'title' => 'Сравнение товаров',
+    ],
+
+    'checkout' => [
+        'success' => [
+            'info' => 'Мы отправим вам детали вашего заказа и информацию о доставке по электронной почте',
+            'order-id-info' => 'Ваш номер заказа: #:order_id',
+            'thanks' => 'Спасибо за ваш заказ!',
+            'title' => 'Заказ успешно размещен',
+        ],
+
+        'cart' => [
+            'continue-to-checkout' => 'Продолжить оформление заказа',
+            'illegal' => 'Количество не может быть меньше одного.',
+            'inactive' => 'Товар был деактивирован и удален из корзины.',
+            'inactive-add' => 'Неактивный товар не может быть добавлен в корзину.',
+            'inventory-warning' => 'Запрошенное количество товара недоступно. Попробуйте позже.',
+            'item-add-to-cart' => 'Товар успешно добавлен',
+            'minimum-order-message' => 'Минимальная сумма заказа составляет',
+            'missing-fields' => 'Отсутствуют некоторые обязательные поля для этого товара.',
+            'missing-options' => 'Отсутствуют варианты для этого товара.',
+            'paypal-payment-cancelled' => 'Платеж через PayPal был отменен.',
+            'qty-missing' => 'Как минимум один товар должен иметь количество больше 1.',
+            'return-to-shop' => 'Вернуться в магазин',
+            'rule-applied' => 'Правило корзины применено',
+            'select-hourly-duration' => 'Выберите продолжительность слота в один час.',
+            'specify-payment-method' => 'Пожалуйста, укажите способ оплаты.',
+            'specify-shipping-method' => 'Пожалуйста, укажите способ доставки.',
+            'success-remove' => 'Товар успешно удален из корзины.',
+            'suspended-account-message' => 'Ваш аккаунт был приостановлен.',
+
+            'index' => [
+                'bagisto' => 'Багисто',
+                'cart' => 'Корзина',
+                'continue-shopping' => 'Продолжить покупки',
+                'empty-product' => 'В вашей корзине нет товаров.',
+                'excl-tax' => 'Без учета налога:',
+                'home' => 'Главная',
+                'items-selected' => ':count товаров выбрано',
+                'move-to-wishlist' => 'Переместить в список желаний',
+                'move-to-wishlist-success' => 'Выбранные товары успешно перемещены в список желаний.',
+                'price' => 'Цена',
+                'product-name' => 'Название товара',
+                'quantity' => 'Количество',
+                'quantity-update' => 'Количество успешно обновлено',
+                'remove' => 'Удалить',
+                'remove-selected-success' => 'Выбранные товары успешно удалены из корзины.',
+                'see-details' => 'Подробнее',
+                'select-all' => 'Выделить все',
+                'select-cart-item' => 'Выбрать товар в корзине',
+                'tax' => 'Налог',
+                'total' => 'Итого',
+                'update-cart' => 'Обновить корзину',
+                'view-cart' => 'Просмотр корзины',
+
+                'cross-sell' => [
+                    'title' => 'Больше вариантов',
+                ],
+            ],
+
+            'mini-cart' => [
+                'continue-to-checkout' => 'Продолжить оформление заказа',
+                'empty-cart' => 'Ваша корзина пуста',
+                'excl-tax' => 'Без учета налога:',
+                'offer-on-orders' => 'Получите скидку до 30% на ваш первый заказ',
+                'remove' => 'Удалить',
+                'see-details' => 'Подробнее',
+                'shopping-cart' => 'Корзина',
+                'subtotal' => 'Итого',
+                'view-cart' => 'Просмотр корзины',
+            ],
+
+            'summary' => [
+                'cart-summary' => 'Сводка корзины',
+                'delivery-charges' => 'Стоимость доставки',
+                'delivery-charges-excl-tax' => 'Стоимость доставки (без учета налога)',
+                'delivery-charges-incl-tax' => 'Стоимость доставки (с учетом налога)',
+                'discount-amount' => 'Сумма скидки',
+                'grand-total' => 'Общая сумма',
+                'included' => 'Включено',
+                'excl-tax' => 'Без налога:',
+                'incl-tax' => 'С налогом:',
+                'items-discount' => 'Скидка на товары',
+                'shipping-discount' => 'Скидка на доставку',
+                'place-order' => 'Оформить заказ',
+                'proceed-to-checkout' => 'Перейти к оформлению заказа',
+                'sub-total' => 'Подитог',
+                'sub-total-excl-tax' => 'Подитог (без учета налога)',
+                'sub-total-incl-tax' => 'Подитог (с учетом налога)',
+                'tax' => 'Налог',
+
+                'estimate-shipping' => [
+                    'country' => 'Страна',
+                    'info' => 'Введите ваш пункт назначения, чтобы получить оценку стоимости доставки и налога.',
+                    'postcode' => 'Почтовый индекс',
+                    'select-country' => 'Выберите страну',
+                    'select-state' => 'Выберите регион',
+                    'state' => 'Регион',
+                    'title' => 'Оценка доставки и налога',
+                ],
+            ],
+        ],
+
+        'onepage' => [
+            'address' => [
+                'add-new' => 'Добавить новый адрес',
+                'add-new-address' => 'Добавить новый адрес',
+                'back' => 'Назад',
+                'billing-address' => 'Платежный адрес',
+                'check-billing-address' => 'Отсутствует адрес выставления счета.',
+                'check-shipping-address' => 'Отсутствует адрес доставки.',
+                'city' => 'Город',
+                'company-name' => 'Название компании',
+                'confirm' => 'Подтвердить',
+                'country' => 'Страна',
+                'email' => 'Электронная почта',
+                'first-name' => 'Имя',
+                'last-name' => 'Фамилия',
+                'postcode' => 'Почтовый индекс',
+                'proceed' => 'Продолжить',
+                'same-as-billing' => 'Использовать одинаковый адрес для доставки?',
+                'save' => 'Сохранить',
+                'save-address' => 'Сохранить в адресной книге',
+                'select-country' => 'Выбрать страну',
+                'select-state' => 'Выбрать регион',
+                'shipping-address' => 'Адрес доставки',
+                'state' => 'Регион',
+                'street-address' => 'Улица, дом',
+                'telephone' => 'Телефон',
+                'title' => 'Адрес',
+                'vat-id' => 'Идентификационный номер НДС',
+            ],
+
+            'index' => [
+                'checkout' => 'Оформление заказа',
+                'home' => 'Главная',
+            ],
+
+            'payment' => [
+                'payment-method' => 'Способ оплаты',
+            ],
+
+            'shipping' => [
+                'shipping-method' => 'Способ доставки',
+            ],
+
+            'summary' => [
+                'cart-summary' => 'Сводка корзины',
+                'delivery-charges' => 'Стоимость доставки',
+                'delivery-charges-excl-tax' => 'Стоимость доставки (без учета налога)',
+                'delivery-charges-incl-tax' => 'Стоимость доставки (с учетом налога)',
+                'discount-amount' => 'Сумма скидки',
+                'excl-tax' => 'Без учета налога:',
+                'grand-total' => 'Общая сумма',
+                'included' => 'Включено',
+                'incl-tax' => 'С налогом:',
+                'items-discount' => 'Скидка на товары',
+                'shipping-discount' => 'Скидка на доставку',
+                'place-order' => 'Оформить заказ',
+                'price_and_qty' => ':price × :qty',
+                'processing' => 'Обработка',
+                'sub-total' => 'Подитог',
+                'sub-total-excl-tax' => 'Подитог (без учета налога)',
+                'sub-total-incl-tax' => 'Подитог (с учетом налога)',
+                'tax' => 'Налог',
+
+                'tax-included' => 'Налог уже включён:', ],
+        ],
+
+        'coupon' => [
+            'already-applied' => 'Код купона уже применен.',
+            'applied' => 'Применен купон',
+            'apply' => 'Применить купон',
+            'apply-issue' => 'Невозможно применить код купона.',
+            'button-title' => 'Применить',
+            'code' => 'Код купона',
+            'discount' => 'Скидка по купону',
+            'enter-your-code' => 'Введите код',
+            'error' => 'Что-то пошло не так',
+            'invalid' => 'Неверный код купона.',
+            'remove' => 'Удалить купон',
+            'subtotal' => 'Итого',
+            'success-apply' => 'Код купона успешно применен.',
+            'usage-limit-exceeded' => 'Этот код купона достиг лимита использования и больше не действителен.',
+        ],
+
+        'login' => [
+            'email' => 'Электронная почта',
+            'password' => 'Пароль',
+            'title' => 'Войти',
+        ],
+    ],
+
+    'home' => [
+        'contact' => [
+            'about' => 'Напишите нам, и мы ответим вам как можно скорее',
+            'desc' => ' Что у вас на уме?',
+            'describe-here' => 'Опишите здесь',
+            'email' => 'Электронная почта',
+            'message' => 'Сообщение',
+            'name' => 'Имя',
+            'phone-number' => 'Номер телефона',
+            'submit' => 'Отправить',
+            'title' => 'Свяжитесь с нами',
+        ],
+
+        'index' => [
+            'categories-carousel' => 'Карусель категорий',
+            'image-carousel' => 'Карусель изображений',
+            'offer' => 'Получите ДО 40% СКИДКИ на ваш первый заказ, ПОКУПАЙТЕ СЕЙЧАС',
+            'product-carousel' => 'Карусель продуктов',
+            'resend-verify-email' => 'Повторно отправить письмо с подтверждением',
+            'verify-email' => 'Подтвердите вашу электронную почту',
+        ],
+
+        'thanks-for-contact' => 'Спасибо за обращение к нам с комментариями и вопросами. Мы ответим вам очень скоро.',
+    ],
+
+    'partials' => [
+        'pagination' => [
+            'next-page' => 'Следующая страница',
+            'pagination-showing' => 'Показаны записи с :firstItem по :lastItem из :total',
+            'prev-page' => 'Предыдущая страница',
+        ],
+    ],
+
+    'errors' => [
+        'go-to-home' => 'Перейти на главную',
+
+        '404' => [
+            'description' => 'Упс! Страница, которую вы ищете, находится на каникулах. Похоже, мы не смогли найти то, что вы искали.',
+            'title' => '404 Страница не найдена',
+        ],
+
+        '401' => [
+            'description' => 'Упс! Похоже, у вас нет доступа к этой странице. Похоже, у вас отсутствуют необходимые учетные данные.',
+            'title' => '401 Не авторизован',
+        ],
+
+        '403' => [
+            'description' => 'Упс! Эта страница закрыта для вас. Похоже, у вас нет необходимых прав для просмотра этого контента.',
+            'title' => '403 Доступ запрещен',
+        ],
+
+        '500' => [
+            'description' => 'Упс! Что-то пошло не так. Похоже, у нас возникли проблемы с загрузкой страницы, которую вы ищете.',
+            'title' => '500 Внутренняя ошибка сервера',
+        ],
+
+        '503' => [
+            'description' => 'Упс! Похоже, мы временно вышли из строя для технического обслуживания. Пожалуйста, проверьте позже.',
+            'title' => '503 Сервис недоступен',
+        ],
+    ],
+
+    'layouts' => [
+        'address' => 'Адрес',
+        'downloadable-products' => 'Загружаемые товары',
+        'gdpr-request' => 'Запросы GDPR',
+        'my-account' => 'Мой аккаунт',
+        'orders' => 'Заказы',
+        'profile' => 'Профиль',
+        'reviews' => 'Отзывы',
+        'rma' => 'RMA',
+        'wishlist' => 'Список желаний',
+    ],
+
+    'subscription' => [
+        'already' => 'Вы уже подписаны на нашу рассылку.',
+        'subscribe-success' => 'Вы успешно подписались на нашу рассылку.',
+        'unsubscribe-success' => 'Вы успешно отписались от нашей рассылки.',
+    ],
+
+    'emails' => [
+        'dear' => 'Уважаемый :customer_name',
+        'thanks' => 'Если вам нужна помощь, пожалуйста, свяжитесь с нами по адресу <a href=":link" style=":style">:email</a>.<br/>Спасибо!',
+
+        'customers' => [
+            'registration' => [
+                'credentials-description' => 'Ваш аккаунт был создан. Ваши учетные данные указаны ниже:',
+                'description' => 'Ваш аккаунт был успешно создан, и вы можете войти, используя вашу электронную почту и пароль. После входа вы сможете получить доступ к другим услугам, включая просмотр предыдущих заказов, список желаний и редактирование информации об аккаунте.',
+                'greeting' => 'Добро пожаловать и спасибо за регистрацию!',
+                'password' => 'Пароль',
+                'sign-in' => 'Войти',
+                'subject' => 'Регистрация нового клиента',
+                'username-email' => 'Имя пользователя/Электронная почта',
+            ],
+
+            'forgot-password' => [
+                'description' => 'Вы получили это письмо, потому что мы получили запрос на сброс пароля для вашей учетной записи.',
+                'greeting' => 'Забыли пароль!',
+                'reset-password' => 'Сбросить пароль',
+                'subject' => 'Письмо сброса пароля',
+            ],
+
+            'update-password' => [
+                'description' => 'Вы получили это письмо, потому что вы обновили свой пароль.',
+                'greeting' => 'Пароль обновлен!',
+                'subject' => 'Пароль обновлен',
+            ],
+
+            'verification' => [
+                'description' => 'Пожалуйста, нажмите кнопку ниже, чтобы подтвердить свой адрес электронной почты.',
+                'greeting' => 'Добро пожаловать!',
+                'subject' => 'Письмо подтверждения аккаунта',
+                'verify-email' => 'Подтвердить адрес электронной почты',
+            ],
+
+            'commented' => [
+                'description' => 'Заметка - :note',
+                'subject' => 'Добавлен новый комментарий',
+            ],
+
+            'subscribed' => [
+                'description' => 'Поздравляем и добро пожаловать в наше сообщество рассылки! Мы рады приветствовать вас и держать вас в курсе последних новостей, трендов и эксклюзивных предложений.',
+                'greeting' => 'Добро пожаловать в нашу рассылку!',
+                'subject' => 'Подписка на нашу рассылку',
+                'unsubscribe' => 'Отписаться',
+            ],
+
+            'gdpr' => [
+                'new-delete-request' => 'Новый запрос на удаление данных',
+                'new-update-request' => 'Новый запрос на обновление данных',
+
+                'new-request' => [
+                    'delete-summary' => 'Резюме запроса на удаление',
+                    'message' => 'Сообщение : ',
+                    'request-status' => 'Статус запроса : ',
+                    'request-type' => 'Тип запроса : ',
+                    'update-summary' => 'Резюме запроса на обновление',
+                ],
+
+                'status-update' => [
+                    'subject' => 'Ваш запрос GDPR был обновлён',
+                    'summary' => 'Статус вашего запроса GDPR был обновлён',
+                    'request-status' => 'Статус запроса:',
+                    'request-type' => 'Тип запроса:',
+                    'message' => 'Сообщение:',
+                ],
+            ],
+
+            'reminder' => [
+                'already-paid' => 'Если вы уже произвели оплату, проигнорируйте это сообщение.',
+                'invoice-overdue' => 'Это дружеское напоминание о том, что ваш счет просрочен. Пожалуйста, произведите оплату при первой возможности.',
+                'subject' => 'Напоминание о счете',
+            ],
+        ],
+
+        'contact-us' => [
+            'contact-from' => 'через форму обратной связи на сайте',
+            'reply-to-mail' => 'пожалуйста, ответьте на это письмо.',
+            'reach-via-phone' => 'Кроме того, вы можете связаться с нами по телефону',
+            'inquiry-from' => 'Запрос от',
+            'to' => 'Для связи с',
+        ],
+
+        'orders' => [
+            'created' => [
+                'greeting' => 'Спасибо за ваш заказ #:order_id, размещенный :created_at',
+                'subject' => 'Подтверждение нового заказа',
+                'summary' => 'Сводка заказа',
+                'title' => 'Подтверждение заказа!',
+            ],
+
+            'invoiced' => [
+                'greeting' => 'Ваш счет #:invoice_id для заказа #:order_id, созданный :created_at',
+                'subject' => 'Подтверждение нового счета',
+                'summary' => 'Сводка счета',
+                'title' => 'Подтверждение счета!',
+            ],
+
+            'shipped' => [
+                'greeting' => 'Ваш заказ #:order_id, размещенный :created_at, отправлен',
+                'subject' => 'Подтверждение новой отправки',
+                'summary' => 'Сводка отправки',
+                'title' => 'Заказ отправлен!',
+            ],
+
+            'refunded' => [
+                'greeting' => 'Инициирован возврат средств для заказа #:order_id, размещенный :created_at',
+                'subject' => 'Подтверждение нового возврата',
+                'summary' => 'Сводка возврата',
+                'title' => 'Заказ возвращен!',
+            ],
+
+            'canceled' => [
+                'greeting' => 'Ваш заказ #:order_id, размещенный :created_at, был отменен',
+                'subject' => 'Подтверждение отмены заказа',
+                'summary' => 'Сводка заказа',
+                'title' => 'Заказ отменен!',
+            ],
+
+            'commented' => [
+                'subject' => 'Добавлен новый комментарий',
+                'title' => 'К заказу #:order_id, размещенному :created_at, добавлен новый комментарий',
+            ],
+
+            'billing-address' => 'Адрес оплаты',
+            'carrier' => 'Перевозчик',
+            'contact' => 'Контакт',
+            'discount' => 'Скидка',
+            'excl-tax' => 'Без налога: ',
+            'grand-total' => 'Общая сумма',
+            'name' => 'Имя',
+            'payment' => 'Оплата',
+            'price' => 'Цена',
+            'qty' => 'Кол-во',
+            'shipping' => 'Доставка',
+            'shipping-address' => 'Адрес доставки',
+            'shipping-handling' => 'Доставка и обработка',
+            'shipping-handling-excl-tax' => 'Доставка и обработка (без налога)',
+            'shipping-handling-incl-tax' => 'Доставка и обработка (с налогом)',
+            'sku' => 'Артикул',
+            'subtotal' => 'Подитог',
+            'subtotal-excl-tax' => 'Подитог (без налога)',
+            'subtotal-incl-tax' => 'Подитог (с налогом)',
+            'tax' => 'Налог',
+            'tracking-number' => 'Номер отслеживания: :tracking_number',
+        ],
+    ],
+
+    'rma' => [
+        'customer' => [
+            'delivered' => 'Доставлено',
+            'menu-name' => 'Возврат товара',
+            'offer' => 'СКИДКА до 40% на ваш первый заказ',
+            'rma-qty' => 'Количество RMA',
+            'shop-now' => 'КУПИТЬ СЕЙЧАС',
+            'submit-req' => 'Отправить запрос',
+            'title' => 'Возврат товара',
+            'undelivered' => 'Не доставлено',
+
+            'create' => [
+                'cancel' => 'Отмена',
+                'create-btn' => 'Сохранить',
+                'enter-order-id' => 'Введите ID заказа',
+                'exchange-window' => 'Окно обмена',
+                'heading' => 'Новый запрос на возврат товара',
+                'image' => 'Изображение',
+                'images' => 'Изображения',
+                'information' => 'Дополнительная информация',
+                'item-ordered' => 'Заказанный товар',
+                'no-record' => 'Записей не найдено!',
+                'not-allowed' => 'Возврат товара недоступен для ожидающего заказа',
+                'order-status' => 'Статус заказа',
+                'orders' => 'Заказы',
+                'price' => 'Цена',
+                'product' => 'Продукт',
+                'product-name' => 'Название продукта',
+                'quantity' => 'Количество',
+                'reason' => 'Причина',
+                'reopen-request' => 'Открыть запрос заново',
+                'resolution' => 'Выберите разрешение',
+                'return-window' => 'Окно возврата',
+                'rma-not-available-quotes' => 'Товар недоступен для возврата',
+                'save' => 'Сохранить',
+                'search-order' => 'Поиск заказа',
+                'sku' => 'Артикул (SKU)',
+                'view' => 'Просмотр RMA',
+            ],
+        ],
+
+        'guest' => [
+            'view' => [
+                'close-rma' => 'Закрыть возврат товара:',
+                'order-status' => 'Статус заказа:',
+                'rma-status' => 'Статус возврата товара:',
+                'title' => 'Возврат товара',
+            ],
+
+            'create' => [
+                'cancel' => 'Отмена',
+                'create-btn' => 'Сохранить',
+                'enter-order-id' => 'Введите ID заказа',
+                'heading' => 'Новый запрос на возврат товара',
+                'image' => 'Изображение',
+                'images' => 'Изображения',
+                'information' => 'Дополнительная информация',
+                'item-ordered' => 'Заказанный товар',
+                'not-allowed' => 'Возврат товара недоступен для ожидающего заказа',
+                'order-status' => 'Статус заказа',
+                'orders' => 'Заказы',
+                'price' => 'Цена',
+                'product-name' => 'Название продукта',
+                'product' => 'Продукт',
+                'quantity' => 'Количество',
+                'reason' => 'Причина',
+                'reopen-request' => 'Открыть запрос заново',
+                'resolution' => 'Выберите разрешение',
+                'rma-not-available-quotes' => 'Товар недоступен для возврата',
+                'save' => 'Сохранить',
+                'search-order' => 'Поиск заказа',
+                'sku' => 'Артикул (SKU)',
+                'title' => 'Возврат товара',
+            ],
+
+            'index' => [
+                'create' => 'Создать новый запрос на возврат товара',
+                'delete' => 'Удалить',
+                'edit' => 'Редактировать',
+                'guest' => 'Панель возвратов товара для гостей',
+                'heading' => 'Панель возвратов товара для гостей',
+                'update' => 'Обновить',
+                'view' => 'Просмотр',
+            ],
+        ],
+
+        'customer-rma-index' => [
+            'cancel' => 'Отмена',
+            'create' => 'Создать',
+            'delete' => 'Удалить',
+            'edit' => 'Редактировать',
+            'guest' => 'Панель возвратов товара для гостей',
+            'heading' => 'Возврат товара',
+            'update' => 'Обновить',
+            'view' => 'Просмотр',
+        ],
+
+        'validation' => [
+            'close-rma' => 'Подтвердить',
+            'information' => 'Дополнительная информация',
+            'order-id' => 'Выбор заказа',
+            'order-status' => 'Статус заказа',
+            'orders' => 'Заказы',
+            'resolution' => 'Разрешение',
+            'select-orders' => 'Выберите заказ',
+        ],
+
+        'conversation-texts' => [
+            'by' => 'От',
+            'customer' => 'Клиент',
+            'no-record' => 'Записей не найдено!',
+            'on' => 'На',
+            'seller' => 'Продавец',
+        ],
+
+        'default-option' => [
+            'others' => 'Другое',
+            'please-select-value' => 'Выберите значение',
+            'select-order-status' => 'Выберите статус заказа',
+            'select-order' => 'Выберите заказ',
+            'select-quantity' => 'Выберите количество',
+            'select-reason' => 'Выберите причину',
+            'select-resolution' => 'Выберите разрешение',
+            'select-seller' => 'Выберите продавца',
+        ],
+
+        'view-customer-rma' => [
+            'additional-information' => 'Дополнительная информация:',
+            'admin' => 'Администратор',
+            'cancel-order' => 'Отменить заказ',
+            'change-rma-status' => 'Изменить статус возврата товара',
+            'close-rma' => 'Закрыть возврат товара:',
+            'conversations' => 'Беседы',
+            'guest' => 'Гость',
+            'heading' => 'Детали возврата товара',
+            'images' => 'Изображения:',
+            'items-request' => 'Товар(ы), запрошенные для возврата',
+            'items-requested-for-rma' => 'Товар(ы), запрошенные для возврата',
+            'order-id' => 'ID заказа:',
+            'refund-details' => 'Детали возврата',
+            'refund-offline-btn' => 'Возврат оффлайн',
+            'refundable-amount' => 'Сумма для возврата',
+            'resolution-type' => 'Тип разрешения:',
+            'rma' => 'Возврат товара',
+            'save-btn' => 'Сохранить',
+            'send-message-btn' => 'Отправить',
+            'send-message' => 'Отправить сообщение',
+            'status-details' => 'Детали статуса',
+            'status-quotes' => 'Пожалуйста, согласитесь для отметки как решено',
+            'status-reopen' => 'Проверьте, чтобы снова открыть',
+            'status' => 'Статус',
+            'term' => 'Согласие с полем отметки обязательно',
+            'you' => 'Администратор',
+        ],
+
+        'view-guest-rma' => [
+            'additional-information' => 'Дополнительная информация:',
+            'admin' => 'Администратор',
+            'close-rma' => 'Закрыть возврат товара',
+            'conversations' => 'Беседы',
+            'guest' => 'Вы',
+            'images' => 'Изображения',
+            'items-request' => 'Товар(ы), запрошенные для возврата',
+            'order-id' => ' ID заказа:',
+            'refund-offline-btn' => 'Возврат оффлайн',
+            'resolution-type' => 'Тип разрешения:',
+            'rma' => 'Возврат товара',
+            'save-btn' => 'Сохранить',
+            'send-message-btn' => 'Отправить',
+            'send-message' => 'Отправить сообщение',
+            'status-details' => 'Детали статуса',
+            'status-quotes' => 'Пожалуйста, согласитесь для отметки как решено.',
+            'status' => 'Статус',
+            'term' => 'Согласие с полем отметки обязательно',
+        ],
+
+        'view-guest-rma-content' => [
+            'full-amount' => 'Полная сумма',
+            'order-status' => 'Статус заказа:',
+            'request-on' => 'Запрос на:',
+            'rma-status' => 'Статус возврата товара:',
+        ],
+
+        'view-customer-rma-content' => [
+            'admin-status' => 'Статус администратора:',
+            'close-rma' => 'Закрыть возврат товара',
+            'consignment-no' => 'Номер отправления:',
+            'enter-message' => 'Введите сообщение',
+            'full-amount' => 'Полная сумма',
+            'order-details' => 'Детали заказа',
+            'order-status' => 'Статус заказа:',
+            'partial-amount' => 'Частичная сумма',
+            'refundable-amount' => 'Сумма для возврата:',
+            'request-on' => 'Запрос на:',
+            'rma-status' => 'Статус возврата товара:',
+            'seller' => 'Продавец',
+            'total-refundable-amount' => 'Общая сумма для возврата:',
+        ],
+
+        'table-heading' => [
+            'image' => 'Изображение',
+            'order-qty' => 'Количество заказа',
+            'price' => 'Цена',
+            'product-name' => 'Название продукта',
+            'reason' => 'Причина',
+            'resolution-type' => 'Тип решения',
+            'rma-qty' => 'Количество RMA',
+            'sku' => 'Артикул',
+        ],
+
+        'guest-users' => [
+            'button-text' => 'Войти',
+            'email' => 'E-mail',
+            'heading' => 'Панель входа для гостей',
+            'logout' => 'Выход гостя',
+            'order-id' => 'ID заказа',
+            'title' => 'Вход для гостей',
+        ],
+
+        'mail' => [
+            'customer-rma-create' => [
+                'additional-information' => 'Дополнительная информация:',
+                'greeting' => 'Вы запросили новый RMA для заказа :order_id.',
+                'heading' => 'Запрос RMA',
+                'hello' => 'Уважаемый(ая) :name',
+                'order-id' => 'ID Заказа:',
+                'order-status' => 'Статус Заказа:',
+                'requested-rma-product' => 'Запрошенный товар для RMA:',
+                'resolution-type' => 'Тип Решения:',
+                'rma-id' => 'ID RMA:',
+                'summary' => 'Сводка RMA заказа',
+                'thank-you' => 'Спасибо',
+            ],
+
+            'customer-data-table-heading' => [
+                'product-name' => 'Наименование Товара',
+                'qty' => 'Количество',
+                'reason' => 'Причина',
+                'sku' => 'Артикул (SKU)',
+            ],
+
+            'customer-conversation' => [
+                'subject' => 'Новое сообщение',
+                'heading' => 'Уважаемый(ая) :name,',
+                'message' => 'Сообщение',
+                'process' => 'Ваш запрос на возврат находится в обработке.',
+                'quotes' => 'Есть новое сообщение от покупателя',
+                'solved' => 'Статус RMA был изменен на Решено клиентом.',
+            ],
+
+            'seller-conversation' => [
+                'subject' => 'Новое сообщение',
+                'heading' => 'Уважаемый(ая) :name',
+                'message' => 'Сообщение',
+                'quotes' => 'Есть новое сообщение от администратора',
+                'title' => 'Получено сообщение!',
+            ],
+
+            'status' => [
+                'heading' => 'Уважаемый(ая) :name',
+                'quotes' => 'Ваш статус RMA был изменен продавцом',
+                'rma-id' => 'ID RMA',
+                'status-change' => ':id был изменен продавцом',
+                'status' => 'Статус',
+                'title' => 'Обновление статуса!',
+                'your-rma-id' => 'Ваш ID RMA',
+            ],
+        ],
+
+        'status' => [
+            'status-name' => [
+                'accept' => 'Одобрено',
+                'awaiting' => 'Ожидание возврата',
+                'canceled' => 'Запрос отменён',
+                'declined' => 'Запрос отклонён',
+                'dispatched-package' => 'Возврат в пути',
+                'item-canceled' => 'Товар отменен',
+                'not-received-package-yet' => 'Пакет еще не получен',
+                'pending' => 'Ожидает рассмотрения',
+                'processing' => 'В обработке',
+                'received-package' => 'Возвращено',
+                'solved' => 'Решено',
+            ],
+
+            'status-quotes' => [
+                'declined-admin' => 'RMA был отклонен администратором.',
+                'declined-buyer' => 'RMA был отклонен покупателем.',
+                'solved-by-admin' => 'RMA был решен администратором.',
+                'solved' => 'RMA был решен.',
+            ],
+        ],
+
+        'response' => [
+            'already-cancel' => 'Статус RMA уже отменен.',
+            'cancel-success' => 'Статус RMA успешно отменен.',
+            'create-success' => 'Запрос успешно создан.',
+            'creation-error' => 'Статус RMA не может быть обновлен, так как счет для этого заказа не был создан.',
+            'invalid-item' => 'Выбранный элемент заказа недействителен.',
+            'invalid-order' => 'Выбранный заказ недействителен.',
+            'permission-denied' => 'Вы вошли в систему',
+            'rma-disabled' => 'RMA отключено для этого продукта',
+            'reopen-not-allowed' => 'Повторное открытие этого запроса RMA не разрешено.',
+            'send-message' => ':name успешно отправлен(а).',
+            'update-success' => ':name успешно обновлен(а).',
+        ],
+    ],
+
+    'eu_withdrawal' => [
+        'button' => [
+            'withdraw' => 'Отказаться от договора',
+            'view_existing' => 'Посмотреть ваш отказ',
+        ],
+
+        'guest_dropdown' => [
+            'link' => 'Отказаться от договора',
+        ],
+
+        'lookup' => [
+            'page_title' => 'Отказ от договора',
+            'heading' => 'Отказ от договора',
+            'intro' => 'Введите номер заказа и адрес e-mail, который Вы использовали при оформлении. Мы пришлём Вам ссылку для подачи отказа.',
+            'order_number' => 'Номер заказа',
+            'email' => 'Адрес e-mail',
+            'submit' => 'Отправить ссылку для отказа',
+            'sent_notice' => 'Если соответствующий заказ существует, мы только что отправили на этот адрес ссылку для отказа. Она действительна в течение 24 часов.',
+            'legal_note' => 'Вы имеете предусмотренное Директивой ЕС 2011/83/ЕС (с изменениями) право отказаться от договора в течение 14 дней. Иные формы отказа — в том числе письменное заявление, направленное в нашу службу поддержки клиентов — остаются действительными.',
+        ],
+
+        'form' => [
+            'page_title' => 'Подтвердите Ваш отказ',
+            'heading' => 'Подтверждение отказа от договора',
+            'legal_notice_title' => 'Это юридически обязывающее заявление',
+            'legal_effect' => 'Отправляя данную форму, Вы реализуете своё установленное законом право на отказ от заказа №:order_id. Заявление приобретает юридическую силу в момент отправки.',
+            'order_summary' => 'Заказ',
+            'order_total' => 'Итого',
+            'order_items' => 'Товары',
+            'placed_on' => 'Оформлен :date',
+            'reason_label' => 'Причина',
+            'reason_optional' => '(необязательно)',
+            'reason_help' => 'Указывать причину не требуется. Всё, что Вы напишете здесь, будет внесено в материалы по отказу от договора и передано продавцу.',
+            'reason_placeholder' => 'Например: «Передумал», «Товар не соответствует описанию» или оставьте поле пустым.',
+            'submit' => 'Отправить отказ',
+            'cancel' => 'Отменить и вернуться',
+        ],
+
+        'confirmation' => [
+            'page_title' => 'Подтверждение отказа',
+            'heading' => 'Ваш отказ получен',
+            'heading_received' => 'Ваш отказ получен',
+            'heading_refunded' => 'Возврат средств выполнен',
+            'heading_declined' => 'Ваш отказ отклонён',
+            'intro' => 'Мы зафиксировали Ваше заявление. Эта страница и письмо, которое мы только что Вам отправили, служат подтверждением на долговременном носителе.',
+            'intro_received' => 'Мы зафиксировали Ваше заявление. Эта страница и письмо, которое мы только что Вам отправили, служат подтверждением на долговременном носителе.',
+            'intro_refunded' => 'Продавец оформил Ваш возврат. Возмещение должно поступить на исходный способ оплаты в ближайшее время.',
+            'intro_declined' => 'Продавец оспаривает Ваше право на возврат по данному заявлению. Ниже приведены указанная причина и информация о Ваших дальнейших возможностях.',
+            'received_at' => 'Получено',
+            'reference' => 'Номер обращения',
+            'copy_reference' => 'Скопировать номер обращения',
+            'reference_copied' => 'Номер обращения скопирован в буфер обмена.',
+            'order' => 'Заказ',
+            'email' => 'E-mail',
+            'reason' => 'Причина',
+            'status' => 'Статус',
+            'status_received' => 'Получено',
+            'status_refunded' => 'Возвращено',
+            'status_declined' => 'Отклонено',
+            'print' => 'Печать',
+            'next_steps_title' => 'Что дальше',
+            'step_received' => 'Ваше заявление получено и зарегистрировано.',
+            'step_email' => 'Письмо-подтверждение отправлено на Вашу почту.',
+            'step_refund' => 'Возврат средств в течение 14 дней.',
+            'step_refund_done' => 'Возврат средств выполнен.',
+            'step_declined' => 'Отказ отклонён продавцом.',
+            'declined_reason_label' => 'Причина, указанная продавцом',
+            'declined_notice' => 'За Вами сохраняются все иные средства правовой защиты по законодательству ЕС о защите прав потребителей. Если Вы не согласны с данным решением, обратитесь напрямую к продавцу.',
+            'refund_notice' => 'Мы возвращаем средства тем же способом оплаты, который Вы использовали при исходной транзакции, если иное не было прямо согласовано.',
+            'email_sent' => 'Письмо-подтверждение отправлено.',
+            'email_pending' => 'Нам не удалось отправить письмо-подтверждение немедленно; наша команда займётся этим. Пожалуйста, сохраните эту страницу в качестве подтверждения.',
+            'durable_medium_notice' => 'Эта страница является Вашим подтверждением. Вы можете сохранить или распечатать её.',
+        ],
+
+        'emails' => [
+            'confirmation' => [
+                'subject' => 'Подтверждение Вашего отказа — заказ :order_id',
+                'title' => 'Отказ получен',
+                'title_received' => 'Отказ получен',
+                'title_refunded' => 'Возврат средств выполнен',
+                'title_declined' => 'Отказ отклонён',
+                'greeting' => 'Здравствуйте,',
+                'intro' => 'Мы получили Ваше заявление об отказе от договора по заказу №:order_id. Юридически значимое время получения указано ниже.',
+                'intro_received' => 'Мы получили Ваше заявление об отказе от договора по заказу №:order_id. Юридически значимое время получения указано ниже.',
+                'intro_refunded' => 'Возврат средств по заказу №:order_id выполнен. Возмещение должно поступить на исходный способ оплаты в ближайшее время.',
+                'intro_declined' => 'Продавец оспаривает Ваше право на возврат по заказу №:order_id на основании данного заявления. Указанная причина приведена ниже.',
+                'summary' => 'Сведения об отказе',
+                'received_at' => 'Получено',
+                'reference' => 'Номер обращения',
+                'order' => 'Заказ',
+                'email' => 'E-mail',
+                'reason' => 'Указанная причина',
+                'declined_reason' => 'Причина отклонения',
+                'refund_notice' => 'Если возврат причитается, мы возвращаем средства тем же способом оплаты, который Вы использовали при исходной транзакции, в течение 14 дней с указанной выше даты, если иное не было прямо согласовано.',
+                'footer' => 'Данное сообщение является подтверждением на долговременном носителе в соответствии со статьёй 11а Директивы 2011/83/ЕС (с изменениями, внесёнными Директивой (ЕС) 2023/2673). Пожалуйста, сохраните его для своих записей.',
+            ],
+
+            'guest_link' => [
+                'subject' => 'Ваша ссылка для отказа',
+                'title' => 'Ваша ссылка для отказа',
+                'intro' => 'Воспользуйтесь ссылкой ниже, чтобы подать отказ по заказу :order_id. Ссылка действительна в течение 24 часов.',
+                'button' => 'Открыть форму отказа',
+                'expiry' => 'Срок действия ссылки истекает через 24 часа. Если Вы не запрашивали это письмо, можете его проигнорировать.',
+            ],
+        ],
+    ],
+];

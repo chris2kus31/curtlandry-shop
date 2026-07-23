@@ -1,0 +1,198 @@
+<?php
+
+namespace Webkul\CatalogRule\Repositories;
+
+use Illuminate\Container\Container;
+use Webkul\Attribute\Repositories\AttributeFamilyRepository;
+use Webkul\Attribute\Repositories\AttributeRepository;
+use Webkul\CatalogRule\Contracts\CatalogRule;
+use Webkul\Category\Repositories\CategoryRepository;
+use Webkul\Core\Eloquent\Repository;
+use Webkul\RMA\Repositories\RMARuleRepository;
+use Webkul\Tax\Repositories\TaxCategoryRepository;
+
+class CatalogRuleRepository extends Repository
+{
+    /**
+     * Create a new repository instance.
+     *
+     * @return void
+     */
+    public function __construct(
+        protected AttributeFamilyRepository $attributeFamilyRepository,
+        protected AttributeRepository $attributeRepository,
+        protected CategoryRepository $categoryRepository,
+        protected TaxCategoryRepository $taxCategoryRepository,
+        protected RMARuleRepository $rmaRuleRepository,
+        Container $container
+    ) {
+        parent::__construct($container);
+    }
+
+    /**
+     * Specify model class name.
+     */
+    public function model(): string
+    {
+        return CatalogRule::class;
+    }
+
+    /**
+     * Create.
+     *
+     * @return CatalogRule
+     */
+    public function create(array $data)
+    {
+        $data = $this->transformFormData($data);
+
+        $catalogRule = parent::create($data);
+
+        $catalogRule->channels()->sync($data['channels']);
+
+        $catalogRule->customer_groups()->sync($data['customer_groups']);
+
+        return $catalogRule;
+    }
+
+    /**
+     * Update.
+     *
+     * @param  int  $id
+     * @return CatalogRule
+     */
+    public function update(array $data, $id)
+    {
+        $data = $this->transformFormData($data);
+
+        $catalogRule = $this->find($id);
+
+        parent::update($data, $id);
+
+        $catalogRule->channels()->sync($data['channels']);
+
+        $catalogRule->customer_groups()->sync($data['customer_groups']);
+
+        return $catalogRule;
+    }
+
+    /**
+     * Transform form data.
+     */
+    public function transformFormData(array $data): array
+    {
+        return [
+            ...$data,
+            'starts_from' => ! empty($data['starts_from']) ? $data['starts_from'] : null,
+            'ends_till' => ! empty($data['ends_till']) ? $data['ends_till'] : null,
+            'status' => isset($data['status']),
+            'conditions' => $data['conditions'] ?? [],
+        ];
+    }
+
+    /**
+     * Returns attributes for catalog rule conditions.
+     *
+     * @return array
+     */
+    public function getConditionAttributes()
+    {
+        $attributes = [
+            [
+                'key' => 'product',
+                'label' => trans('admin::app.marketing.promotions.catalog-rules.create.product-attribute'),
+                'children' => [
+                    [
+                        'key' => 'product|category_ids',
+                        'type' => 'multiselect',
+                        'label' => trans('admin::app.marketing.promotions.catalog-rules.create.categories'),
+                        'options' => $this->categoryRepository->getCategoryTree(),
+                    ], [
+                        'key' => 'product|attribute_family_id',
+                        'type' => 'select',
+                        'label' => trans('admin::app.marketing.promotions.catalog-rules.create.attribute-family'),
+                        'options' => $this->getAttributeFamilies(),
+                    ],
+                ],
+            ],
+        ];
+
+        foreach ($this->attributeRepository->findWhereNotIn('type', ['textarea', 'image', 'file']) as $attribute) {
+            if ($attribute->code == 'tax_category_id') {
+                $options = $this->getTaxCategories();
+            } elseif ($attribute->code == 'rma_rule_id') {
+                $options = $this->getRMARules();
+            } else {
+                if ($attribute->type === 'select') {
+                    $options = $attribute->options()->orderBy('sort_order')->get();
+                } else {
+                    $options = $attribute->options;
+                }
+            }
+
+            $attributes[0]['children'][] = [
+                'key' => 'product|'.$attribute->code,
+                'type' => $attribute->type,
+                'label' => $attribute->name,
+                'options' => $options,
+            ];
+        }
+
+        return $attributes;
+    }
+
+    /**
+     * Returns all attribute families.
+     *
+     * @return array
+     */
+    public function getAttributeFamilies()
+    {
+        $attributeFamilies = [];
+
+        foreach ($this->attributeFamilyRepository->all() as $attributeFamily) {
+            $attributeFamilies[] = [
+                'id' => $attributeFamily->id,
+                'admin_name' => $attributeFamily->name,
+            ];
+        }
+
+        return $attributeFamilies;
+    }
+
+    /**
+     * Returns all tax categories.
+     *
+     * @return array
+     */
+    public function getTaxCategories()
+    {
+        $taxCategories = [];
+
+        foreach ($this->taxCategoryRepository->all() as $taxCategory) {
+            $taxCategories[] = [
+                'id' => $taxCategory->id,
+                'admin_name' => $taxCategory->name,
+            ];
+        }
+
+        return $taxCategories;
+    }
+
+    /**
+     * Returns all RMA rules.
+     */
+    public function getRMARules(): array
+    {
+        $rmaRules = [];
+
+        foreach ($this->rmaRuleRepository->all() as $rmaRule) {
+            $rmaRules[] = [
+                'id' => $rmaRule->id,
+                'admin_name' => $rmaRule->name,
+            ];
+        }
+
+        return $rmaRules;
+    }
+}

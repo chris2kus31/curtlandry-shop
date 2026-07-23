@@ -1,0 +1,97 @@
+import { test } from "../../setup";
+import { ProductCreation } from "../../pages/admin/catalog/products/ProductCreatePage";
+import { BundleProductCheckout } from "../../pages/shop/checkout/product-types/BundleProductCheckout";
+import { loginAsCustomer, addAddress } from "../../utils/customer";
+
+test.describe("bundle product checkout flow", () => {
+    test("should create simple product to add in bundle", async ({ adminPage }) => {
+        const productCreation = new ProductCreation(adminPage);
+
+        await productCreation.createProduct({
+            type: "simple",
+            sku: `SKU-${Date.now()}`,
+            name: `Simple-${Date.now()}`,
+            shortDescription: "Short desc",
+            description: "Full desc",
+            price: 199,
+            weight: 1,
+            inventory: 100,
+        });
+    });
+    test("should create simple product again to add in bundle", async ({ adminPage }) => {
+        const productCreation = new ProductCreation(adminPage);
+
+        await productCreation.createProduct({
+            type: "simple",
+            sku: `SKU-${Date.now()}`,
+            name: `Simple-${Date.now()}`,
+            shortDescription: "Short desc",
+            description: "Full desc",
+            price: 199,
+            weight: 1,
+            inventory: 100,
+        });
+    });
+    test("should create bundle product", async ({ adminPage }) => {
+        const productCreation = new ProductCreation(adminPage);
+
+        await productCreation.createProduct({
+            type: "bundle",
+            sku: `SKU-${Date.now()}`,
+            name: `bundle-${Date.now()}`,
+            shortDescription: "Short desc",
+            description: "Full desc",
+            price: 199,
+            weight: 1,
+            inventory: 100,
+        });
+    });
+
+    test("should allow customer to complete checkout for bundle product successfully", async ({
+        shopPage,
+    }) => {
+        await loginAsCustomer(shopPage);
+        await addAddress(shopPage);
+        const checkout = new BundleProductCheckout(shopPage);
+        await checkout.checkoutWithDefaultShipping();
+    });
+
+    test("should allow guest to complete checkout for bundle product successfully", async ({
+        shopPage,
+    }) => {
+        const checkout = new BundleProductCheckout(shopPage);
+        await checkout.guestCheckout();
+    });
+
+    test("should use same address for shipping", async ({ shopPage }) => {
+        await loginAsCustomer(shopPage);
+        await addAddress(shopPage);
+        const checkout = new BundleProductCheckout(shopPage);
+        await checkout.checkoutWithDefaultShipping();
+    });
+
+    test("should not use same address for shipping", async ({ shopPage }) => {
+        await loginAsCustomer(shopPage);
+        await addAddress(shopPage);
+        const checkout = new BundleProductCheckout(shopPage);
+        await checkout.checkoutWithNewAddress();
+    });
+
+    test("should allow customer to complete checkout for bundle product via flat rate shipping successfully", async ({
+        shopPage,
+    }) => {
+        await loginAsCustomer(shopPage);
+        await addAddress(shopPage);
+        const checkout = new BundleProductCheckout(shopPage);
+        await checkout.checkoutWithFlatRateShipping();
+    });
+
+    test("should allow customer to complete checkout for bundle product via cash on delivery successfully", async ({
+        shopPage,
+    }) => {
+        await loginAsCustomer(shopPage);
+        await addAddress(shopPage);
+        const checkout = new BundleProductCheckout(shopPage);
+        await checkout.checkoutWithCOD();
+    });
+});

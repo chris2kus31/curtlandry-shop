@@ -1,0 +1,1882 @@
+<?php
+
+return [
+    'customers' => [
+        'forgot-password' => [
+            'already-sent' => 'Wachtwoord al opnieuw ingesteld E-mail verzonden.',
+            'back' => 'Terug naar Aanmelden?',
+            'bagisto' => 'Bagisto',
+            'email' => 'E-mail',
+            'email-not-exist' => 'We kunnen geen gebruiker vinden met dat e-mailadres.',
+            'footer' => '© Auteursrecht 2010 - :current_year, Webkul Software (geregistreerd in India). Alle rechten voorbehouden.',
+            'forgot-password-text' => 'Als u uw wachtwoord bent vergeten, kunt u het herstellen door uw e-mailadres in te voeren.',
+            'page-title' => 'Bent u uw wachtwoord vergeten?',
+            'reset-link-sent' => 'We hebben de resetlink voor uw wachtwoord per e-mail verzonden.',
+            'sign-in-button' => 'Aanmelden',
+            'submit' => 'Wachtwoord Herstellen',
+            'title' => 'Wachtwoord Herstellen',
+        ],
+
+        'reset-password' => [
+            'back-link-title' => 'Terug naar Aanmelden',
+            'bagisto' => 'Bagisto',
+            'confirm-password' => 'Bevestig Wachtwoord',
+            'email' => 'Geregistreerde E-mail',
+            'footer' => '© Auteursrecht 2010 - :current_year, Webkul Software (geregistreerd in India). Alle rechten voorbehouden.',
+            'password' => 'Wachtwoord',
+            'submit-btn-title' => 'Wachtwoord Resetten',
+            'title' => 'Wachtwoord Resetten',
+        ],
+
+        'login-form' => [
+            'bagisto' => 'Bagisto',
+            'button-title' => 'Aanmelden',
+            'create-your-account' => 'Maak uw account aan',
+            'email' => 'E-mail',
+            'footer' => '© Auteursrecht 2010 - :current_year, Webkul Software (geregistreerd in India). Alle rechten voorbehouden.',
+            'forgot-pass' => 'Wachtwoord Vergeten?',
+            'form-login-text' => 'Als u een account heeft, meld u dan aan met uw e-mailadres.',
+            'invalid-credentials' => 'Controleer uw referenties en probeer het opnieuw.',
+            'new-customer' => 'Nieuwe klant?',
+            'not-activated' => 'Uw activering wacht op goedkeuring van de beheerder',
+            'page-title' => 'Aanmelden',
+            'password' => 'Wachtwoord',
+            'resend-verification' => 'Verificatie-e-mail opnieuw verzenden',
+            'show-password' => 'Wachtwoord Weergeven',
+            'title' => 'Aanmelden',
+            'verify-first' => 'Verifieer eerst uw e-mailaccount.',
+        ],
+
+        'signup-form' => [
+            'account-exists' => 'Heeft u al een account?',
+            'bagisto' => 'Bagisto',
+            'button-title' => 'Registreren',
+            'click-here' => 'Klik Hier',
+            'confirm-pass' => 'Bevestig Wachtwoord',
+            'email' => 'E-mail',
+            'first-name' => 'Voornaam',
+            'footer' => '© Auteursrecht 2010 - :current_year, Webkul Software (geregistreerd in India). Alle rechten voorbehouden.',
+            'form-signup-text' => 'Als u nieuw bent in onze winkel, zijn we blij u als lid te hebben.',
+            'last-name' => 'Achternaam',
+            'page-title' => 'Word Gebruiker',
+            'password' => 'Wachtwoord',
+            'sign-in-button' => 'Registreren',
+            'subscribe-to-newsletter' => 'Abonneer op nieuwsbrief',
+            'success' => 'Account succesvol aangemaakt.',
+            'success-verify' => 'Account succesvol aangemaakt, er is een e-mail verzonden ter verificatie.',
+            'terms-conditions' => 'Algemene Voorwaarden',
+            'verification-not-sent' => 'Fout! Probleem bij het verzenden van de verificatie-e-mail, probeer het later opnieuw.',
+            'verification-sent' => 'Verificatie e-mail verzonden',
+            'verified' => 'Uw account is geverifieerd, probeer nu in te loggen.',
+            'verify-failed' => 'We kunnen uw e-mailaccount niet verifiëren.',
+        ],
+
+        'account' => [
+            'home' => 'Home',
+
+            'profile' => [
+                'index' => [
+                    'delete' => 'Verwijderen',
+                    'delete-failed' => 'Fout opgetreden bij het verwijderen van de klant.',
+                    'delete-profile' => 'Profiel Verwijderen',
+                    'delete-success' => 'Klant succesvol verwijderd',
+                    'dob' => 'Geboortedatum',
+                    'edit' => 'Bewerken',
+                    'edit-success' => 'Profiel succesvol bijgewerkt',
+                    'email' => 'E-mail',
+                    'enter-password' => 'Voer uw wachtwoord in',
+                    'first-name' => 'Voornaam',
+                    'gender' => 'Geslacht',
+                    'last-name' => 'Achternaam',
+                    'order-pending' => 'Kan klantaccount niet verwijderen omdat er nog bestelling(en) in afwachting zijn of in verwerking zijn.',
+                    'title' => 'Profiel',
+                    'unmatched' => 'Het oude wachtwoord komt niet overeen.',
+                    'wrong-password' => 'Verkeerd wachtwoord!',
+                ],
+
+                'edit' => [
+                    'confirm-password' => 'Bevestig Wachtwoord',
+                    'current-password' => 'Huidig Wachtwoord',
+                    'dob' => 'Geboortedatum',
+                    'edit' => 'Bewerken',
+                    'edit-profile' => 'Profiel Bewerken',
+                    'email' => 'E-mail',
+                    'female' => 'Vrouw',
+                    'first-name' => 'Voornaam',
+                    'gender' => 'Geslacht',
+                    'last-name' => 'Achternaam',
+                    'male' => 'Man',
+                    'new-password' => 'Nieuw Wachtwoord',
+                    'other' => 'Anders',
+                    'phone' => 'Telefoon',
+                    'save' => 'Opslaan',
+                    'subscribe-to-newsletter' => 'Abonneren op nieuwsbrief',
+                ],
+            ],
+
+            'addresses' => [
+                'index' => [
+                    'add-address' => 'Adres Toevoegen',
+                    'create-success' => 'Adres succesvol toegevoegd.',
+                    'default-address' => 'Standaard Adres',
+                    'default-delete' => 'Standaard adres kan niet worden gewijzigd.',
+                    'delete' => 'Verwijderen',
+                    'delete-success' => 'Adres succesvol verwijderd',
+                    'edit' => 'Bewerken',
+                    'edit-success' => 'Adres succesvol bijgewerkt.',
+                    'empty-address' => 'U heeft nog geen adres aan uw account toegevoegd.',
+                    'security-warning' => 'Verdachte activiteit gevonden!!!',
+                    'set-as-default' => 'Instellen als Standaard',
+                    'title' => 'Adres',
+                    'update-success' => 'Adres succesvol bijgewerkt.',
+                ],
+
+                'create' => [
+                    'add-address' => 'Adres Toevoegen',
+                    'city' => 'Stad',
+                    'company-name' => 'Bedrijfsnaam',
+                    'country' => 'Land',
+                    'email' => 'E-mail',
+                    'first-name' => 'Voornaam',
+                    'last-name' => 'Achternaam',
+                    'phone' => 'Telefoon',
+                    'post-code' => 'Postcode',
+                    'save' => 'Opslaan',
+                    'select-country' => 'Selecteer Land',
+                    'set-as-default' => 'Instellen als Standaard',
+                    'state' => 'Provincie',
+                    'street-address' => 'Straatnaam en Huisnummer',
+                    'title' => 'Adres',
+                    'vat-id' => 'BTW-nummer',
+                ],
+
+                'edit' => [
+                    'city' => 'Stad',
+                    'company-name' => 'Bedrijfsnaam',
+                    'country' => 'Land',
+                    'edit' => 'Bewerken',
+                    'email' => 'E-mail',
+                    'first-name' => 'Voornaam',
+                    'last-name' => 'Achternaam',
+                    'phone' => 'Telefoon',
+                    'post-code' => 'Postcode',
+                    'select-country' => 'Selecteer Land',
+                    'state' => 'Provincie',
+                    'street-address' => 'Straatnaam en Huisnummer',
+                    'title' => 'Adres',
+                    'update-btn' => 'Bijwerken',
+                    'vat-id' => 'BTW-nummer',
+                ],
+            ],
+
+            'orders' => [
+                'action' => 'Actie',
+                'action-view' => 'Bekijken',
+                'empty-order' => 'U heeft nog geen product besteld',
+                'order' => 'Bestelling',
+                'order-date' => 'Besteldatum',
+                'order-id' => 'Bestel-ID',
+                'pay-by' => 'Betalen met - :method',
+                'pay-via' => 'Betalen via',
+                'subtotal' => 'Subtotaal',
+                'title' => 'Bestellingen',
+                'total' => 'Totaal',
+
+                'status' => [
+                    'title' => 'Status',
+
+                    'options' => [
+                        'canceled' => 'Geannuleerd',
+                        'closed' => 'Gesloten',
+                        'completed' => 'Voltooid',
+                        'fraud' => 'Fraude',
+                        'pending' => 'In Afwachting',
+                        'pending-payment' => 'In Afwachting van Betaling',
+                        'processing' => 'Bezig met verwerken',
+                    ],
+
+                    'canceled' => 'Geannuleerd',
+                    'closed' => 'Gesloten',
+                    'completed' => 'Voltooid',
+                    'fraud' => 'Fraude',
+                    'pending' => 'In afwachting',
+                    'pending-payment' => 'Betaling in afwachting',
+                    'processing' => 'In verwerking',
+                ],
+
+                'view' => [
+                    'billing-address' => 'Factuuradres',
+
+                    'booking-cancellation-not-allowed' => [
+                        'title' => 'Boekingsitems worden niet geannuleerd',
+                        'description' => 'Deze bestelling bevat boekingsproducten die als niet-annuleerbaar zijn gemarkeerd. Bij annulering worden alleen de resterende items geannuleerd; boekingsitems blijven actief. Neem contact op met de ondersteuning als u hulp nodig heeft met de boekingsitems.',
+                    ],
+
+                    'cancel-btn-title' => 'Annuleren',
+                    'cancel-confirm-msg' => 'Weet u zeker dat u deze bestelling wilt annuleren?',
+                    'cancel-error' => 'Uw bestelling kan niet geannuleerd worden.',
+                    'cancel-success' => 'Uw bestelling is geannuleerd',
+                    'contact' => 'Contact',
+                    'item-invoiced' => 'Item gefactureerd',
+                    'item-refunded' => 'Item terugbetaald',
+                    'item-shipped' => 'Item verzonden',
+                    'item-ordered' => 'Item besteld',
+                    'order' => 'Bestelling',
+                    'order-id' => 'Bestelnummer',
+                    'page-title' => 'Bestelling #:order_id',
+                    'payment-method' => 'Betaalmethode',
+                    'reorder-booking-skipped' => 'Boekingsproducten zijn overgeslagen tijdens het opnieuw bestellen. Boek ze opnieuw met nieuwe datums en tijdsloten.',
+                    'reorder-btn-title' => 'Opnieuw bestellen',
+                    'shipping-address' => 'Verzendadres',
+                    'shipping-method' => 'Verzendmethode',
+                    'shipping-and-payment' => 'Verzend- en betaalgegevens',
+                    'status' => 'Status',
+                    'title' => 'Bekijken',
+                    'total' => 'Totaal',
+
+                    'information' => [
+                        'discount' => 'Korting',
+                        'excl-tax' => 'Excl. BTW:',
+                        'grand-total' => 'Totaalbedrag',
+                        'info' => 'Informatie',
+                        'item-canceled' => 'Geannuleerd (:qty_canceled)',
+                        'item-refunded' => 'Terugbetaald (:qty_refunded)',
+                        'invoiced-item' => 'Gefactureerd (:qty_invoiced)',
+                        'item-shipped' => 'verzonden (:qty_shipped)',
+                        'item-status' => 'Itemstatus',
+                        'ordered-item' => 'Besteld (:qty_ordered)',
+                        'placed-on' => 'Geplaatst op',
+                        'price' => 'Prijs',
+                        'product-name' => 'Naam',
+                        'shipping-handling' => 'Verzend- en afhandelingskosten',
+                        'shipping-handling-excl-tax' => 'Verzend- en afhandelingskosten (Excl. BTW)',
+                        'shipping-handling-incl-tax' => 'Verzend- en afhandelingskosten (Incl. BTW)',
+                        'sku' => 'Artikelnummer',
+                        'subtotal' => 'Subtotaal',
+                        'subtotal-excl-tax' => 'Subtotaal (Excl. BTW)',
+                        'subtotal-incl-tax' => 'Subtotaal (Incl. BTW)',
+                        'order-summary' => 'Besteloverzicht',
+                        'tax' => 'BTW',
+                        'tax-amount' => 'BTW-bedrag',
+                        'tax-percent' => 'BTW-percentage',
+                        'total-due' => 'Totaal verschuldigd',
+                        'total-paid' => 'Totaal betaald',
+                        'total-refunded' => 'Totaal terugbetaald',
+                    ],
+
+                    'invoices' => [
+                        'discount' => 'Korting',
+                        'excl-tax' => 'Excl. BTW:',
+                        'grand-total' => 'Totaalbedrag',
+                        'individual-invoice' => 'Factuur #:invoice_id',
+                        'invoices' => 'Facturen',
+                        'price' => 'Prijs',
+                        'print' => 'Afdrukken',
+                        'product-name' => 'Naam',
+                        'products-ordered' => 'Bestelde producten',
+                        'qty' => 'Aantal',
+                        'shipping-handling-excl-tax' => 'Verzend- en afhandelingskosten (Excl. BTW)',
+                        'shipping-handling-incl-tax' => 'Verzend- en afhandelingskosten (Incl. BTW)',
+                        'shipping-handling' => 'Verzend- en afhandelingskosten',
+                        'sku' => 'Artikelnummer',
+                        'subtotal-excl-tax' => 'Subtotaal (Excl. BTW)',
+                        'subtotal-incl-tax' => 'Subtotaal (Incl. BTW)',
+                        'subtotal' => 'Subtotaal',
+                        'tax' => 'BTW',
+                        'tax-amount' => 'BTW-bedrag',
+                    ],
+
+                    'shipments' => [
+                        'individual-shipment' => 'Verzending #:shipment_id',
+                        'product-name' => 'Naam',
+                        'qty' => 'Aantal',
+                        'shipments' => 'Verzendingen',
+                        'sku' => 'Artikelnummer',
+                        'subtotal' => 'Subtotaal',
+                        'tracking-number' => 'Track & Trace-nummer',
+                    ],
+
+                    'refunds' => [
+                        'adjustment-fee' => 'Aanpassingskosten',
+                        'adjustment-refund' => 'Aanpassingsrefund',
+                        'discount' => 'Korting',
+                        'grand-total' => 'Totaalbedrag',
+                        'individual-refund' => 'Terugbetaling #:refund_id',
+                        'no-result-found' => 'Geen resultaten gevonden.',
+                        'order-summary' => 'Besteloverzicht',
+                        'price' => 'Prijs',
+                        'product-name' => 'Naam',
+                        'qty' => 'Aantal',
+                        'refunds' => 'Terugbetalingen',
+                        'shipping-handling' => 'Verzend- en afhandelingskosten',
+                        'shipping-handling-excl-tax' => 'Verzend- en afhandelingskosten (Excl. BTW)',
+                        'shipping-handling-incl-tax' => 'Verzend- en afhandelingskosten (Incl. BTW)',
+                        'sku' => 'Artikelnummer',
+                        'subtotal' => 'Subtotaal',
+                        'subtotal-excl-tax' => 'Subtotaal (Excl. BTW)',
+                        'subtotal-incl-tax' => 'Subtotaal (Incl. BTW)',
+                        'tax' => 'BTW',
+                        'tax-amount' => 'BTW-bedrag',
+                    ],
+                ],
+
+                'invoice-pdf' => [
+                    'bank-details' => 'Bankgegevens',
+                    'bill-to' => 'Factuuradres',
+                    'contact-number' => 'Contactnummer',
+                    'contact' => 'Contact',
+                    'date' => 'Factuurdatum',
+                    'discount' => 'Korting',
+                    'excl-tax' => 'Excl. BTW:',
+                    'grand-total' => 'Totaalbedrag',
+                    'invoice-id' => 'Factuurnummer',
+                    'invoice' => 'Factuur',
+                    'order-date' => 'Besteldatum',
+                    'order-id' => 'Bestelnummer',
+                    'payment-method' => 'Betaalmethode',
+                    'payment-terms' => 'Betalingsvoorwaarden',
+                    'price' => 'Prijs',
+                    'product-name' => 'Productnaam',
+                    'qty' => 'Hoeveelheid',
+                    'ship-to' => 'Verzenden naar',
+                    'shipping-handling-excl-tax' => 'Verzendkosten en behandeling (excl. BTW)',
+                    'shipping-handling-incl-tax' => 'Verzendkosten en behandeling (incl. BTW)',
+                    'shipping-handling' => 'Verzendkosten en behandeling',
+                    'shipping-method' => 'Verzendmethode',
+                    'sku' => 'Artikelnummer',
+                    'subtotal-excl-tax' => 'Subtotaal (excl. BTW)',
+                    'subtotal-incl-tax' => 'Subtotaal (incl. BTW)',
+                    'subtotal' => 'Subtotaal',
+                    'tax-amount' => 'Belastingbedrag',
+                    'tax' => 'BTW',
+                    'vat-number' => 'BTW-nummer',
+                ],
+            ],
+
+            'reviews' => [
+                'empty-review' => 'U heeft nog geen product beoordeeld',
+                'title' => 'Beoordelingen',
+            ],
+
+            'downloadable-products' => [
+                'available' => 'Beschikbaar',
+                'completed' => 'Voltooid',
+                'date' => 'Datum',
+                'download-error' => 'Downloadlink is verlopen.',
+                'empty-product' => 'U heeft geen product om te downloaden',
+                'expired' => 'Verlopen',
+                'name' => 'Downloadbare Producten',
+                'orderId' => 'Bestelnummer',
+                'payment-error' => 'Betaling is niet gedaan voor deze download.',
+                'pending' => 'In behandeling',
+                'records-found' => 'Record(s) gevonden',
+                'remaining-downloads' => 'Resterende Downloads',
+                'status' => 'Status',
+                'title' => 'Titel',
+            ],
+
+            'wishlist' => [
+                'color' => 'Kleur',
+                'delete-all' => 'Alles Verwijderen',
+                'empty' => 'Er zijn geen producten toegevoegd aan de verlanglijst.',
+                'move-to-cart' => 'Verplaats Naar Winkelwagen',
+                'moved' => 'Item succesvol naar de winkelwagen verplaatst',
+                'moved-success' => 'Item Succesvol Verplaatst naar Winkelwagen',
+                'page-title' => 'Verlanglijst',
+                'product-removed' => 'Product is niet meer beschikbaar en is verwijderd door de beheerder',
+                'profile' => 'Profiel',
+                'remove' => 'Verwijderen',
+                'remove-all-success' => 'Alle items uit uw verlanglijst zijn verwijderd',
+                'remove-fail' => 'Item kan niet uit de verlanglijst worden verwijderd',
+                'removed' => 'Item succesvol verwijderd uit verlanglijst',
+                'see-details' => 'Details Bekijken',
+                'success' => 'Item succesvol toegevoegd aan verlanglijst',
+                'title' => 'Verlanglijst',
+            ],
+
+            'gdpr' => [
+                'create-success' => 'Verzoek succesvol aangemaakt',
+                'revoked-successfully' => 'Verzoek succesvol ingetrokken',
+                'success-verify' => 'Succes! Verificatie-e-mail is verzonden.',
+                'success-verify-email-unsent' => 'Succes! Verificatie-e-mail is niet verzonden.',
+                'unable-to-sent' => 'E-mail kon niet worden verzonden.',
+
+                'index' => [
+                    'create-btn' => 'Verzoek aanmaken',
+                    'html' => 'HTML',
+                    'pdf' => 'PDF',
+                    'title' => 'GDPR-gegevensverzoeken',
+
+                    'modal' => [
+                        'message' => 'Bericht',
+                        'save' => 'Opslaan',
+                        'title' => 'Nieuw verzoek aanmaken',
+
+                        'type' => [
+                            'choose' => 'Kiezen',
+                            'delete' => 'Verwijderen',
+                            'title' => 'Type',
+                            'update' => 'Bijwerken',
+                        ],
+                    ],
+
+                    'datagrid' => [
+                        'completed' => 'Voltooid',
+                        'date' => 'Datum',
+                        'declined' => 'Geweigerd',
+                        'delete' => 'Verwijderen',
+                        'id' => 'ID',
+                        'message' => 'Bericht',
+                        'pending' => 'In afwachting',
+                        'processing' => 'In verwerking',
+                        'revoke-btn' => 'Intrekken',
+                        'revoked' => 'Ingetrokken',
+                        'status' => 'Status',
+                        'type' => 'Type',
+                        'update' => 'Bijwerken',
+                    ],
+                ],
+
+                'pdf' => [
+                    'title' => 'Standaard Winkelweergave',
+
+                    'account-info' => [
+                        'dob' => 'Geboortedatum',
+                        'email' => 'E-mail',
+                        'first-name' => 'Voornaam',
+                        'gender' => 'Geslacht',
+                        'last-name' => 'Achternaam',
+                        'phone' => 'Telefoon',
+                        'title' => 'Accountinformatie',
+                    ],
+
+                    'address-info' => [
+                        'address' => 'Adres',
+                        'address1' => 'Adres 1',
+                        'address2' => 'Adres 2',
+                        'city' => 'Stad',
+                        'company' => 'Bedrijf',
+                        'country' => 'Land',
+                        'first-name' => 'Voornaam',
+                        'last-name' => 'Achternaam',
+                        'phone' => 'Telefoon',
+                        'postcode' => 'Postcode',
+                        'state' => 'Staat',
+                        'title' => 'Adresgegevens',
+                        'vat-id' => 'BTW-ID',
+                    ],
+
+                    'order-info' => [
+                        'amount' => 'Bedrag',
+                        'order-id' => 'Bestel-ID',
+                        'product-name' => 'Productnaam',
+                        'qty' => 'Aantal',
+                        'shipping' => 'Verzending',
+                        'sku' => 'SKU',
+                        'status' => 'Status',
+                        'title' => 'Bestelinformatie',
+                        'type' => 'Type',
+                    ],
+                ],
+            ],
+
+            'rma' => [
+                'index' => [
+                    'title' => 'RMA',
+                    'action' => 'Actie',
+
+                    'datagrid' => [
+                        'id' => 'RMA-ID',
+                        'order-ref' => 'Bestelreferentie',
+                        'rma-status' => 'Aanvraagstatus',
+                        'create' => 'Aangemaakt op',
+                        'quantity' => 'Hoeveelheid',
+                    ],
+                ],
+
+                'create' => [
+                    'action' => 'Actie',
+                    'sku' => 'SKU',
+                    'price' => 'Prijs',
+                    'current-order-quantity' => 'Huidige bestelhoeveelheid',
+                    'product-already-raw' => 'Alle items van dit product zijn al aangevraagd voor retour/annulering',
+                    'resolution-type' => 'Oplossingstype',
+                    'select' => 'Selecteren',
+                    'return' => 'Retour/Terugbetaling',
+                    'cancel-items' => 'Annuleer items',
+                    'product-delivery-status' => 'Leveringsstatus',
+                    'package-condition' => 'Pakketconditie',
+                    'open' => 'Open',
+                    'packed' => 'Verpakt',
+                    'return-pickup-address' => 'Retour ophaaladres',
+                    'return-pickup-time' => 'Retour ophaaltijd',
+                    'morning' => 'Ochtend (10 - 13)',
+                    'afternoon' => 'Middag (14 - 17)',
+                    'evening' => 'Avond (18 - 21)',
+                    'images' => 'Afbeeldingen',
+                ],
+
+                'view' => [
+                    'id' => 'RMA-ID',
+                    'enter-message' => 'Voer hier uw bericht in',
+                    'add-attachments' => 'Bijlagen toevoegen',
+                    'send-message-btn' => 'Bericht verzenden',
+                    'attachment' => 'Bijlage',
+                    'download' => 'Downloaden',
+                    'allowed-file-types' => 'Toegestane bestandstypen',
+                    'remove' => 'Verwijderen',
+                ],
+
+                'terms' => [
+                    'terms' => 'Ik ga akkoord met de voorwaarden',
+                    'read' => 'Lees de voorwaarden',
+                ],
+            ],
+        ],
+    ],
+
+    'components' => [
+        'accordion' => [
+            'default-content' => 'Standaard inhoud',
+            'default-header' => 'Standaard kop',
+        ],
+
+        'drawer' => [
+            'default-toggle' => 'Standaard Schakelen',
+        ],
+
+        'media' => [
+            'index' => [
+                'add-attachments' => 'Bijlagen toevoegen',
+                'add-image' => 'Afbeelding/Video toevoegen',
+                'invalid-file-type' => 'Het geselecteerde bestandstype is niet toegestaan.',
+            ],
+        ],
+
+        'layouts' => [
+            'header' => [
+                'desktop' => [
+                    'top' => [
+                        'default-locale' => 'Standaardtaal',
+                    ],
+
+                    'bottom' => [
+                        'all' => 'Alles',
+                        'back-button' => 'Terug naar hoofdmenu',
+                        'bagisto' => 'Bagisto',
+                        'categories' => 'Categorieën',
+                        'compare' => 'Vergelijken',
+                        'dropdown-text' => 'Winkelwagen, bestellingen & verlanglijst beheren',
+                        'logout' => 'Uitloggen',
+                        'orders' => 'Bestellingen',
+                        'profile' => 'Profiel',
+                        'search' => 'Zoeken',
+                        'search-text' => 'Zoek producten hier',
+                        'sign-in' => 'Inloggen',
+                        'sign-up' => 'Registreren',
+                        'submit' => 'Verzenden',
+                        'welcome' => 'Welkom',
+                        'welcome-guest' => 'Welkom gast',
+                        'wishlist' => 'Verlanglijst',
+                    ],
+                ],
+
+                'mobile' => [
+                    'account' => 'Account',
+                    'back-button' => 'Terug naar hoofdmenu',
+                    'bagisto' => 'Bagisto',
+                    'compare' => 'Vergelijken',
+                    'currencies' => 'Valuta',
+                    'dropdown-text' => 'Winkelwagen, bestellingen & verlanglijst beheren',
+                    'locales' => 'Talen',
+                    'login' => 'Registreren of inloggen',
+                    'logout' => 'Uitloggen',
+                    'orders' => 'Bestellingen',
+                    'profile' => 'Profiel',
+                    'search' => 'Zoeken',
+                    'search-text' => 'Zoek producten hier',
+                    'sign-in' => 'Inloggen',
+                    'sign-up' => 'Registreren',
+                    'welcome' => 'Welkom',
+                    'welcome-guest' => 'Welkom gast',
+                    'wishlist' => 'Verlanglijst',
+                ],
+            ],
+
+            'webmcp' => [
+                'add-to-wishlist' => 'Voeg een product op naam toe aan de verlanglijst van de klant.',
+                'add-to-wishlist-query' => 'De productnaam of URL-sleutel om aan de verlanglijst toe te voegen.',
+                'proceed-to-checkout' => 'Open de afrekenpagina om een bestelling te plaatsen voor de artikelen in de winkelwagen.',
+                'search-products' => 'Zoek producten in de winkelcatalogus op trefwoord en open de overeenkomende resultaten.',
+                'search-products-query' => 'De trefwoorden of productnaam om in de catalogus te zoeken.',
+                'subscribe-newsletter' => 'Schrijf een e-mailadres in voor de nieuwsbrief van de winkel.',
+                'subscribe-newsletter-email' => 'Het e-mailadres om in te schrijven voor de nieuwsbrief.',
+                'view-cart' => 'Open de winkelwagenpagina zodat de klant de toegevoegde producten kan bekijken.',
+                'view-product' => 'Open de detailpagina van een product op productnaam.',
+                'view-product-query' => 'De productnaam of URL-sleutel om te openen.',
+                'view-wishlist' => 'Open de verlanglijstpagina om de opgeslagen producten van de klant te bekijken.',
+            ],
+
+            'footer' => [
+                'about-us' => 'Over ons',
+                'contact-us' => 'Neem contact met ons op',
+                'currency' => 'Valuta',
+                'customer-service' => 'Klantenservice',
+                'email' => 'E-mail',
+                'footer-content' => 'Voettekst inhoud',
+                'footer-text' => '© Auteursrecht 2010 - :current_year, Webkul Software (geregistreerd in India). Alle rechten voorbehouden.',
+                'locale' => 'Taal',
+                'newsletter-text' => 'Maak je klaar voor onze leuke nieuwsbrief!',
+                'order-return' => 'Bestelling en Retourneren',
+                'payment-policy' => 'Betalingsbeleid',
+                'privacy-cookies-policy' => 'Privacy- en cookiebeleid',
+                'shipping-policy' => 'Verzendbeleid',
+                'subscribe' => 'Abonneren',
+                'subscribe-newsletter' => 'Abonneer op de nieuwsbrief',
+                'subscribe-stay-touch' => 'Abonneer om in contact te blijven.',
+                'whats-new' => 'Wat is nieuw',
+            ],
+
+            'cookie' => [
+                'index' => [
+                    'privacy-policy' => 'Privacybeleid',
+                    'reject' => 'Weigeren',
+                    'accept' => 'Accepteren',
+                    'learn-more-and-customize' => 'Meer informatie en aanpassen',
+                ],
+
+                'consent' => [
+                    'your-cookie-consent-preferences' => 'Uw cookievoorkeuren',
+                    'save-and-continue' => 'Opslaan en doorgaan',
+                    'strictly-necessary' => 'Strikt noodzakelijk',
+                    'basic-interactions' => 'Basisinteracties en functionaliteiten',
+                    'experience-enhancement' => 'Ervaring verbetering',
+                    'measurements' => 'Meting',
+                    'targeting-and-advertising' => 'Targeting en adverteren',
+                ],
+            ],
+        ],
+
+        'datagrid' => [
+            'toolbar' => [
+                'length-of' => ':length van',
+                'results' => ':total Resultaten',
+                'selected' => ':total Geselecteerd',
+
+                'mass-actions' => [
+                    'must-select-a-mass-action' => 'U moet een massa-actie selecteren.',
+                    'must-select-a-mass-action-option' => 'U moet een optie voor massa-actie selecteren.',
+                    'no-records-selected' => 'Er zijn geen records geselecteerd.',
+                    'select-action' => 'Selecteer Actie',
+                ],
+
+                'search' => [
+                    'title' => 'Zoeken',
+                ],
+
+                'filter' => [
+                    'apply-filter' => 'Filters Toepassen',
+                    'title' => 'Filteren',
+
+                    'dropdown' => [
+                        'select' => 'Selecteren',
+
+                        'searchable' => [
+                            'at-least-two-chars' => 'Typ minimaal 2 tekens...',
+                            'no-results' => 'Geen resultaat gevonden...',
+                        ],
+                    ],
+
+                    'custom-filters' => [
+                        'clear-all' => 'Alles wissen',
+                    ],
+                ],
+            ],
+
+            'table' => [
+                'actions' => 'Acties',
+                'next-page' => 'Volgende Pagina',
+                'no-records-available' => 'Geen Records Beschikbaar.',
+                'of' => 'van :total items',
+                'page-navigation' => 'Pagina Navigatie',
+                'page-number' => 'Paginanummer',
+                'previous-page' => 'Vorige Pagina',
+                'showing' => 'Weergeven :firstItem',
+                'to' => 'tot :lastItem',
+            ],
+        ],
+
+        'modal' => [
+            'default-content' => 'Standaard inhoud',
+            'default-header' => 'Standaard kop',
+
+            'confirm' => [
+                'agree-btn' => 'Akkoord',
+                'disagree-btn' => 'Niet akkoord',
+                'message' => 'Weet je zeker dat je deze actie wilt uitvoeren?',
+                'title' => 'Weet je het zeker?',
+            ],
+        ],
+
+        'products' => [
+            'card' => [
+                'add-to-cart' => 'Toevoegen aan winkelwagen',
+                'add-to-compare' => 'Toevoegen aan vergelijkingslijst',
+                'add-to-compare-success' => 'Item succesvol toegevoegd aan vergelijkingslijst.',
+                'add-to-wishlist' => 'Toevoegen aan verlanglijst',
+                'already-in-compare' => 'Dit item is al toegevoegd aan vergelijkingslijst.',
+                'new' => 'Nieuw',
+                'review-description' => 'Wees de eerste om dit product te beoordelen',
+                'sale' => 'Uitverkoop',
+            ],
+
+            'carousel' => [
+                'next' => 'Volgende',
+                'previous' => 'Vorige',
+                'view-all' => 'Alles bekijken',
+            ],
+
+            'ratings' => [
+                'title' => 'Beoordelingen',
+            ],
+        ],
+
+        'range-slider' => [
+            'max-range' => 'Maximale Bereik',
+            'min-range' => 'Minimale Bereik',
+            'range' => 'Bereik:',
+        ],
+
+        'carousel' => [
+            'image-slide' => 'Afbeeldingslide',
+            'next' => 'Volgende',
+            'previous' => 'Vorige',
+        ],
+
+        'quantity-changer' => [
+            'decrease-quantity' => 'Hoeveelheid verminderen',
+            'increase-quantity' => 'Hoeveelheid verhogen',
+            'remove-item' => 'Item verwijderen',
+        ],
+    ],
+
+    'products' => [
+        'prices' => [
+            'grouped' => [
+                'starting-at' => 'Vanaf',
+            ],
+
+            'configurable' => [
+                'as-low-as' => 'Vanaf',
+            ],
+        ],
+
+        'sort-by' => [
+            'title' => 'Sorteer op',
+        ],
+
+        'view' => [
+            'type' => [
+                'simple' => [
+                    'customizable-options' => [
+                        'none' => 'Geen',
+                        'total-amount' => 'Totaalbedrag',
+                    ],
+                ],
+
+                'configurable' => [
+                    'select-options' => 'Selecteer alsjeblieft een optie',
+                    'select-above-options' => 'Selecteer hierboven de opties',
+                ],
+
+                'bundle' => [
+                    'none' => 'Geen',
+                    'total-amount' => 'Totaalbedrag',
+                ],
+
+                'downloadable' => [
+                    'links' => 'Links',
+                    'sample' => 'Voorbeeld',
+                    'samples' => 'Voorbeelden',
+                ],
+
+                'grouped' => [
+                    'name' => 'Naam',
+                ],
+
+                'booking' => [
+                    'location' => 'Locatie',
+                    'view-on-map' => 'Bekijk op Kaart',
+
+                    'cancellation-not-allowed' => [
+                        'title' => 'Annulering niet toegestaan',
+                        'description' => 'Na het plaatsen van deze boeking kan deze niet worden geannuleerd. Controleer de details zorgvuldig voordat u afrekent.',
+                    ],
+
+                    'default' => [
+                        'slot-duration-in-minutes' => ':minutes Minuten',
+                        'slot-duration' => 'Slotduur',
+                    ],
+
+                    'appointment' => [
+                        'closed' => 'Gesloten',
+                        'see-details' => 'Bekijk Details',
+                        'slot-duration' => 'Slotduur',
+                        'slot-duration-in-minutes' => ':minutes Minuten',
+                        'today-availability' => 'Beschikbaarheid Vandaag',
+                    ],
+
+                    'event' => [
+                        'book-your-ticket' => 'Boek Uw Ticket',
+                        'title' => 'Evenement op :',
+                        'total-price' => 'Totaalprijs',
+                        'summary-title' => 'Jouw boeking',
+                        'ticket-line' => ':name (:count × :price)',
+                        'base-fee-line' => 'Basistarief (:count × :price)',
+                        'ticket' => 'ticket',
+                        'tickets' => 'tickets',
+                        'total' => 'Totaal',
+                        'select-tickets-hint' => 'Selecteer uw ticketaantallen om het totaal te zien.',
+                        'starting-from' => 'Vanaf',
+                        'base-fee-note' => 'Inclusief basistarief + goedkoopste ticket. Het totaal wordt bijgewerkt op basis van de ticketkeuze.',
+                    ],
+
+                    'rental' => [
+                        'choose-rent-option' => 'Kies Huur Optie',
+                        'daily-basis' => 'Dagelijks',
+                        'from' => 'Van',
+                        'hourly-basis' => 'Per Uur',
+                        'rent-an-item' => 'Huur een Item',
+                        'select-date' => 'Selecteer Datum',
+                        'select-rent-time' => 'Selecteer Huur Tijd',
+                        'select-slot' => 'Selecteer Slot',
+                        'select-time-slot' => 'Selecteer Tijdslot',
+                        'slot' => 'Slot',
+                        'no-slots-available' => 'Geen slots beschikbaar',
+                        'to' => 'Tot',
+                        'summary-title' => 'Jouw verhuur',
+                        'base-rental-fee' => 'Basishuurtarief',
+                        'daily-rate-line' => 'Dagtarief (:count × :rate)',
+                        'hourly-rate-line' => 'Uurtarief (:count × :rate)',
+                        'day' => 'dag',
+                        'days' => 'dagen',
+                        'hour' => 'uur',
+                        'hours' => 'uur',
+                        'total' => 'Totaal',
+                        'select-dates-hint' => 'Selecteer uw verhuurdata om het totaal te zien.',
+                        'starting-from' => 'Vanaf',
+                        'rental-fee-note' => 'Inclusief basistarief + minimumhuurtarief. Het totaal wordt bijgewerkt op basis van de gekozen duur.',
+                    ],
+
+                    'table' => [
+                        'book-a-table' => 'Reserveer een Tafel',
+                        'closed' => 'Gesloten',
+                        'slot-duration' => 'Slotduur',
+                        'slot-duration-in-minutes' => ':minutes Minuten',
+                        'slots-for-all-days' => 'Toon voor alle dagen',
+                        'special-notes' => 'Speciale Verzoeken/Opmerkingen',
+                        'today-availability' => 'Beschikbaarheid Vandaag',
+                    ],
+
+                    'slots' => [
+                        'book-an-appointment' => 'Maak een Afspraak',
+                        'date' => 'Datum',
+                        'no-slots-available' => 'Geen slots beschikbaar',
+                        'select-slot' => 'Selecteer Slot',
+                        'title' => 'Slot',
+                    ],
+                ],
+            ],
+
+            'gallery' => [
+                'product-image' => 'Productafbeelding',
+                'thumbnail-image' => 'Miniatuurafbeelding',
+            ],
+
+            'reviews' => [
+                'attachments' => 'Bijlagen',
+                'cancel' => 'Annuleren',
+                'comment' => 'Opmerking',
+                'customer-review' => 'Klantbeoordelingen',
+                'empty-review' => 'Geen beoordeling gevonden, wees de eerste om dit product te beoordelen',
+                'failed-to-upload' => 'Het uploaden van de afbeelding is mislukt',
+                'load-more' => 'Meer laden',
+                'name' => 'Naam',
+                'rating' => 'Beoordeling',
+                'ratings' => 'Waarderingen',
+                'submit-review' => 'Beoordeling indienen',
+                'success' => 'Beoordeling succesvol ingediend.',
+                'title' => 'Titel',
+                'translate' => 'Vertalen',
+                'translating' => 'Vertalen...',
+                'write-a-review' => 'Schrijf een beoordeling',
+            ],
+
+            'contact-us' => [
+                'about' => 'Stuur ons een bericht en we zullen zo snel mogelijk reageren',
+                'desc' => 'Waar denk je aan?',
+                'describe-here' => 'Beschrijf hier',
+                'email' => 'E-mail',
+                'message' => 'Bericht',
+                'name' => 'Naam',
+                'phone-number' => 'Telefoonnummer',
+                'submit' => 'Verzenden',
+                'title' => 'Neem contact met ons op',
+            ],
+
+            'add-to-cart' => 'Toevoegen aan winkelwagen',
+            'add-to-compare' => 'Product toegevoegd aan vergelijking.',
+            'add-to-wishlist' => 'Toevoegen aan verlanglijstje',
+            'additional-information' => 'Aanvullende informatie',
+            'already-in-compare' => 'Product staat al in de vergelijking.',
+            'buy-now' => 'Nu kopen',
+            'compare' => 'Vergelijken',
+            'description' => 'Beschrijving',
+            'related-product-title' => 'Gerelateerde producten',
+            'review' => 'Beoordelingen',
+            'tax-inclusive' => 'Inclusief alle belastingen',
+            'up-sell-title' => 'We hebben andere producten gevonden die je misschien leuk vindt!',
+        ],
+
+        'type' => [
+            'abstract' => [
+                'offers' => 'Koop :qty voor :price per stuk en bespaar :discount',
+            ],
+        ],
+
+        'booking' => [
+            'closed' => 'Gesloten',
+
+            'cart' => [
+                'booking-from' => 'Boeking Van',
+                'booking-location' => 'Locatie',
+                'booking-till' => 'Boeking Tot',
+                'charged-per' => 'Kosten per',
+                'daily' => 'Dagelijks',
+                'event-from' => 'Evenement Van',
+                'event-location' => 'Evenementlocatie',
+                'event-ticket' => 'Evenement Ticket',
+                'event-till' => 'Evenement Tot',
+                'guest-limit' => 'Gastenlimiet per tafel',
+                'hourly' => 'Per Uur',
+
+                'integrity' => [
+                    'event' => [
+                        'expired' => 'Dit evenement is verlopen.',
+                        'exceeds_available' => 'Er zijn slechts :qty tickets beschikbaar voor dit evenement.',
+                        'sold_out' => 'De tickets voor dit evenement zijn uitverkocht.',
+                        'ticket_exceeds_available' => 'Er zijn slechts :qty ":ticket" tickets beschikbaar.',
+                        'ticket_sold_out' => '":ticket" tickets zijn uitverkocht.',
+                    ],
+
+                    'missing_options' => 'Opties ontbreken voor dit product.',
+                    'inventory_warning' => 'De gevraagde hoeveelheid is niet beschikbaar, probeer het later opnieuw.',
+                    'rental_unavailable' => 'Dit huurproduct is niet beschikbaar voor de geselecteerde datums.',
+                    'select_hourly_duration' => 'Selecteer een slotduur van minimaal één uur.',
+                ],
+
+                'per-guest' => 'Per gast',
+                'per-table' => 'Per tafel',
+                'rent-from' => 'Huur Van',
+                'rent-till' => 'Huur Tot',
+                'rent-type' => 'Huur Type',
+                'renting_type' => 'Huur Type',
+                'special-note' => 'Speciale Verzoeken/Opmerkingen',
+            ],
+
+            'per-ticket-price' => ':price Per Ticket',
+        ],
+    ],
+
+    'categories' => [
+        'filters' => [
+            'clear-all' => 'Alles wissen',
+            'filter' => 'Filter',
+            'filters' => 'Filters:',
+
+            'search' => [
+                'load-more' => 'Meer laden',
+                'loading' => 'Bezig met laden...',
+                'no-options-available' => 'Geen opties beschikbaar.',
+                'results-info' => ':currentCount van :totalCount opties weergegeven',
+                'title' => 'Zoeken',
+            ],
+
+            'sort' => 'Sorteer',
+        ],
+
+        'toolbar' => [
+            'grid' => 'Raster',
+            'list' => 'Lijst',
+            'show' => 'Tonen',
+        ],
+
+        'view' => [
+            'empty' => 'Geen producten beschikbaar in deze categorie',
+            'load-more' => 'Meer laden',
+        ],
+    ],
+
+    'search' => [
+        'title' => 'Dit zijn de resultaten voor : :query',
+        'suggest' => 'Zoek in plaats daarvan',
+        'results' => 'Zoekresultaten',
+
+        'images' => [
+            'index' => [
+                'only-images-allowed' => 'Alleen afbeeldingen (.jpeg, .jpg, .png, ..) zijn toegestaan.',
+                'search' => 'Zoeken',
+                'size-limit-error' => 'Grootte Limiet Fout',
+                'something-went-wrong' => 'Er is iets misgegaan, probeer het later opnieuw.',
+            ],
+
+            'results' => [
+                'analyzed-keywords' => 'Geanalyseerde Trefwoorden:',
+            ],
+        ],
+    ],
+
+    'compare' => [
+        'already-added' => 'Item is al toegevoegd aan de vergelijkingslijst',
+        'delete-all' => 'Alles Verwijderen',
+        'empty-text' => 'Je hebt geen items in je vergelijkingslijst',
+        'item-add-success' => 'Item succesvol toegevoegd aan de vergelijkingslijst',
+        'product-compare' => 'Producten Vergelijken',
+        'remove-all-success' => 'Alle items succesvol verwijderd.',
+        'remove-error' => 'Er is iets misgegaan, probeer het later opnieuw.',
+        'remove-success' => 'Item succesvol verwijderd.',
+        'title' => 'Product Vergelijking',
+    ],
+
+    'checkout' => [
+        'success' => [
+            'info' => 'We sturen u een e-mail met uw bestelgegevens en trackinginformatie',
+            'order-id-info' => 'Uw bestelnummer is #:order_id',
+            'thanks' => 'Bedankt voor uw bestelling!',
+            'title' => 'Bestelling succesvol geplaatst',
+        ],
+
+        'cart' => [
+            'continue-to-checkout' => 'Ga verder naar afrekenen',
+            'illegal' => 'De hoeveelheid kan niet minder zijn dan één.',
+            'inactive' => 'Het item is gedeactiveerd en vervolgens uit de winkelwagen verwijderd.',
+            'inactive-add' => 'Inactief item kan niet aan winkelwagen worden toegevoegd.',
+            'inventory-warning' => 'De aangevraagde hoeveelheid is niet beschikbaar, probeer het later opnieuw.',
+            'item-add-to-cart' => 'Item succesvol toegevoegd',
+            'minimum-order-message' => 'Het minimum bestelbedrag is',
+            'missing-fields' => 'Sommige vereiste velden ontbreken voor dit product.',
+            'missing-options' => 'Opties ontbreken voor dit product.',
+            'paypal-payment-cancelled' => 'PayPal-betaling is geannuleerd.',
+            'qty-missing' => 'Minstens één product moet meer dan 1 hoeveelheid hebben.',
+            'return-to-shop' => 'Terug naar de winkel',
+            'rule-applied' => 'Winkelwagenregel toegepast',
+            'select-hourly-duration' => 'Selecteer een slotduur van één uur.',
+            'specify-payment-method' => 'Geef een betaalmethode op.',
+            'specify-shipping-method' => 'Geef een verzendmethode op.',
+            'success-remove' => 'Item is succesvol verwijderd uit de winkelwagen.',
+            'suspended-account-message' => 'Uw account is opgeschort.',
+
+            'index' => [
+                'bagisto' => 'Bagisto',
+                'cart' => 'Winkelwagen',
+                'continue-shopping' => 'Doorgaan met winkelen',
+                'empty-product' => 'U heeft geen product in uw winkelwagen.',
+                'excl-tax' => 'Excl. BTW:',
+                'home' => 'Home',
+                'items-selected' => ':count items geselecteerd',
+                'move-to-wishlist' => 'Verplaats naar verlanglijst',
+                'move-to-wishlist-success' => 'Geselecteerde items succesvol verplaatst naar de verlanglijst.',
+                'price' => 'Prijs',
+                'product-name' => 'Productnaam',
+                'quantity' => 'Hoeveelheid',
+                'quantity-update' => 'Hoeveelheid succesvol bijgewerkt',
+                'remove' => 'Verwijderen',
+                'remove-selected-success' => 'Geselecteerde items succesvol uit de winkelwagen verwijderd.',
+                'see-details' => 'Details bekijken',
+                'select-all' => 'Alles selecteren',
+                'select-cart-item' => 'Selecteer winkelwagenitem',
+                'tax' => 'BTW',
+                'total' => 'Totaal',
+                'update-cart' => 'Winkelwagen bijwerken',
+                'view-cart' => 'Bekijk winkelwagen',
+
+                'cross-sell' => [
+                    'title' => 'Meer keuzes',
+                ],
+            ],
+
+            'mini-cart' => [
+                'continue-to-checkout' => 'Ga verder naar afrekenen',
+                'empty-cart' => 'Uw winkelwagen is leeg',
+                'excl-tax' => 'Excl. BTW:',
+                'offer-on-orders' => 'Ontvang tot 30% korting op uw eerste bestelling',
+                'remove' => 'Verwijderen',
+                'see-details' => 'Details bekijken',
+                'shopping-cart' => 'Winkelwagen',
+                'subtotal' => 'Subtotaal',
+                'view-cart' => 'Bekijk winkelwagen',
+            ],
+
+            'summary' => [
+                'cart-summary' => 'Winkelwagenoverzicht',
+                'delivery-charges' => 'Verzendkosten',
+                'delivery-charges-excl-tax' => 'Verzendkosten (Excl. BTW)',
+                'delivery-charges-incl-tax' => 'Verzendkosten (Incl. BTW)',
+                'discount-amount' => 'Korting',
+                'grand-total' => 'Totaalbedrag',
+                'included' => 'Inbegrepen',
+                'excl-tax' => 'Excl. btw:',
+                'incl-tax' => 'Incl. btw:',
+                'items-discount' => 'Korting artikelen',
+                'shipping-discount' => 'Korting verzending',
+                'place-order' => 'Bestelling plaatsen',
+                'proceed-to-checkout' => 'Doorgaan naar afrekenen',
+                'sub-total' => 'Subtotaal',
+                'sub-total-excl-tax' => 'Subtotaal (Excl. BTW)',
+                'sub-total-incl-tax' => 'Subtotaal (Incl. BTW)',
+                'tax' => 'BTW',
+
+                'estimate-shipping' => [
+                    'country' => 'Land',
+                    'info' => 'Voer uw bestemming in om een schatting te krijgen van de verzend- en belastingkosten.',
+                    'postcode' => 'Postcode',
+                    'select-country' => 'Selecteer land',
+                    'select-state' => 'Selecteer provincie',
+                    'state' => 'Provincie',
+                    'title' => 'Verzend- en belastingkosten schatten',
+                ],
+            ],
+        ],
+
+        'onepage' => [
+            'address' => [
+                'add-new' => 'Nieuw adres toevoegen',
+                'add-new-address' => 'Nieuw adres toevoegen',
+                'back' => 'Terug',
+                'billing-address' => 'Factuuradres',
+                'check-billing-address' => 'Factuuradres ontbreekt.',
+                'check-shipping-address' => 'Verzendadres ontbreekt.',
+                'city' => 'Stad',
+                'company-name' => 'Bedrijfsnaam',
+                'confirm' => 'Bevestigen',
+                'country' => 'Land',
+                'email' => 'E-mail',
+                'first-name' => 'Voornaam',
+                'last-name' => 'Achternaam',
+                'postcode' => 'Postcode',
+                'proceed' => 'Ga verder',
+                'same-as-billing' => 'Gelijk adres gebruiken voor verzending?',
+                'save' => 'Opslaan',
+                'save-address' => 'Opslaan in adresboek',
+                'select-country' => 'Selecteer land',
+                'select-state' => 'Selecteer provincie',
+                'shipping-address' => 'Verzendadres',
+                'state' => 'Provincie',
+                'street-address' => 'Straatadres',
+                'telephone' => 'Telefoon',
+                'title' => 'Adres',
+                'vat-id' => 'BTW-nummer',
+            ],
+
+            'index' => [
+                'checkout' => 'Afrekenen',
+                'home' => 'Home',
+            ],
+
+            'payment' => [
+                'payment-method' => 'Betalingsmethode',
+            ],
+
+            'shipping' => [
+                'shipping-method' => 'Verzendmethode',
+            ],
+
+            'summary' => [
+                'cart-summary' => 'Winkelwagenoverzicht',
+                'delivery-charges' => 'Verzendkosten',
+                'delivery-charges-excl-tax' => 'Verzendkosten (Excl. BTW)',
+                'delivery-charges-incl-tax' => 'Verzendkosten (Incl. BTW)',
+                'discount-amount' => 'Kortingbedrag',
+                'excl-tax' => 'Excl. BTW:',
+                'grand-total' => 'Totaalbedrag',
+                'included' => 'Inbegrepen',
+                'incl-tax' => 'Incl. btw:',
+                'items-discount' => 'Korting artikelen',
+                'shipping-discount' => 'Korting verzending',
+                'place-order' => 'Bestelling plaatsen',
+                'price_and_qty' => ':price × :qty',
+                'processing' => 'Verwerken',
+                'sub-total' => 'Subtotaal',
+                'sub-total-excl-tax' => 'Subtotaal (Excl. BTW)',
+                'sub-total-incl-tax' => 'Subtotaal (Incl. BTW)',
+                'tax' => 'BTW',
+
+                'tax-included' => 'Belasting al inbegrepen:', ],
+        ],
+
+        'coupon' => [
+            'already-applied' => 'Couponcode is al toegepast.',
+            'applied' => 'Coupon toegepast',
+            'apply' => 'Coupon toepassen',
+            'apply-issue' => 'Couponcode kan niet worden toegepast.',
+            'button-title' => 'Toepassen',
+            'code' => 'Couponcode',
+            'discount' => 'Kortingsbon',
+            'enter-your-code' => 'Voer uw code in',
+            'error' => 'Er is iets misgegaan',
+            'invalid' => 'Couponcode is ongeldig.',
+            'remove' => 'Coupon verwijderen',
+            'subtotal' => 'Subtotaal',
+            'success-apply' => 'Couponcode succesvol toegepast.',
+            'usage-limit-exceeded' => 'Deze couponcode heeft de gebruikslimiet bereikt en is niet meer geldig.',
+        ],
+
+        'login' => [
+            'email' => 'E-mail',
+            'password' => 'Wachtwoord',
+            'title' => 'Inloggen',
+        ],
+    ],
+
+    'home' => [
+        'contact' => [
+            'about' => 'Stuur ons een bericht en we zullen zo snel mogelijk reageren',
+            'desc' => 'Waar denk je aan?',
+            'describe-here' => 'Beschrijf hier',
+            'email' => 'E-mail',
+            'message' => 'Bericht',
+            'name' => 'Naam',
+            'phone-number' => 'Telefoonnummer',
+            'submit' => 'Verzenden',
+            'title' => 'Neem contact met ons op',
+        ],
+
+        'index' => [
+            'categories-carousel' => 'Categorieën Carrousel',
+            'image-carousel' => 'Afbeeldingen Carrousel',
+            'offer' => 'Krijg TOT 40% KORTING op je eerste bestelling, WINKEL NU',
+            'product-carousel' => 'Producten Carrousel',
+            'resend-verify-email' => 'Verificatie-e-mail opnieuw verzenden',
+            'verify-email' => 'Verifieer je e-mailaccount',
+        ],
+
+        'thanks-for-contact' => 'Bedankt voor het contact met ons opnemen met uw opmerkingen en vragen. We zullen spoedig reageren.',
+    ],
+
+    'partials' => [
+        'pagination' => [
+            'next-page' => 'Volgende pagina',
+            'pagination-showing' => 'Toont :firstItem tot :lastItem van de :total vermeldingen',
+            'prev-page' => 'Vorige pagina',
+        ],
+    ],
+
+    'errors' => [
+        'go-to-home' => 'Ga naar de startpagina',
+
+        '404' => [
+            'description' => 'Oeps! De pagina die je zoekt, is met vakantie. Het lijkt erop dat we niet hebben gevonden wat je zocht.',
+            'title' => '404 Pagina niet gevonden',
+        ],
+
+        '401' => [
+            'description' => 'Oeps! Het lijkt erop dat je geen toegang hebt tot deze pagina. Het lijkt erop dat je de benodigde referenties mist.',
+            'title' => '401 Onbevoegd',
+        ],
+
+        '403' => [
+            'description' => 'Oeps! Deze pagina is verboden terrein. Het lijkt erop dat je niet over de vereiste rechten beschikt om deze inhoud te bekijken.',
+            'title' => '403 Verboden',
+        ],
+
+        '500' => [
+            'description' => 'Oeps! Er is iets misgegaan. Het lijkt erop dat we problemen hebben met het laden van de pagina die je zoekt.',
+            'title' => '500 Interne serverfout',
+        ],
+
+        '503' => [
+            'description' => 'Oeps! Het lijkt erop dat we tijdelijk offline zijn voor onderhoud. Kom later terug.',
+            'title' => '503 Service Niet Beschikbaar',
+        ],
+    ],
+
+    'layouts' => [
+        'address' => 'Adres',
+        'downloadable-products' => 'Downloadbare Producten',
+        'gdpr-request' => 'GDPR Verzoeken',
+        'my-account' => 'Mijn Account',
+        'orders' => 'Bestellingen',
+        'profile' => 'Profiel',
+        'reviews' => 'Beoordelingen',
+        'rma' => 'RMA',
+        'wishlist' => 'Verlanglijst',
+    ],
+
+    'subscription' => [
+        'already' => 'Je bent al geabonneerd op onze nieuwsbrief.',
+        'subscribe-success' => 'Je bent succesvol geabonneerd op onze nieuwsbrief.',
+        'unsubscribe-success' => 'Je hebt je succesvol afgemeld voor onze nieuwsbrief.',
+    ],
+
+    'emails' => [
+        'dear' => 'Beste :customer_name',
+        'thanks' => 'Als je hulp nodig hebt, neem dan contact met ons op via <a href=":link" style=":style">:email</a>.<br/>Bedankt!',
+
+        'customers' => [
+            'registration' => [
+                'credentials-description' => 'Uw account is aangemaakt. Uw accountgegevens staan hieronder:',
+                'description' => 'Je account is nu succesvol aangemaakt en je kunt inloggen met je e-mailadres en wachtwoord. Na het inloggen kun je andere diensten gebruiken, waaronder het bekijken van eerdere bestellingen, verlanglijstjes en het bewerken van je accountgegevens.',
+                'greeting' => 'Welkom en bedankt voor je registratie bij ons!',
+                'password' => 'Wachtwoord',
+                'sign-in' => 'Inloggen',
+                'subject' => 'Nieuwe Klantregistratie',
+                'username-email' => 'Gebruikersnaam/E-mail',
+            ],
+
+            'forgot-password' => [
+                'description' => 'Je ontvangt deze e-mail omdat we een verzoek hebben ontvangen om je wachtwoord opnieuw in te stellen voor je account.',
+                'greeting' => 'Wachtwoord vergeten!',
+                'reset-password' => 'Wachtwoord opnieuw instellen',
+                'subject' => 'E-mail voor het opnieuw instellen van het wachtwoord',
+            ],
+
+            'update-password' => [
+                'description' => 'Je ontvangt deze e-mail omdat je je wachtwoord hebt bijgewerkt.',
+                'greeting' => 'Wachtwoord bijgewerkt!',
+                'subject' => 'Wachtwoord bijgewerkt',
+            ],
+
+            'verification' => [
+                'description' => 'Klik op de onderstaande knop om je e-mailadres te verifiëren.',
+                'greeting' => 'Welkom!',
+                'subject' => 'E-mail voor accountverificatie',
+                'verify-email' => 'E-mailadres verifiëren',
+            ],
+
+            'commented' => [
+                'description' => 'Opmerking is - :note',
+                'subject' => 'Nieuwe opmerking toegevoegd',
+            ],
+
+            'subscribed' => [
+                'description' => 'Gefeliciteerd en welkom bij onze nieuwsbriefgemeenschap! We zijn blij dat je meedoet en je op de hoogte houden van het laatste nieuws, trends en exclusieve aanbiedingen.',
+                'greeting' => 'Welkom bij onze nieuwsbrief!',
+                'subject' => 'Je! Abonneer je op onze nieuwsbrief',
+                'unsubscribe' => 'Afmelden',
+            ],
+
+            'gdpr' => [
+                'new-delete-request' => 'Nieuwe aanvraag voor gegevensverwijdering',
+                'new-update-request' => 'Nieuwe aanvraag voor gegevensupdate',
+
+                'new-request' => [
+                    'delete-summary' => 'Samenvatting van verwijderingsverzoek',
+                    'message' => 'Bericht : ',
+                    'request-status' => 'Aanvraagstatus : ',
+                    'request-type' => 'Aanvraagtype : ',
+                    'update-summary' => 'Samenvatting van updateverzoek',
+                ],
+
+                'status-update' => [
+                    'subject' => 'Uw GDPR-aanvraag is bijgewerkt',
+                    'summary' => 'De status van uw GDPR-aanvraag is bijgewerkt',
+                    'request-status' => 'Aanvraagstatus:',
+                    'request-type' => 'Aanvraagtype:',
+                    'message' => 'Bericht:',
+                ],
+            ],
+
+            'reminder' => [
+                'already-paid' => 'Als u de betaling al heeft gedaan, negeer dan dit bericht.',
+                'invoice-overdue' => 'Dit is een vriendelijke herinnering dat uw factuur nu achterstallig is. Wij verzoeken u vriendelijk om de betaling zo spoedig mogelijk te voldoen.',
+                'subject' => 'Factuurherinnering',
+            ],
+        ],
+
+        'contact-us' => [
+            'contact-from' => 'via het contactformulier op de website',
+            'reply-to-mail' => 'antwoord alstublieft op deze e-mail.',
+            'reach-via-phone' => 'U kunt ons ook telefonisch bereiken op',
+            'inquiry-from' => 'Vraag van',
+            'to' => 'Om contact op te nemen met',
+        ],
+
+        'orders' => [
+            'created' => [
+                'greeting' => 'Bedankt voor je bestelling :order_id geplaatst op :created_at',
+                'subject' => 'Nieuwe Bestelbevestiging',
+                'summary' => 'Samenvatting van Bestelling',
+                'title' => 'Bestelbevestiging!',
+            ],
+
+            'invoiced' => [
+                'greeting' => 'Je factuur #:invoice_id voor bestelling :order_id gemaakt op :created_at',
+                'subject' => 'Nieuwe Factuurbevestiging',
+                'summary' => 'Samenvatting van Factuur',
+                'title' => 'Factuurbevestiging!',
+            ],
+
+            'shipped' => [
+                'greeting' => 'Je bestelling :order_id geplaatst op :created_at is verzonden',
+                'subject' => 'Nieuwe Verzendingsbevestiging',
+                'summary' => 'Samenvatting van Verzending',
+                'title' => 'Bestelling Verzonden!',
+            ],
+
+            'refunded' => [
+                'greeting' => 'Terugbetaling is gestart voor bestelling :order_id geplaatst op :created_at',
+                'subject' => 'Nieuwe Terugbetalingsbevestiging',
+                'summary' => 'Samenvatting van Terugbetaling',
+                'title' => 'Bestelling Terugbetaald!',
+            ],
+
+            'canceled' => [
+                'greeting' => 'Je bestelling :order_id geplaatst op :created_at is geannuleerd',
+                'subject' => 'Nieuwe Bestellingsannuleringsbevestiging',
+                'summary' => 'Samenvatting van Bestelling',
+                'title' => 'Bestelling Geannuleerd!',
+            ],
+
+            'commented' => [
+                'subject' => 'Nieuwe opmerking toegevoegd',
+                'title' => 'Nieuwe opmerking toegevoegd aan je bestelling :order_id geplaatst op :created_at',
+            ],
+
+            'billing-address' => 'Factuuradres',
+            'carrier' => 'Vervoerder',
+            'contact' => 'Contact',
+            'discount' => 'Korting',
+            'excl-tax' => 'Excl. BTW: ',
+            'grand-total' => 'Totaalbedrag',
+            'name' => 'Naam',
+            'payment' => 'Betaling',
+            'price' => 'Prijs',
+            'qty' => 'Aantal',
+            'shipping' => 'Verzending',
+            'shipping-address' => 'Verzendadres',
+            'shipping-handling' => 'Verzend- en verwerkingskosten',
+            'shipping-handling-excl-tax' => 'Verzend- en verwerkingskosten (Excl. BTW)',
+            'shipping-handling-incl-tax' => 'Verzend- en verwerkingskosten (Incl. BTW)',
+            'sku' => 'SKU',
+            'subtotal' => 'Subtotaal',
+            'subtotal-excl-tax' => 'Subtotaal (Excl. BTW)',
+            'subtotal-incl-tax' => 'Subtotaal (Incl. BTW)',
+            'tax' => 'BTW',
+            'tracking-number' => 'Volgnummer: :tracking_number',
+        ],
+    ],
+
+    'rma' => [
+        'customer' => [
+            'delivered' => 'Geleverd',
+            'menu-name' => 'RMA',
+            'offer' => 'Tot 40% KORTING op je eerste bestelling',
+            'rma-qty' => 'RMA Aantal',
+            'shop-now' => 'SHOP NU',
+            'submit-req' => 'Verzoek indienen',
+            'title' => 'RMA',
+            'undelivered' => 'Niet geleverd',
+
+            'create' => [
+                'cancel' => 'Annuleren',
+                'create-btn' => 'Opslaan',
+                'enter-order-id' => 'Voer Bestel-ID in',
+                'exchange-window' => 'Ruilvenster',
+                'heading' => 'Nieuw RMA-verzoek',
+                'image' => 'Afbeelding',
+                'images' => 'Afbeeldingen',
+                'information' => 'Aanvullende Informatie',
+                'item-ordered' => 'Besteld Item',
+                'no-record' => 'Geen Records Gevonden!',
+                'not-allowed' => 'RMA is niet toegestaan voor bestellingen in afwachting',
+                'order-status' => 'Bestelstatus',
+                'orders' => 'Bestellingen',
+                'price' => 'Prijs',
+                'product' => 'Product',
+                'product-name' => 'Productnaam',
+                'quantity' => 'Hoeveelheid',
+                'reason' => 'Reden',
+                'reopen-request' => 'Heropen Verzoek',
+                'resolution' => 'Selecteer Oplossing',
+                'return-window' => 'Retourvenster',
+                'rma-not-available-quotes' => 'Item niet beschikbaar voor RMA',
+                'save' => 'Opslaan',
+                'search-order' => 'Zoek Bestelling',
+                'sku' => 'SKU',
+                'view' => 'Bekijk RMA',
+            ],
+        ],
+
+        'guest' => [
+            'view' => [
+                'close-rma' => 'Sluit RMA:',
+                'order-status' => 'Bestelstatus:',
+                'rma-status' => 'RMA Status:',
+                'title' => 'RMA',
+            ],
+
+            'create' => [
+                'cancel' => 'Annuleren',
+                'create-btn' => 'Opslaan',
+                'enter-order-id' => 'Voer Bestel-ID in',
+                'heading' => 'Nieuw RMA-verzoek',
+                'image' => 'Afbeelding',
+                'images' => 'Afbeeldingen',
+                'information' => 'Aanvullende Informatie',
+                'item-ordered' => 'Besteld Item',
+                'not-allowed' => 'RMA is niet toegestaan voor bestellingen in afwachting',
+                'order-status' => 'Bestelstatus',
+                'orders' => 'Bestellingen',
+                'price' => 'Prijs',
+                'product-name' => 'Productnaam',
+                'product' => 'Product',
+                'quantity' => 'Hoeveelheid',
+                'reason' => 'Reden',
+                'reopen-request' => 'Heropen Verzoek',
+                'resolution' => 'Selecteer Oplossing',
+                'rma-not-available-quotes' => 'Item niet beschikbaar voor RMA',
+                'save' => 'Opslaan',
+                'search-order' => 'Zoek Bestelling',
+                'sku' => 'SKU',
+                'title' => 'RMA',
+            ],
+
+            'index' => [
+                'create' => 'Nieuw RMA aanvragen',
+                'delete' => 'Verwijderen',
+                'edit' => 'Bewerken',
+                'guest' => 'Gast RMA Paneel',
+                'heading' => 'Gast RMA Paneel',
+                'update' => 'Bijwerken',
+                'view' => 'Bekijken',
+            ],
+        ],
+
+        'customer-rma-index' => [
+            'cancel' => 'Annuleren',
+            'create' => 'Creëren',
+            'delete' => 'Verwijderen',
+            'edit' => 'Bewerken',
+            'guest' => 'Gast RMA Paneel',
+            'heading' => 'RMA',
+            'update' => 'Bijwerken',
+            'view' => 'Bekijken',
+        ],
+
+        'validation' => [
+            'close-rma' => 'Bevestigen',
+            'information' => 'Aanvullende Informatie',
+            'order-id' => 'Bestelling Selectie',
+            'order-status' => 'Bestelstatus',
+            'orders' => 'Bestellingen',
+            'resolution' => 'Oplossing',
+            'select-orders' => 'Selecteer Bestelling',
+        ],
+
+        'conversation-texts' => [
+            'by' => 'Door',
+            'customer' => 'Klant',
+            'no-record' => 'Geen Records Gevonden!',
+            'on' => 'Op',
+            'seller' => 'Verkoper',
+        ],
+
+        'default-option' => [
+            'others' => 'Anders',
+            'please-select-value' => 'Selecteer Waarde',
+            'select-order-status' => 'Selecteer Bestelstatus',
+            'select-order' => 'Selecteer Bestelling',
+            'select-quantity' => 'Selecteer Hoeveelheid',
+            'select-reason' => 'Selecteer Reden',
+            'select-resolution' => 'Selecteer Oplossing',
+            'select-seller' => 'Selecteer Verkoper',
+        ],
+
+        'view-customer-rma' => [
+            'additional-information' => 'Aanvullende Informatie:',
+            'admin' => 'Beheerder',
+            'cancel-order' => 'Bestelling Annuleren',
+            'change-rma-status' => 'Wijzig RMA-status',
+            'close-rma' => 'RMA Sluiten:',
+            'conversations' => 'Gesprekken',
+            'guest' => 'Gast',
+            'heading' => 'RMA Details',
+            'images' => 'Afbeeldingen:',
+            'items-request' => 'Artikel(en) aangevraagd voor RMA',
+            'items-requested-for-rma' => 'Artikel(en) aangevraagd voor RMA',
+            'order-id' => 'Bestel-ID:',
+            'refund-details' => 'Terugbetalingsgegevens',
+            'refund-offline-btn' => 'Offline Terugbetaling',
+            'refundable-amount' => 'Terug te betalen Bedrag',
+            'resolution-type' => 'Oplossing Type:',
+            'rma' => 'RMA',
+            'save-btn' => 'Opslaan',
+            'send-message-btn' => 'Verzenden',
+            'send-message' => 'Bericht Verzenden',
+            'status-details' => 'Status Details',
+            'status-quotes' => 'Gelieve akkoord te gaan om het als opgelost te markeren',
+            'status-reopen' => 'Controleer om opnieuw te openen',
+            'status' => 'Status',
+            'term' => 'Akkoord markeringsveld is verplicht',
+            'you' => 'Beheerder',
+        ],
+
+        'view-guest-rma' => [
+            'additional-information' => 'Aanvullende Informatie:',
+            'admin' => 'Beheerder',
+            'close-rma' => 'RMA Sluiten',
+            'conversations' => 'Gesprekken',
+            'guest' => 'Jij',
+            'images' => 'Afbeeldingen',
+            'items-request' => 'Artikel(en) aangevraagd voor RMA',
+            'order-id' => ' Bestel-ID:',
+            'refund-offline-btn' => 'Offline Terugbetaling',
+            'resolution-type' => 'Oplossing Type:',
+            'rma' => 'RMA',
+            'save-btn' => 'Opslaan',
+            'send-message-btn' => 'Verzenden',
+            'send-message' => 'Bericht Verzenden',
+            'status-details' => 'Status Details',
+            'status-quotes' => 'Gelieve akkoord te gaan om het als opgelost te markeren.',
+            'status' => 'Status',
+            'term' => 'Akkoord markeringsveld is verplicht',
+        ],
+
+        'view-guest-rma-content' => [
+            'full-amount' => 'Volledig Bedrag',
+            'order-status' => 'Bestelstatus:',
+            'request-on' => 'Aanvraag Op:',
+            'rma-status' => 'RMA Status:',
+        ],
+
+        'view-customer-rma-content' => [
+            'admin-status' => 'Beheerder Status:',
+            'close-rma' => 'RMA Sluiten',
+            'consignment-no' => 'Zending Nummer:',
+            'enter-message' => 'Voer Bericht In',
+            'full-amount' => 'Volledig Bedrag',
+            'order-details' => 'Bestelgegevens',
+            'order-status' => 'Bestelstatus:',
+            'partial-amount' => 'Gedeeltelijk Bedrag',
+            'refundable-amount' => 'Terugbetalingsbedrag:',
+            'request-on' => 'Aanvraag Op:',
+            'rma-status' => 'RMA Status:',
+            'seller' => 'Verkoper',
+            'total-refundable-amount' => 'Totaal Terug te Betalen Bedrag:',
+        ],
+
+        'table-heading' => [
+            'image' => 'Afbeelding',
+            'order-qty' => 'Bestelhoeveelheid',
+            'price' => 'Prijs',
+            'product-name' => 'Productnaam',
+            'reason' => 'Reden',
+            'resolution-type' => 'Oplossingstype',
+            'rma-qty' => 'RMA Hoeveelheid',
+            'sku' => 'SKU',
+        ],
+
+        'guest-users' => [
+            'button-text' => 'Inloggen',
+            'email' => 'E-mail',
+            'heading' => 'Gast Login Paneel',
+            'logout' => 'Gast afmelden',
+            'order-id' => 'Bestel-ID',
+            'title' => 'Gast Login',
+        ],
+
+        'mail' => [
+            'customer-rma-create' => [
+                'additional-information' => 'Aanvullende informatie:',
+                'greeting' => 'U heeft een nieuwe RMA aangevraagd voor bestelling :order_id.',
+                'heading' => 'RMA Aanvraag',
+                'hello' => 'Beste :name',
+                'order-id' => 'Bestelnummer:',
+                'order-status' => 'Bestelstatus:',
+                'requested-rma-product' => 'Gevraagd product voor RMA:',
+                'resolution-type' => 'Oplossingstype:',
+                'rma-id' => 'RMA ID:',
+                'summary' => 'Samenvatting van de RMA van de bestelling',
+                'thank-you' => 'Bedankt',
+            ],
+
+            'customer-data-table-heading' => [
+                'product-name' => 'Productnaam',
+                'qty' => 'Aantal',
+                'reason' => 'Reden',
+                'sku' => 'SKU',
+            ],
+
+            'customer-conversation' => [
+                'subject' => 'Nieuw Bericht',
+                'heading' => 'Beste :name,',
+                'message' => 'Bericht',
+                'process' => 'Uw retourverzoek wordt verwerkt.',
+                'quotes' => 'Er is een nieuw bericht van de koper',
+                'solved' => 'De RMA-status is door de klant gewijzigd naar Opgelost.',
+            ],
+
+            'seller-conversation' => [
+                'subject' => 'Nieuw Bericht',
+                'heading' => 'Beste :name',
+                'message' => 'Bericht',
+                'quotes' => 'Er is een nieuw bericht van de beheerder',
+                'title' => 'Bericht ontvangen!',
+            ],
+
+            'status' => [
+                'heading' => 'Beste :name',
+                'quotes' => 'Uw RMA-status is gewijzigd door de verkoper',
+                'rma-id' => 'RMA ID',
+                'status-change' => ':id status is gewijzigd door de verkoper',
+                'status' => 'Status',
+                'title' => 'Status bijgewerkt!',
+                'your-rma-id' => 'Uw RMA ID',
+            ],
+        ],
+
+        'status' => [
+            'status-name' => [
+                'accept' => 'Goedgekeurd',
+                'awaiting' => 'Wachten op retour',
+                'canceled' => 'Verzoek geannuleerd',
+                'declined' => 'Verzoek afgewezen',
+                'dispatched-package' => 'Retour onderweg',
+                'item-canceled' => 'Item geannuleerd',
+                'not-received-package-yet' => 'Pakket nog niet ontvangen',
+                'pending' => 'In afwachting van beoordeling',
+                'processing' => 'Verwerking',
+                'received-package' => 'Terugbetaald',
+                'solved' => 'Opgelost',
+            ],
+
+            'status-quotes' => [
+                'declined-admin' => 'RMA is afgewezen door de beheerder.',
+                'declined-buyer' => 'RMA is afgewezen door de koper.',
+                'solved-by-admin' => 'RMA is opgelost door de beheerder.',
+                'solved' => 'RMA is opgelost.',
+            ],
+        ],
+
+        'response' => [
+            'already-cancel' => 'RMA-status is al geannuleerd.',
+            'cancel-success' => 'RMA-status is succesvol geannuleerd.',
+            'create-success' => 'Verzoek succesvol aangemaakt.',
+            'creation-error' => 'De RMA-status kan niet worden bijgewerkt omdat de factuur voor deze bestelling niet is aangemaakt.',
+            'invalid-item' => 'Het geselecteerde bestelitem is ongeldig.',
+            'invalid-order' => 'De geselecteerde bestelling is ongeldig.',
+            'permission-denied' => 'U bent ingelogd',
+            'rma-disabled' => 'RMA is uitgeschakeld voor dit product',
+            'reopen-not-allowed' => 'Het heropenen van dit RMA-verzoek is niet toegestaan.',
+            'send-message' => ':name succesvol verzonden.',
+            'update-success' => ':name succesvol bijgewerkt.',
+        ],
+    ],
+
+    'eu_withdrawal' => [
+        'button' => [
+            'withdraw' => 'Overeenkomst herroepen',
+            'view_existing' => 'Bekijk uw herroeping',
+        ],
+
+        'guest_dropdown' => [
+            'link' => 'Overeenkomst herroepen',
+        ],
+
+        'lookup' => [
+            'page_title' => 'Overeenkomst herroepen',
+            'heading' => 'Overeenkomst Herroepen',
+            'intro' => 'Voer het bestelnummer in en het e-mailadres dat u bij het afrekenen heeft gebruikt. Wij sturen u een link om uw herroeping in te dienen.',
+            'order_number' => 'Bestelnummer',
+            'email' => 'E-mailadres',
+            'submit' => 'Stuur mij de herroepingslink',
+            'sent_notice' => 'Als er een overeenkomende bestelling bestaat, hebben wij zojuist een herroepingslink naar dat adres gemaild. De link is 24 uur geldig.',
+            'legal_note' => 'U heeft op grond van EU-richtlijn 2011/83/EU (zoals gewijzigd) het wettelijke recht om de overeenkomst binnen 14 dagen te herroepen. Andere wijzen van herroeping – waaronder een schriftelijke verklaring aan onze klantenservice – blijven geldig.',
+        ],
+
+        'form' => [
+            'page_title' => 'Bevestig uw herroeping',
+            'heading' => 'Bevestig herroeping van overeenkomst',
+            'legal_notice_title' => 'Dit is een juridisch bindende verklaring',
+            'legal_effect' => 'Door dit formulier in te dienen oefent u uw wettelijke herroepingsrecht uit voor bestelling #:order_id. De verklaring is rechtsgeldig vanaf het moment van indiening.',
+            'order_summary' => 'Bestelling',
+            'order_total' => 'Totaal',
+            'order_items' => 'Artikelen',
+            'placed_on' => 'Geplaatst op :date',
+            'reason_label' => 'Reden',
+            'reason_optional' => '(optioneel)',
+            'reason_help' => 'U bent niet verplicht een reden op te geven. Alles wat u hier invult, wordt vastgelegd in het herroepingsbewijs en doorgestuurd naar de verkoper.',
+            'reason_placeholder' => 'Bijvoorbeeld: „Bedacht me”, „Artikel komt niet overeen met de beschrijving”, of laat leeg.',
+            'submit' => 'Herroeping indienen',
+            'cancel' => 'Annuleren en terug',
+        ],
+
+        'confirmation' => [
+            'page_title' => 'Herroepingsbewijs',
+            'heading' => 'Uw herroeping is ontvangen',
+            'heading_received' => 'Uw herroeping is ontvangen',
+            'heading_refunded' => 'Uw terugbetaling is uitgevoerd',
+            'heading_declined' => 'Uw herroeping is afgewezen',
+            'intro' => 'Wij hebben uw verklaring vastgelegd. Deze pagina en de e-mail die wij u zojuist hebben gestuurd, dienen beide als bevestiging op een duurzame gegevensdrager.',
+            'intro_received' => 'Wij hebben uw verklaring vastgelegd. Deze pagina en de e-mail die wij u zojuist hebben gestuurd, dienen beide als bevestiging op een duurzame gegevensdrager.',
+            'intro_refunded' => 'De verkoper heeft uw terugbetaling verwerkt. Het bedrag zou binnenkort op uw oorspronkelijke betaalmethode moeten binnenkomen.',
+            'intro_declined' => 'De verkoper betwist uw recht op terugbetaling op grond van deze verklaring. Zie hieronder voor de opgegeven reden en uw resterende opties.',
+            'received_at' => 'Ontvangen op',
+            'reference' => 'Referentie',
+            'copy_reference' => 'Referentie kopiëren',
+            'reference_copied' => 'Referentie naar het klembord gekopieerd.',
+            'order' => 'Bestelling',
+            'email' => 'E-mail',
+            'reason' => 'Reden',
+            'status' => 'Status',
+            'status_received' => 'Ontvangen',
+            'status_refunded' => 'Terugbetaald',
+            'status_declined' => 'Afgewezen',
+            'print' => 'Afdrukken',
+            'next_steps_title' => 'Wat gebeurt er nu',
+            'step_received' => 'Uw verklaring is ontvangen en vastgelegd.',
+            'step_email' => 'Bevestigingsmail naar uw postvak verzonden.',
+            'step_refund' => 'Terugbetaling binnen 14 dagen.',
+            'step_refund_done' => 'De terugbetaling is uitgevoerd.',
+            'step_declined' => 'Herroeping afgewezen door de verkoper.',
+            'declined_reason_label' => 'Door de verkoper opgegeven reden',
+            'declined_notice' => 'Al uw overige wettelijke rechtsmiddelen onder het EU-consumentenrecht blijven u behouden. Bent u het niet eens met deze beslissing, neem dan rechtstreeks contact op met de verkoper.',
+            'refund_notice' => 'Wij betalen terug met hetzelfde betaalmiddel dat u voor de oorspronkelijke transactie heeft gebruikt, tenzij uitdrukkelijk anders overeengekomen.',
+            'email_sent' => 'De bevestigingsmail is verzonden.',
+            'email_pending' => 'Wij konden de bevestigingsmail niet direct verzenden; ons team neemt nog actie. Bewaar deze pagina als uw bewijsstuk.',
+            'durable_medium_notice' => 'Deze pagina is uw bewijsstuk. U kunt deze opslaan of afdrukken.',
+        ],
+
+        'emails' => [
+            'confirmation' => [
+                'subject' => 'Bevestiging van uw herroeping – Bestelling :order_id',
+                'title' => 'Herroeping ontvangen',
+                'title_received' => 'Herroeping ontvangen',
+                'title_refunded' => 'Terugbetaling uitgevoerd',
+                'title_declined' => 'Herroeping afgewezen',
+                'greeting' => 'Geachte heer/mevrouw,',
+                'intro' => 'Wij hebben uw verklaring van herroeping van de overeenkomst voor bestelling #:order_id ontvangen. Het rechtsgeldige tijdstip van ontvangst is hieronder vastgelegd.',
+                'intro_received' => 'Wij hebben uw verklaring van herroeping van de overeenkomst voor bestelling #:order_id ontvangen. Het rechtsgeldige tijdstip van ontvangst is hieronder vastgelegd.',
+                'intro_refunded' => 'Uw terugbetaling voor bestelling #:order_id is uitgevoerd. Het bedrag zou binnenkort op uw oorspronkelijke betaalmethode moeten binnenkomen.',
+                'intro_declined' => 'De verkoper betwist uw recht op terugbetaling voor bestelling #:order_id op grond van deze verklaring. De opgegeven reden vindt u hieronder.',
+                'summary' => 'Overzicht herroeping',
+                'received_at' => 'Ontvangen op',
+                'reference' => 'Referentie',
+                'order' => 'Bestelling',
+                'email' => 'E-mail',
+                'reason' => 'Opgegeven reden',
+                'declined_reason' => 'Reden van afwijzing',
+                'refund_notice' => 'Indien een terugbetaling verschuldigd is, betalen wij terug met hetzelfde betaalmiddel dat u voor de oorspronkelijke transactie heeft gebruikt, binnen 14 dagen na bovenstaande datum, tenzij uitdrukkelijk anders overeengekomen.',
+                'footer' => 'Dit bericht is de bevestiging op een duurzame gegevensdrager zoals vereist door artikel 11 bis van Richtlijn 2011/83/EU (gewijzigd bij Richtlijn (EU) 2023/2673). Bewaar dit bericht voor uw administratie.',
+            ],
+
+            'guest_link' => [
+                'subject' => 'Uw herroepingslink',
+                'title' => 'Uw herroepingslink',
+                'intro' => 'Gebruik onderstaande link om uw herroeping voor bestelling :order_id in te dienen. De link is 24 uur geldig.',
+                'button' => 'Open het herroepingsformulier',
+                'expiry' => 'De link verloopt over 24 uur. Heeft u deze e-mail niet aangevraagd, dan kunt u deze negeren.',
+            ],
+        ],
+    ],
+];

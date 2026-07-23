@@ -1,0 +1,1882 @@
+<?php
+
+return [
+    'customers' => [
+        'forgot-password' => [
+            'already-sent' => 'כבר איפוס סיסמה נשלח דואר.',
+            'back' => 'חזרה להתחברות?',
+            'bagisto' => 'בַּגִּיסְטוֹ',
+            'email' => 'אימייל',
+            'email-not-exist' => 'אנחנו לא מוצאים משתמש עם כתובת הדוא"ל הזו.',
+            'footer' => '© זכויות יוצרים 2010 - :current_year, Webkul Software (רשומה בהודו). כל הזכויות שמורות.',
+            'forgot-password-text' => 'אם שכחת את הסיסמה שלך, ניתן לשחזר אותה על ידי הזנת כתובת האימייל שלך.',
+            'page-title' => 'שכחת את הסיסמה שלך?',
+            'reset-link-sent' => 'שלחנו לך את הקישור לאיפוס הסיסמה באמצעות האימייל שלך.',
+            'sign-in-button' => 'התחברות',
+            'submit' => 'איפוס סיסמה',
+            'title' => 'שחזור סיסמה',
+        ],
+
+        'reset-password' => [
+            'back-link-title' => 'חזרה להתחברות',
+            'bagisto' => 'בַּגִּיסְטוֹ',
+            'confirm-password' => 'אימות סיסמה',
+            'email' => 'אימייל רשום',
+            'footer' => '© זכויות יוצרים 2010 - :current_year, Webkul Software (רשומה בהודו). כל הזכויות שמורות.',
+            'password' => 'סיסמה',
+            'submit-btn-title' => 'איפוס סיסמה',
+            'title' => 'איפוס סיסמה',
+        ],
+
+        'login-form' => [
+            'bagisto' => 'בַּגִּיסְטוֹ',
+            'button-title' => 'התחברות',
+            'create-your-account' => 'צור את החשבון שלך',
+            'email' => 'אימייל',
+            'footer' => '© זכויות יוצרים 2010 - :current_year, Webkul Software (רשומה בהודו). כל הזכויות שמורות.',
+            'forgot-pass' => 'שכחת סיסמה?',
+            'form-login-text' => 'אם יש לך חשבון, התחבר עם כתובת האימייל שלך.',
+            'invalid-credentials' => 'אנא בדוק את הפרטים שלך ונסה שוב.',
+            'new-customer' => 'לקוח חדש?',
+            'not-activated' => 'הפעלת החשבון שלך מחכה לאישור מנהל',
+            'page-title' => 'התחברות ללקוחות',
+            'password' => 'סיסמה',
+            'resend-verification' => 'שלח שוב אימייל אימות',
+            'show-password' => 'הצג סיסמה',
+            'title' => 'התחברות',
+            'verify-first' => 'אנא אמת את חשבון האימייל שלך תחילה.',
+        ],
+
+        'signup-form' => [
+            'account-exists' => 'כבר יש לך חשבון?',
+            'bagisto' => 'בַּגִּיסְטוֹ',
+            'button-title' => 'הירשם',
+            'click-here' => 'לחץ כאן',
+            'confirm-pass' => 'אימות סיסמה',
+            'email' => 'אימייל',
+            'first-name' => 'שם פרטי',
+            'footer' => '© זכויות יוצרים 2010 - :current_year, Webkul Software (רשומה בהודו). כל הזכויות שמורות.',
+            'form-signup-text' => 'אם אתה חדש בחנות שלנו, אנחנו שמחים לראותך כחבר.',
+            'last-name' => 'שם משפחה',
+            'page-title' => 'הצטרף כלקוח',
+            'password' => 'סיסמה',
+            'sign-in-button' => 'התחברות',
+            'subscribe-to-newsletter' => 'הרשם לניוזלטר',
+            'success' => 'חשבון נוצר בהצלחה.',
+            'success-verify' => 'חשבון נוצר בהצלחה, הודעת אימייל נשלחה לאימות.',
+            'terms-conditions' => 'תנאים והגבלות',
+            'verification-not-sent' => 'שגיאה! בעיה בשליחת האימייל לאימות, אנא נסה שוב מאוחר יותר.',
+            'verification-sent' => 'האימייל לאימות נשלח',
+            'verified' => 'חשבונך אומת, נסה להתחבר כעת.',
+            'verify-failed' => 'אנחנו לא יכולים לאמת את חשבון האימייל שלך.',
+        ],
+
+        'account' => [
+            'home' => 'בית',
+
+            'profile' => [
+                'index' => [
+                    'delete' => 'מחק',
+                    'delete-failed' => 'אירעה שגיאה במהלך מחיקת הלקוח.',
+                    'delete-profile' => 'מחק פרופיל',
+                    'delete-success' => 'הלקוח נמחק בהצלחה',
+                    'dob' => 'תאריך לידה',
+                    'edit' => 'ערוך',
+                    'edit-success' => 'הפרופיל עודכן בהצלחה',
+                    'email' => 'אימייל',
+                    'enter-password' => 'הזן את הסיסמה שלך',
+                    'first-name' => 'שם פרטי',
+                    'gender' => 'מין',
+                    'last-name' => 'שם משפחה',
+                    'order-pending' => 'לא ניתן למחוק את חשבון הלקוח מכיוון שישנם הזמנות במצב ממתין או בעיבוד.',
+                    'title' => 'פרופיל',
+                    'unmatched' => 'הסיסמה הישנה אינה תואמת.',
+                    'wrong-password' => 'סיסמה שגויה!',
+                ],
+
+                'edit' => [
+                    'confirm-password' => 'אשר סיסמה',
+                    'current-password' => 'סיסמה נוכחית',
+                    'dob' => 'תאריך לידה',
+                    'edit' => 'ערוך',
+                    'edit-profile' => 'ערוך פרופיל',
+                    'email' => 'אימייל',
+                    'female' => 'נקבה',
+                    'first-name' => 'שם פרטי',
+                    'gender' => 'מין',
+                    'last-name' => 'שם משפחה',
+                    'male' => 'זכר',
+                    'new-password' => 'סיסמה חדשה',
+                    'other' => 'אחר',
+                    'phone' => 'טלפון',
+                    'save' => 'שמור',
+                    'subscribe-to-newsletter' => 'הירשם לניוזלטר',
+                ],
+            ],
+
+            'addresses' => [
+                'index' => [
+                    'add-address' => 'הוסף כתובת',
+                    'create-success' => 'הכתובת נוספה בהצלחה.',
+                    'default-address' => 'כתובת ברירת מחדל',
+                    'default-delete' => 'לא ניתן לשנות את הכתובת הברירת מחדל.',
+                    'delete' => 'מחק',
+                    'delete-success' => 'הכתובת נמחקה בהצלחה',
+                    'edit' => 'ערוך',
+                    'edit-success' => 'הכתובת עודכנה בהצלחה.',
+                    'empty-address' => 'עדיין לא הוספת כתובת לחשבון שלך.',
+                    'security-warning' => 'פעילות חשודה זוהתה!!!',
+                    'set-as-default' => 'קבע כברירת מחדל',
+                    'title' => 'כתובת',
+                    'update-success' => 'הכתובת עודכנה בהצלחה.',
+                ],
+
+                'create' => [
+                    'add-address' => 'הוסף כתובת',
+                    'city' => 'עיר',
+                    'company-name' => 'שם החברה',
+                    'country' => 'מדינה',
+                    'email' => 'אימייל',
+                    'first-name' => 'שם פרטי',
+                    'last-name' => 'שם משפחה',
+                    'phone' => 'טלפון',
+                    'post-code' => 'מיקוד',
+                    'save' => 'שמור',
+                    'select-country' => 'בחר מדינה',
+                    'set-as-default' => 'קבע כברירת מחדל',
+                    'state' => 'מדינה',
+                    'street-address' => 'כתובת',
+                    'title' => 'כתובת',
+                    'vat-id' => 'מספר עוסק מורשה',
+                ],
+
+                'edit' => [
+                    'city' => 'עיר',
+                    'company-name' => 'שם החברה',
+                    'country' => 'מדינה',
+                    'edit' => 'ערוך',
+                    'email' => 'אימייל',
+                    'first-name' => 'שם פרטי',
+                    'last-name' => 'שם משפחה',
+                    'phone' => 'טלפון',
+                    'post-code' => 'מיקוד',
+                    'select-country' => 'בחר מדינה',
+                    'state' => 'מדינה',
+                    'street-address' => 'כתובת',
+                    'title' => 'כתובת',
+                    'update-btn' => 'עדכון',
+                    'vat-id' => 'מספר עוסק מורשה',
+                ],
+            ],
+
+            'orders' => [
+                'action' => 'פעולה',
+                'action-view' => 'צפה',
+                'empty-order' => 'עדיין לא הזמנת מוצר כלשהו',
+                'order' => 'הזמנה',
+                'order-date' => 'תאריך הזמנה',
+                'order-id' => 'מספר הזמנה',
+                'pay-by' => 'תשלום באמצעות - :method',
+                'pay-via' => 'תשלום דרך',
+                'subtotal' => 'סכום חלקי',
+                'title' => 'הזמנות',
+                'total' => 'סך הכל',
+
+                'status' => [
+                    'title' => 'סטטוס',
+
+                    'options' => [
+                        'canceled' => 'בוטל',
+                        'closed' => 'סגור',
+                        'completed' => 'הושלם',
+                        'fraud' => 'בעל מסמר חשוד',
+                        'pending' => 'ממתין',
+                        'pending-payment' => 'ממתין לתשלום',
+                        'processing' => 'בטיפול',
+                    ],
+
+                    'canceled' => 'בוטל',
+                    'closed' => 'נסגר',
+                    'completed' => 'הושלם',
+                    'fraud' => 'הונאה',
+                    'pending' => 'ממתין',
+                    'pending-payment' => 'ממתין לתשלום',
+                    'processing' => 'בטיפול',
+                ],
+
+                'view' => [
+                    'billing-address' => 'כתובת לחיוב',
+
+                    'booking-cancellation-not-allowed' => [
+                        'title' => 'פריטי הזמנה לא יבוטלו',
+                        'description' => 'הזמנה זו מכילה מוצרי הזמנה המסומנים כלא ניתנים לביטול. ביטול ההזמנה יבטל רק את הפריטים הנותרים; פריטי ההזמנה יישארו פעילים. אנא צרו קשר עם התמיכה אם אתם זקוקים לעזרה עם פריטי ההזמנה.',
+                    ],
+
+                    'cancel-btn-title' => 'ביטול',
+                    'cancel-confirm-msg' => 'האם אתה בטוח שברצונך לבטל הזמנה זו?',
+                    'cancel-error' => 'לא ניתן לבטל את ההזמנה שלך.',
+                    'cancel-success' => 'ההזמנה שלך בוטלה בהצלחה',
+                    'contact' => 'צור קשר',
+                    'item-invoiced' => 'פריט מחושב',
+                    'item-refunded' => 'פריט הוחזר',
+                    'item-shipped' => 'פריט נשלח',
+                    'item-ordered' => 'פריט הוזמן',
+                    'order' => 'הזמנה',
+                    'order-id' => 'מספר הזמנה',
+                    'page-title' => 'הזמנה #:order_id',
+                    'payment-method' => 'אמצעי תשלום',
+                    'reorder-booking-skipped' => 'מוצרי הזמנה דולגו במהלך ההזמנה מחדש. אנא הזמינו אותם שוב עם תאריכים ומשבצות זמן חדשות.',
+                    'reorder-btn-title' => 'הזמן שוב',
+                    'shipping-address' => 'כתובת למשלוח',
+                    'shipping-method' => 'אמצעי משלוח',
+                    'shipping-and-payment' => 'פרטי משלוח ותשלום',
+                    'status' => 'סטטוס',
+                    'title' => 'צפה',
+                    'total' => 'סך הכל',
+
+                    'information' => [
+                        'discount' => 'הנחה',
+                        'excl-tax' => 'לא כולל מס:',
+                        'grand-total' => 'סכום כולל',
+                        'info' => 'מידע',
+                        'item-canceled' => 'בוטל (:qty_canceled)',
+                        'item-refunded' => 'הוחזר (:qty_refunded)',
+                        'invoiced-item' => 'מחושב (:qty_invoiced)',
+                        'item-shipped' => 'נשלח (:qty_shipped)',
+                        'item-status' => 'סטטוס פריט',
+                        'ordered-item' => 'הוזמן (:qty_ordered)',
+                        'placed-on' => 'הוזמן בתאריך',
+                        'price' => 'מחיר',
+                        'product-name' => 'שם',
+                        'shipping-handling' => 'משלוח וטיפול',
+                        'shipping-handling-excl-tax' => 'משלוח וטיפול (לא כולל מס)',
+                        'shipping-handling-incl-tax' => 'משלוח וטיפול (כולל מס)',
+                        'sku' => 'קוד SKU',
+                        'subtotal' => 'סכום חלקי',
+                        'subtotal-excl-tax' => 'סכום חלקי (לא כולל מס)',
+                        'subtotal-incl-tax' => 'סכום חלקי (כולל מס)',
+                        'order-summary' => 'סיכום הזמנה',
+                        'tax' => 'מס',
+                        'tax-amount' => 'סכום מס',
+                        'tax-percent' => 'אחוז מס',
+                        'total-due' => 'סך הכל לתשלום',
+                        'total-paid' => 'סך הכל ששולם',
+                        'total-refunded' => 'סך הכל הוחזר',
+                    ],
+
+                    'invoices' => [
+                        'discount' => 'הנחה',
+                        'excl-tax' => 'לא כולל מס:',
+                        'grand-total' => 'סכום כולל',
+                        'individual-invoice' => 'חשבונית #:invoice_id',
+                        'invoices' => 'חשבוניות',
+                        'price' => 'מחיר',
+                        'print' => 'הדפסה',
+                        'product-name' => 'שם',
+                        'products-ordered' => 'מוצרים הוזמנו',
+                        'qty' => 'כמות',
+                        'shipping-handling-excl-tax' => 'משלוח וטיפול (לא כולל מס)',
+                        'shipping-handling-incl-tax' => 'משלוח וטיפול (כולל מס)',
+                        'shipping-handling' => 'משלוח וטיפול',
+                        'sku' => 'קוד SKU',
+                        'subtotal-excl-tax' => 'סכום חלקי (לא כולל מס)',
+                        'subtotal-incl-tax' => 'סכום חלקי (כולל מס)',
+                        'subtotal' => 'סכום חלקי',
+                        'tax' => 'מס',
+                        'tax-amount' => 'סכום מס',
+                    ],
+
+                    'shipments' => [
+                        'individual-shipment' => 'משלוח #:shipment_id',
+                        'product-name' => 'שם',
+                        'qty' => 'כמות',
+                        'shipments' => 'משלוחים',
+                        'sku' => 'קוד SKU',
+                        'subtotal' => 'סכום חלקי',
+                        'tracking-number' => 'מספר מעקב',
+                    ],
+
+                    'refunds' => [
+                        'adjustment-fee' => 'דמי תיקון',
+                        'adjustment-refund' => 'החזר תיקון',
+                        'discount' => 'הנחה',
+                        'grand-total' => 'סכום כולל',
+                        'individual-refund' => 'החזר #:refund_id',
+                        'no-result-found' => 'לא מצאנו רשומות.',
+                        'order-summary' => 'סיכום הזמנה',
+                        'price' => 'מחיר',
+                        'product-name' => 'שם',
+                        'qty' => 'כמות',
+                        'refunds' => 'החזרים',
+                        'shipping-handling' => 'משלוח וטיפול',
+                        'shipping-handling-excl-tax' => 'משלוח וטיפול (לא כולל מס)',
+                        'shipping-handling-incl-tax' => 'משלוח וטיפול (כולל מס)',
+                        'sku' => 'קוד SKU',
+                        'subtotal' => 'סכום חלקי',
+                        'subtotal-excl-tax' => 'סכום חלקי (לא כולל מס)',
+                        'subtotal-incl-tax' => 'סכום חלקי (כולל מס)',
+                        'tax' => 'מס',
+                        'tax-amount' => 'סכום מס',
+                    ],
+                ],
+
+                'invoice-pdf' => [
+                    'bank-details' => 'פרטי הבנק',
+                    'bill-to' => 'חשבונית ל',
+                    'contact-number' => 'מספר טלפון ליצירת קשר',
+                    'contact' => 'צור קשר',
+                    'date' => 'תאריך חשבונית',
+                    'discount' => 'הנחה',
+                    'excl-tax' => 'לא כולל מס:',
+                    'grand-total' => 'סכום כולל',
+                    'invoice-id' => 'מספר זיהוי חשבונית',
+                    'invoice' => 'חשבונית',
+                    'order-date' => 'תאריך הזמנה',
+                    'order-id' => 'מספר הזמנה',
+                    'payment-method' => 'אמצעי תשלום',
+                    'payment-terms' => 'תנאי תשלום',
+                    'price' => 'מחיר',
+                    'product-name' => 'שם המוצר',
+                    'qty' => 'כמות',
+                    'ship-to' => 'שלח אל',
+                    'shipping-handling-excl-tax' => 'משלוח וטיפול (לא כולל מס)',
+                    'shipping-handling-incl-tax' => 'משלוח וטיפול (כולל מס)',
+                    'shipping-handling' => 'משלוח וטיפול',
+                    'shipping-method' => 'שיטת משלוח',
+                    'sku' => 'קוד מוצר',
+                    'subtotal-excl-tax' => 'סה"כ ביניים (לא כולל מס)',
+                    'subtotal-incl-tax' => 'סה"כ ביניים (כולל מס)',
+                    'subtotal' => 'סה"כ ביניים',
+                    'tax-amount' => 'סכום מס',
+                    'tax' => 'מס',
+                    'vat-number' => 'מספר ת.ז.',
+                ],
+            ],
+
+            'reviews' => [
+                'empty-review' => 'טרם כתבת ביקורת על מוצר.',
+                'title' => 'ביקורות',
+            ],
+
+            'downloadable-products' => [
+                'available' => 'זמין',
+                'completed' => 'הושלם',
+                'date' => 'תאריך',
+                'download-error' => 'קישור הורדה פג תוקף.',
+                'empty-product' => 'אין לך מוצרים להורדה',
+                'expired' => 'פג תוקף',
+                'name' => 'מוצרים להורדה',
+                'orderId' => 'מספר הזמנה',
+                'payment-error' => 'לא בוצע תשלום עבור ההורדה הזו.',
+                'pending' => 'ממתין ל',
+                'records-found' => 'נמצאו :record_count רשומות',
+                'remaining-downloads' => 'הורדות נותרו',
+                'status' => 'סטטוס',
+                'title' => 'כותרת',
+            ],
+
+            'wishlist' => [
+                'color' => 'צבע',
+                'delete-all' => 'מחק הכל',
+                'empty' => 'לא הוספת מוצרים לרשימת המשאלות.',
+                'move-to-cart' => 'העבר לעגלת הקניות',
+                'moved' => 'הפריט הועבר בהצלחה לעגלת הקניות',
+                'moved-success' => 'הפריט הועבר בהצלחה לעגלת הקניות',
+                'page-title' => 'רשימת משאלות',
+                'product-removed' => 'המוצר אינו זמין יותר ונמחק על ידי המנהל',
+                'profile' => 'פרופיל',
+                'remove' => 'הסר',
+                'remove-all-success' => 'כל הפריטים מרשימת המשאלות שלך הוסרו בהצלחה',
+                'remove-fail' => 'לא ניתן להסיר את הפריט מרשימת המשאלות',
+                'removed' => 'הפריט הוסר בהצלחה מרשימת המשאלות',
+                'see-details' => 'ראה פרטים',
+                'success' => 'הפריט הוסף בהצלחה לרשימת המשאלות',
+                'title' => 'רשימת משאלות',
+            ],
+
+            'gdpr' => [
+                'create-success' => 'הבקשה נוצרה בהצלחה',
+                'revoked-successfully' => 'הבקשה בוטלה בהצלחה',
+                'success-verify' => 'הצלחה! אימייל האימות נשלח.',
+                'success-verify-email-unsent' => 'הצלחה! אימייל האימות לא נשלח.',
+                'unable-to-sent' => 'לא ניתן לשלוח אימייל.',
+
+                'index' => [
+                    'create-btn' => 'צור בקשה',
+                    'html' => 'HTML',
+                    'pdf' => 'PDF',
+                    'title' => 'בקשות נתונים GDPR',
+
+                    'modal' => [
+                        'message' => 'הודעה',
+                        'save' => 'שמור',
+                        'title' => 'צור בקשה חדשה',
+
+                        'type' => [
+                            'choose' => 'בחר',
+                            'delete' => 'מחק',
+                            'title' => 'סוג',
+                            'update' => 'עדכן',
+                        ],
+                    ],
+
+                    'datagrid' => [
+                        'completed' => 'הושלם',
+                        'date' => 'תאריך',
+                        'declined' => 'נדחה',
+                        'delete' => 'מחק',
+                        'id' => 'מזהה',
+                        'message' => 'הודעה',
+                        'pending' => 'ממתין',
+                        'processing' => 'בעיבוד',
+                        'revoke-btn' => 'לבטל',
+                        'revoked' => 'בוטל',
+                        'status' => 'סטטוס',
+                        'type' => 'סוג',
+                        'update' => 'עדכן',
+                    ],
+                ],
+
+                'pdf' => [
+                    'title' => 'תצוגת חנות ברירת מחדל',
+
+                    'account-info' => [
+                        'dob' => 'תאריך לידה',
+                        'email' => 'אימייל',
+                        'first-name' => 'שם פרטי',
+                        'gender' => 'מגדר',
+                        'last-name' => 'שם משפחה',
+                        'phone' => 'טלפון',
+                        'title' => 'פרטי חשבון',
+                    ],
+
+                    'address-info' => [
+                        'address' => 'כתובת',
+                        'address1' => 'כתובת 1',
+                        'address2' => 'כתובת 2',
+                        'city' => 'עיר',
+                        'company' => 'חברה',
+                        'country' => 'מדינה',
+                        'first-name' => 'שם פרטי',
+                        'last-name' => 'שם משפחה',
+                        'phone' => 'טלפון',
+                        'postcode' => 'מיקוד',
+                        'state' => 'מדינה',
+                        'title' => 'פרטי כתובת',
+                        'vat-id' => 'מספר מע"מ',
+                    ],
+
+                    'order-info' => [
+                        'amount' => 'סכום',
+                        'order-id' => 'מזהה הזמנה',
+                        'product-name' => 'שם המוצר',
+                        'qty' => 'כמות',
+                        'shipping' => 'משלוח',
+                        'sku' => 'מק"ט',
+                        'status' => 'סטטוס',
+                        'title' => 'פרטי הזמנה',
+                        'type' => 'סוג',
+                    ],
+                ],
+            ],
+
+            'rma' => [
+                'index' => [
+                    'title' => 'RMA',
+                    'action' => 'פעולה',
+
+                    'datagrid' => [
+                        'id' => 'מזהה RMA',
+                        'order-ref' => 'אסמכתת הזמנה',
+                        'rma-status' => 'סטטוס הבקשה',
+                        'create' => 'נוצר בתאריך',
+                        'quantity' => 'כמות',
+                    ],
+                ],
+
+                'create' => [
+                    'action' => 'פעולה',
+                    'sku' => 'SKU',
+                    'price' => 'מחיר',
+                    'current-order-quantity' => 'כמות הזמנה נוכחית',
+                    'product-already-raw' => 'כל הפריטים של מוצר זה כבר התבקשו להחזרה/ביטול',
+                    'resolution-type' => 'סוג פתרון',
+                    'select' => 'בחר',
+                    'return' => 'החזרה/החזר',
+                    'cancel-items' => 'ביטול פריטים',
+                    'product-delivery-status' => 'סטטוס משלוח',
+                    'package-condition' => 'מצב החבילה',
+                    'open' => 'פתוח',
+                    'packed' => 'ארוז',
+                    'return-pickup-address' => 'כתובת איסוף להחזרה',
+                    'return-pickup-time' => 'זמן איסוף להחזרה',
+                    'morning' => 'בוקר (10–13)',
+                    'afternoon' => 'אחר הצהריים (14–17)',
+                    'evening' => 'ערב (18–21)',
+                    'images' => 'תמונות',
+                ],
+
+                'view' => [
+                    'id' => 'מזהה RMA',
+                    'enter-message' => 'הזן את ההודעה כאן',
+                    'add-attachments' => 'הוסף קבצים מצורפים',
+                    'send-message-btn' => 'שלח הודעה',
+                    'attachment' => 'קובץ מצורף',
+                    'download' => 'הורדה',
+                    'allowed-file-types' => 'סוגי קבצים מותרים',
+                    'remove' => 'הסר',
+                ],
+
+                'terms' => [
+                    'terms' => 'אני מסכים לתנאים ולהגבלות',
+                    'read' => 'קרא תנאים והגבלות',
+                ],
+            ],
+        ],
+    ],
+
+    'components' => [
+        'accordion' => [
+            'default-content' => 'תוכן ברירת מחדל',
+            'default-header' => 'כותרת ברירת מחדל',
+        ],
+
+        'drawer' => [
+            'default-toggle' => 'מתג ברירת מחדל',
+        ],
+
+        'media' => [
+            'index' => [
+                'add-attachments' => 'הוסף קבצים מצורפים',
+                'add-image' => 'הוסף תמונה/וידאו',
+                'invalid-file-type' => 'סוג הקובץ שנבחר אינו מותר.',
+            ],
+        ],
+
+        'layouts' => [
+            'header' => [
+                'desktop' => [
+                    'top' => [
+                        'default-locale' => 'שפת ברירת מחדל',
+                    ],
+
+                    'bottom' => [
+                        'all' => 'הכל',
+                        'back-button' => 'חזרה לתפריט הראשי',
+                        'bagisto' => 'באגיסטו',
+                        'categories' => 'קטגוריות',
+                        'compare' => 'השווה',
+                        'dropdown-text' => 'ניהול עגלה, הזמנות ורשימת משאלות',
+                        'logout' => 'התנתקות',
+                        'orders' => 'הזמנות',
+                        'profile' => 'פרופיל',
+                        'search' => 'חיפוש',
+                        'search-text' => 'חפש מוצרים כאן',
+                        'sign-in' => 'התחברות',
+                        'sign-up' => 'הרשמה',
+                        'submit' => 'שלח',
+                        'welcome' => 'ברוך הבא',
+                        'welcome-guest' => 'ברוך הבא אורח',
+                        'wishlist' => 'רשימת משאלות',
+                    ],
+                ],
+
+                'mobile' => [
+                    'account' => 'חשבון',
+                    'back-button' => 'חזרה לתפריט הראשי',
+                    'bagisto' => 'באגיסטו',
+                    'compare' => 'השווה',
+                    'currencies' => 'מטבעות',
+                    'dropdown-text' => 'ניהול עגלה, הזמנות ורשימת משאלות',
+                    'locales' => 'שפות',
+                    'login' => 'התחברות או הרשמה',
+                    'logout' => 'התנתקות',
+                    'orders' => 'הזמנות',
+                    'profile' => 'פרופיל',
+                    'search' => 'חיפוש',
+                    'search-text' => 'חפש מוצרים כאן',
+                    'sign-in' => 'התחברות',
+                    'sign-up' => 'הרשמה',
+                    'welcome' => 'ברוך הבא',
+                    'welcome-guest' => 'ברוך הבא אורח',
+                    'wishlist' => 'רשימת משאלות',
+                ],
+            ],
+
+            'webmcp' => [
+                'add-to-wishlist' => 'הוסף מוצר לרשימת המשאלות של הלקוח לפי שם.',
+                'add-to-wishlist-query' => 'שם המוצר או מפתח ה-URL להוספה לרשימת המשאלות.',
+                'proceed-to-checkout' => 'פתח את עמוד התשלום כדי להתחיל בביצוע הזמנה של הפריטים בעגלה.',
+                'search-products' => 'חפש מוצרים בקטלוג החנות לפי מילת מפתח ופתח את התוצאות התואמות.',
+                'search-products-query' => 'מילות המפתח או שם המוצר לחיפוש בקטלוג.',
+                'subscribe-newsletter' => 'רשום כתובת אימייל לניוזלטר של החנות.',
+                'subscribe-newsletter-email' => 'כתובת האימייל להרשמה לניוזלטר.',
+                'view-cart' => 'פתח את עמוד עגלת הקניות כדי שהלקוח יוכל לעיין במוצרים שהוסיף.',
+                'view-product' => 'פתח את עמוד הפרטים של מוצר לפי שם המוצר.',
+                'view-product-query' => 'שם המוצר או מפתח ה-URL לפתיחה.',
+                'view-wishlist' => 'פתח את עמוד רשימת המשאלות כדי לעיין במוצרים השמורים של הלקוח.',
+            ],
+
+            'footer' => [
+                'about-us' => 'אודותנו',
+                'contact-us' => 'צור קשר',
+                'currency' => 'מטבע',
+                'customer-service' => 'שירות לקוחות',
+                'email' => 'אימייל',
+                'footer-content' => 'תוכן תחתית הדף',
+                'footer-text' => '© זכויות יוצרים 2010 - :current_year, Webkul Software (רשומה בהודו). כל הזכויות שמורות.',
+                'locale' => 'אזור',
+                'newsletter-text' => 'הכנסו לרשימת התפוצה שלנו וקבלו עדכונים והצעות מרשימות!',
+                'order-return' => 'הזמנה והחזרה',
+                'payment-policy' => 'מדיניות תשלום',
+                'privacy-cookies-policy' => 'מדיניות פרטיות ועוגיות',
+                'shipping-policy' => 'מדיניות משלוחים',
+                'subscribe' => 'הרשם',
+                'subscribe-newsletter' => 'הרשמו לרשימת התפוצה',
+                'subscribe-stay-touch' => 'הירשמו לעדכונים ונשארו מעודכנים.',
+                'whats-new' => 'מה חדש',
+            ],
+
+            'cookie' => [
+                'index' => [
+                    'privacy-policy' => 'מדיניות פרטיות',
+                    'reject' => 'דחה',
+                    'accept' => 'קבל',
+                    'learn-more-and-customize' => 'למד עוד והתאם אישית',
+                ],
+
+                'consent' => [
+                    'your-cookie-consent-preferences' => 'העדפות הסכמת העוגיות שלך',
+                    'save-and-continue' => 'שמור והמשך',
+                    'strictly-necessary' => 'הכרחי בהחלט',
+                    'basic-interactions' => 'אינטראקציות ותפקודים בסיסיים',
+                    'experience-enhancement' => 'שיפור חווית משתמש',
+                    'measurements' => 'מדידה',
+                    'targeting-and-advertising' => 'מיקוד ופרסום',
+                ],
+            ],
+        ],
+
+        'datagrid' => [
+            'toolbar' => [
+                'length-of' => ':length של',
+                'results' => ':total תוצאות',
+                'selected' => ':total נבחרו',
+
+                'mass-actions' => [
+                    'must-select-a-mass-action' => 'עליך לבחור פעולה כוללת.',
+                    'must-select-a-mass-action-option' => 'עליך לבחור אפשרות לפעולה כוללת.',
+                    'no-records-selected' => 'לא נבחרו רשומות.',
+                    'select-action' => 'בחר פעולה',
+                ],
+
+                'search' => [
+                    'title' => 'חיפוש',
+                ],
+
+                'filter' => [
+                    'apply-filter' => 'החל מסננים',
+                    'title' => 'סינון',
+
+                    'dropdown' => [
+                        'select' => 'בחר',
+
+                        'searchable' => [
+                            'at-least-two-chars' => 'הקלד לפחות 2 תווים...',
+                            'no-results' => 'לא נמצאו תוצאות...',
+                        ],
+                    ],
+
+                    'custom-filters' => [
+                        'clear-all' => 'נקה הכל',
+                    ],
+                ],
+            ],
+
+            'table' => [
+                'actions' => 'פעולות',
+                'next-page' => 'עמוד הבא',
+                'no-records-available' => 'אין רשומות זמינות.',
+                'of' => 'מתוך :total רשומות',
+                'page-navigation' => 'ניווט בעמודים',
+                'page-number' => 'מספר עמוד',
+                'previous-page' => 'עמוד קודם',
+                'showing' => 'מציג :firstItem',
+                'to' => 'עד :lastItem',
+            ],
+        ],
+
+        'modal' => [
+            'default-content' => 'תוכן ברירת מחדל',
+            'default-header' => 'כותרת ברירת מחדל',
+
+            'confirm' => [
+                'agree-btn' => 'הסכם',
+                'disagree-btn' => 'אי הסכמה',
+                'message' => 'האם אתה בטוח שברצונך לבצע פעולה זו?',
+                'title' => 'האם אתה בטוח?',
+            ],
+        ],
+
+        'products' => [
+            'card' => [
+                'add-to-cart' => 'הוסף לעגלה',
+                'add-to-compare' => 'הוסף לרשימת ההשוואה',
+                'add-to-compare-success' => 'הפריט נוסף לרשימת ההשוואה בהצלחה.',
+                'add-to-wishlist' => 'הוסף לרשימת המשאלות',
+                'already-in-compare' => 'הפריט כבר נמצא ברשימת ההשוואה.',
+                'new' => 'חדש',
+                'review-description' => 'הפוך לראשון שמבקר במוצר זה',
+                'sale' => 'מבצע',
+            ],
+
+            'carousel' => [
+                'next' => 'הבא',
+                'previous' => 'הקודם',
+                'view-all' => 'צפה בהכול',
+            ],
+
+            'ratings' => [
+                'title' => 'דירוגים',
+            ],
+        ],
+
+        'range-slider' => [
+            'max-range' => 'טווח מרבי',
+            'min-range' => 'טווח מינימלי',
+            'range' => 'טווח:',
+        ],
+
+        'carousel' => [
+            'image-slide' => 'שקופית תמונה',
+            'next' => 'הבא',
+            'previous' => 'הקודם',
+        ],
+
+        'quantity-changer' => [
+            'decrease-quantity' => 'הפחת כמות',
+            'increase-quantity' => 'הגדל כמות',
+            'remove-item' => 'הסר פריט',
+        ],
+    ],
+
+    'products' => [
+        'prices' => [
+            'grouped' => [
+                'starting-at' => 'החל מ-',
+            ],
+
+            'configurable' => [
+                'as-low-as' => 'החל מ-',
+            ],
+        ],
+
+        'sort-by' => [
+            'title' => 'מיין לפי',
+        ],
+
+        'view' => [
+            'type' => [
+                'simple' => [
+                    'customizable-options' => [
+                        'none' => 'אין',
+                        'total-amount' => 'סכום כולל',
+                    ],
+                ],
+
+                'configurable' => [
+                    'select-options' => 'אנא בחר אפשרות',
+                    'select-above-options' => 'אנא בחר אפשרויות למעלה',
+                ],
+
+                'bundle' => [
+                    'none' => 'אין',
+                    'total-amount' => 'סכום כולל',
+                ],
+
+                'downloadable' => [
+                    'links' => 'קישורים',
+                    'sample' => 'דוגמה',
+                    'samples' => 'דוגמאות',
+                ],
+
+                'grouped' => [
+                    'name' => 'שם',
+                ],
+
+                'booking' => [
+                    'location' => 'מיקום',
+                    'view-on-map' => 'צפה במפה',
+
+                    'cancellation-not-allowed' => [
+                        'title' => 'ביטול אינו מורשה',
+                        'description' => 'לאחר ביצוע ההזמנה, לא ניתן לבטל אותה. אנא בדקו את הפרטים בקפידה לפני התשלום.',
+                    ],
+
+                    'default' => [
+                        'slot-duration-in-minutes' => ':minutes דקות',
+                        'slot-duration' => 'משך זמן',
+                    ],
+
+                    'appointment' => [
+                        'closed' => 'סגור',
+                        'see-details' => 'ראה פרטים',
+                        'slot-duration' => 'משך זמן',
+                        'slot-duration-in-minutes' => ':minutes דקות',
+                        'today-availability' => 'זמינות היום',
+                    ],
+
+                    'event' => [
+                        'book-your-ticket' => 'הזמן כרטיס',
+                        'title' => 'אירוע ב-:',
+                        'total-price' => 'מחיר כולל',
+                        'summary-title' => 'ההזמנה שלך',
+                        'ticket-line' => ':name (:count × :price)',
+                        'base-fee-line' => 'דמי בסיס (:count × :price)',
+                        'ticket' => 'כרטיס',
+                        'tickets' => 'כרטיסים',
+                        'total' => 'סך הכל',
+                        'select-tickets-hint' => 'בחר את כמויות הכרטיסים כדי לראות את הסכום הכולל.',
+                        'starting-from' => 'החל מ-',
+                        'base-fee-note' => 'כולל דמי בסיס + הכרטיס הזול ביותר. הסכום הכולל מתעדכן לפי בחירת הכרטיסים.',
+                    ],
+
+                    'rental' => [
+                        'choose-rent-option' => 'בחר אפשרות השכרה',
+                        'daily-basis' => 'בסיס יומי',
+                        'from' => 'מ',
+                        'hourly-basis' => 'בסיס שעתי',
+                        'rent-an-item' => 'השכר פריט',
+                        'select-date' => 'בחר תאריך',
+                        'select-rent-time' => 'בחר זמן השכרה',
+                        'select-slot' => 'בחר משבצת',
+                        'select-time-slot' => 'בחר משבצת זמן',
+                        'slot' => 'משבצת',
+                        'no-slots-available' => 'אין משבצות זמינות',
+                        'to' => 'עד',
+                        'summary-title' => 'ההשכרה שלך',
+                        'base-rental-fee' => 'דמי השכרה בסיסיים',
+                        'daily-rate-line' => 'תעריף יומי (:count × :rate)',
+                        'hourly-rate-line' => 'תעריף שעתי (:count × :rate)',
+                        'day' => 'יום',
+                        'days' => 'ימים',
+                        'hour' => 'שעה',
+                        'hours' => 'שעות',
+                        'total' => 'סך הכל',
+                        'select-dates-hint' => 'בחר את תאריכי ההשכרה כדי לראות את הסכום הכולל.',
+                        'starting-from' => 'החל מ-',
+                        'rental-fee-note' => 'כולל דמי בסיס + תעריף השכרה מינימלי. הסכום הכולל מתעדכן לפי משך הזמן שנבחר.',
+                    ],
+
+                    'table' => [
+                        'book-a-table' => 'הזמן שולחן',
+                        'closed' => 'סגור',
+                        'slot-duration' => 'משך זמן',
+                        'slot-duration-in-minutes' => ':minutes דקות',
+                        'slots-for-all-days' => 'הצג לכל הימים',
+                        'special-notes' => 'בקשה/הערות מיוחדות',
+                        'today-availability' => 'זמינות היום',
+                    ],
+
+                    'slots' => [
+                        'book-an-appointment' => 'הזמן פגישה',
+                        'date' => 'תאריך',
+                        'no-slots-available' => 'אין משבצות זמינות',
+                        'select-slot' => 'בחר משבצת',
+                        'title' => 'משבצת',
+                    ],
+                ],
+            ],
+
+            'gallery' => [
+                'product-image' => 'תמונת המוצר',
+                'thumbnail-image' => 'תמונה ממוזערת',
+            ],
+
+            'reviews' => [
+                'attachments' => 'קבצים מצורפים',
+                'cancel' => 'ביטול',
+                'comment' => 'תגובה',
+                'customer-review' => 'ביקורות לקוחות',
+                'empty-review' => 'לא נמצאו ביקורות, היה הראשון לכתוב ביקורת על מוצר זה',
+                'failed-to-upload' => 'התמונה נכשלה בהעלאה',
+                'load-more' => 'טען עוד',
+                'name' => 'שם',
+                'rating' => 'דירוג',
+                'ratings' => 'דירוגים',
+                'submit-review' => 'שלח ביקורת',
+                'success' => 'ביקורת נשלחה בהצלחה.',
+                'title' => 'כותרת',
+                'translate' => 'תרגום',
+                'translating' => 'מתרגם...',
+                'write-a-review' => 'כתוב ביקורת',
+            ],
+
+            'contact-us' => [
+                'about' => 'שלח לנו הודעה ונחזור אליך בהקדם האפשרי',
+                'desc' => 'מה על דעתך?',
+                'describe-here' => 'תיאור כאן',
+                'email' => 'אימייל',
+                'message' => 'הודעה',
+                'name' => 'שם',
+                'phone-number' => 'מספר טלפון',
+                'submit' => 'שלח',
+                'title' => 'צור קשר',
+            ],
+
+            'add-to-cart' => 'הוסף לעגלת הקניות',
+            'add-to-compare' => 'המוצר התווסף להשוואה.',
+            'add-to-wishlist' => 'הוסף לרשימת המשאלות',
+            'additional-information' => 'מידע נוסף',
+            'already-in-compare' => 'המוצר כבר נמצא בהשוואה.',
+            'buy-now' => 'קנה עכשיו',
+            'compare' => 'השוואה',
+            'description' => 'תיאור',
+            'related-product-title' => 'מוצרים דומים',
+            'review' => 'ביקורות',
+            'tax-inclusive' => 'כולל מס',
+            'up-sell-title' => 'מצאנו מוצרים אחרים שעשויים לעניין אותך!',
+        ],
+
+        'type' => [
+            'abstract' => [
+                'offers' => 'קנה :qty במחיר של :price לכל יחידה וחסוך :discount',
+            ],
+        ],
+
+        'booking' => [
+            'closed' => 'סגור',
+
+            'cart' => [
+                'booking-from' => 'הזמנה מ',
+                'booking-location' => 'מיקום',
+                'booking-till' => 'הזמנה עד',
+                'charged-per' => 'חיוב לפי',
+                'daily' => 'בסיס יומי',
+                'event-from' => 'אירוע מ',
+                'event-location' => 'מיקום האירוע',
+                'event-ticket' => 'כרטיס אירוע',
+                'event-till' => 'אירוע עד',
+                'guest-limit' => 'מגבלת אורחים לשולחן',
+                'hourly' => 'בסיס שעתי',
+
+                'integrity' => [
+                    'event' => [
+                        'expired' => 'האירוע הזה פג תוקף.',
+                        'exceeds_available' => 'רק :qty כרטיסים זמינים לאירוע זה.',
+                        'sold_out' => 'הכרטיסים לאירוע זה אזלו.',
+                        'ticket_exceeds_available' => 'רק :qty כרטיסי ":ticket" זמינים.',
+                        'ticket_sold_out' => 'כרטיסי ":ticket" אזלו.',
+                    ],
+
+                    'missing_options' => 'אפשרויות חסרות עבור מוצר זה.',
+                    'inventory_warning' => 'הכמות המבוקשת אינה זמינה, אנא נסה שוב מאוחר יותר.',
+                    'rental_unavailable' => 'מוצר השכרה זה אינו זמין לתאריכים שנבחרו.',
+                    'select_hourly_duration' => 'בחר משך זמן של שעה אחת לפחות.',
+                ],
+
+                'per-guest' => 'לאורח',
+                'per-table' => 'לשולחן',
+                'rent-from' => 'השכרה מ',
+                'rent-till' => 'השכרה עד',
+                'rent-type' => 'סוג השכרה',
+                'renting_type' => 'סוג השכרה',
+                'special-note' => 'בקשה/הערות מיוחדות',
+            ],
+
+            'per-ticket-price' => ':price לכל כרטיס',
+        ],
+    ],
+
+    'categories' => [
+        'filters' => [
+            'clear-all' => 'נקה הכל',
+            'filter' => 'מסנן',
+            'filters' => 'מסננים:',
+
+            'search' => [
+                'load-more' => 'טען עוד',
+                'loading' => 'טוען...',
+                'no-options-available' => 'אין אפשרויות זמינות.',
+                'results-info' => 'מציג :currentCount מתוך :totalCount אפשרויות',
+                'title' => 'חיפוש',
+            ],
+
+            'sort' => 'מיון',
+        ],
+
+        'toolbar' => [
+            'grid' => 'גריד',
+            'list' => 'רשימה',
+            'show' => 'הצג',
+        ],
+
+        'view' => [
+            'empty' => 'אין מוצרים זמינים בקטגוריה זו',
+            'load-more' => 'טען עוד',
+        ],
+    ],
+
+    'search' => [
+        'title' => 'אלה התוצאות עבור : :query',
+        'suggest' => 'חפש במקום זאת',
+        'results' => 'תוצאות חיפוש',
+
+        'images' => [
+            'index' => [
+                'only-images-allowed' => 'מותרות רק תמונות (.jpeg, .jpg, .png, ..).',
+                'search' => 'חיפוש',
+                'size-limit-error' => 'שגיאת הגבלת גודל',
+                'something-went-wrong' => 'משהו השתבש, נסה שוב מאוחר יותר.',
+            ],
+
+            'results' => [
+                'analyzed-keywords' => 'מילות מפתח שנבדקו:',
+            ],
+        ],
+    ],
+
+    'compare' => [
+        'already-added' => 'הפריט כבר נמצא ברשימת ההשוואה',
+        'delete-all' => 'מחק הכל',
+        'empty-text' => 'אין לך פריטים ברשימת ההשוואה שלך',
+        'item-add-success' => 'הפריט התווסף לרשימת ההשוואה בהצלחה',
+        'product-compare' => 'השוואת מוצרים',
+        'remove-all-success' => 'הפריטים נמחקו בהצלחה',
+        'remove-error' => 'משהו השתבש, אנא נסה שוב מאוחר יותר',
+        'remove-success' => 'הפריט הוסר בהצלחה',
+        'title' => 'השוואת מוצרים',
+    ],
+
+    'checkout' => [
+        'success' => [
+            'info' => 'נשלח אליך אימייל עם פרטי ההזמנה ומידע לגבי מעקב.',
+            'order-id-info' => 'מספר הזמנתך הוא #:order_id',
+            'thanks' => 'תודה על ההזמנה שלך!',
+            'title' => 'ההזמנה בוצעה בהצלחה',
+        ],
+
+        'cart' => [
+            'continue-to-checkout' => 'המשך לתשלום',
+            'illegal' => 'הכמות לא יכולה להיות פחות מאחד.',
+            'inactive' => 'הפריט הושבת ונמחק מהעגלה.',
+            'inactive-add' => 'פריט לא פעיל לא ניתן להוסיף לעגלה.',
+            'inventory-warning' => 'הכמות המבוקשת אינה זמינה, אנא נסה שוב מאוחר יותר.',
+            'item-add-to-cart' => 'הפריט התווסף בהצלחה',
+            'minimum-order-message' => 'סכום הזמנה מינימלי הוא ',
+            'missing-fields' => 'חלק מהשדות החובה חסרים עבור מוצר זה.',
+            'missing-options' => 'אפשרויות חסרות עבור מוצר זה.',
+            'paypal-payment-cancelled' => 'התשלום בפייפאל בוטל.',
+            'qty-missing' => 'לפחות מוצר אחד צריך להיות בו יותר מכמות 1.',
+            'return-to-shop' => 'חזרה לחנות',
+            'rule-applied' => 'חוק הסל הוחל',
+            'select-hourly-duration' => 'בחר משך זמן של שעה אחת.',
+            'specify-payment-method' => 'אנא ציין שיטת תשלום.',
+            'specify-shipping-method' => 'אנא ציין שיטת משלוח.',
+            'success-remove' => 'הפריט הוסר בהצלחה מהעגלה.',
+            'suspended-account-message' => 'החשבון שלך הושבת.',
+
+            'index' => [
+                'bagisto' => 'בַּגִּיסְטוֹ',
+                'cart' => 'עגלת קניות',
+                'continue-shopping' => 'המשך לקנות',
+                'empty-product' => 'אין לך מוצר בעגלה שלך.',
+                'excl-tax' => 'לא כולל מס:',
+                'home' => 'דף הבית',
+                'items-selected' => ':count פריטים נבחרו',
+                'move-to-wishlist' => 'העבר לרשימת המשאלות',
+                'move-to-wishlist-success' => 'הפריטים שנבחרו הועברו בהצלחה לרשימת המשאלות.',
+                'price' => 'מחיר',
+                'product-name' => 'שם המוצר',
+                'quantity' => 'כמות',
+                'quantity-update' => 'עדכון הכמות בוצע בהצלחה',
+                'remove' => 'הסר',
+                'remove-selected-success' => 'הפריטים שנבחרו הוסרו בהצלחה מהעגלה.',
+                'see-details' => 'צפה בפרטים',
+                'select-all' => 'בחר הכל',
+                'select-cart-item' => 'בחר פריט בסל',
+                'tax' => 'מס',
+                'total' => 'סה"כ',
+                'update-cart' => 'עדכון עגלת הקניות',
+                'view-cart' => 'צפה בעגלת הקניות',
+
+                'cross-sell' => [
+                    'title' => 'אפשרויות נוספות',
+                ],
+            ],
+
+            'mini-cart' => [
+                'continue-to-checkout' => 'המשך לתשלום',
+                'empty-cart' => 'עגלת הקניות שלך ריקה',
+                'excl-tax' => 'לא כולל מס:',
+                'offer-on-orders' => 'קבל עד 30% הנחה על הזמנה הראשונה שלך',
+                'remove' => 'הסר',
+                'see-details' => 'צפה בפרטים',
+                'shopping-cart' => 'עגלת קניות',
+                'subtotal' => 'סכום ביניים',
+                'view-cart' => 'צפה בעגלת הקניות',
+            ],
+
+            'summary' => [
+                'cart-summary' => 'סיכום העגלה',
+                'delivery-charges' => 'דמי משלוח',
+                'delivery-charges-excl-tax' => 'דמי משלוח (לא כולל מס)',
+                'delivery-charges-incl-tax' => 'דמי משלוח (כולל מס)',
+                'discount-amount' => 'סכום ההנחה',
+                'grand-total' => 'סכום כולל',
+                'included' => 'כלול',
+                'excl-tax' => 'ללא מס:',
+                'incl-tax' => 'כולל מס:',
+                'items-discount' => 'הנחת פריטים',
+                'shipping-discount' => 'הנחת משלוח',
+                'place-order' => 'בצע הזמנה',
+                'proceed-to-checkout' => 'המשך לתשלום',
+                'sub-total' => 'סיכום ביניים',
+                'sub-total-excl-tax' => 'סיכום ביניים (לא כולל מס)',
+                'sub-total-incl-tax' => 'סיכום ביניים (כולל מס)',
+                'tax' => 'מס',
+
+                'estimate-shipping' => [
+                    'country' => 'מדינה',
+                    'info' => 'הזן את היעד שלך כדי לקבל חישוב של משלוח ומס.',
+                    'postcode' => 'מיקוד',
+                    'select-country' => 'בחר מדינה',
+                    'select-state' => 'בחר מדינה',
+                    'state' => 'מדינה',
+                    'title' => 'חישוב משלוח ומס',
+                ],
+            ],
+        ],
+
+        'onepage' => [
+            'address' => [
+                'add-new' => 'הוסף כתובת חדשה',
+                'add-new-address' => 'הוסף כתובת חדשה',
+                'back' => 'חזור',
+                'billing-address' => 'כתובת לחיוב',
+                'check-billing-address' => 'כתובת החיוב חסרה.',
+                'check-shipping-address' => 'כתובת המשלוח חסרה.',
+                'city' => 'עיר',
+                'company-name' => 'שם החברה',
+                'confirm' => 'אישור',
+                'country' => 'מדינה',
+                'email' => 'אימייל',
+                'first-name' => 'שם פרטי',
+                'last-name' => 'שם משפחה',
+                'postcode' => 'מיקוד',
+                'proceed' => 'המשך',
+                'same-as-billing' => 'השתמש באותה כתובת למשלוח?',
+                'save' => 'שמור',
+                'save-address' => 'שמור בספר הכתובות',
+                'select-country' => 'בחר מדינה',
+                'select-state' => 'בחר מדינה',
+                'shipping-address' => 'כתובת למשלוח',
+                'state' => 'מדינה',
+                'street-address' => 'כתובת',
+                'telephone' => 'טלפון',
+                'title' => 'כתובת',
+                'vat-id' => 'מספר עוסק מורשה',
+            ],
+
+            'index' => [
+                'checkout' => 'תשלום',
+                'home' => 'דף הבית',
+            ],
+
+            'payment' => [
+                'payment-method' => 'אמצעי תשלום',
+            ],
+
+            'shipping' => [
+                'shipping-method' => 'אמצעי משלוח',
+            ],
+
+            'summary' => [
+                'cart-summary' => 'סיכום עגלת הקניות',
+                'delivery-charges' => 'דמי משלוח',
+                'delivery-charges-excl-tax' => 'דמי משלוח (לא כולל מס)',
+                'delivery-charges-incl-tax' => 'דמי משלוח (כולל מס)',
+                'discount-amount' => 'סכום ההנחה',
+                'excl-tax' => 'לא כולל מס:',
+                'grand-total' => 'סכום כולל',
+                'included' => 'כלול',
+                'incl-tax' => 'כולל מס:',
+                'items-discount' => 'הנחת פריטים',
+                'shipping-discount' => 'הנחת משלוח',
+                'place-order' => 'בצע הזמנה',
+                'price_and_qty' => ':price × :qty',
+                'processing' => 'מעבד',
+                'sub-total' => 'סיכום ביניים',
+                'sub-total-excl-tax' => 'סיכום ביניים (לא כולל מס)',
+                'sub-total-incl-tax' => 'סיכום ביניים (כולל מס)',
+                'tax' => 'מס',
+
+                'tax-included' => 'מס כבר כלול:', ],
+        ],
+
+        'coupon' => [
+            'already-applied' => 'קוד הקופון כבר הוחל.',
+            'applied' => 'הקופון הוחל',
+            'apply' => 'החל קופון',
+            'apply-issue' => 'לא ניתן להחיל את קוד הקופון.',
+            'button-title' => 'החל',
+            'code' => 'קוד קופון',
+            'discount' => 'הנחת קופון',
+            'enter-your-code' => 'הזן את קודך',
+            'error' => 'משהו השתבש',
+            'invalid' => 'קוד קופון אינו חוקי.',
+            'remove' => 'הסר קופון',
+            'subtotal' => 'סכום ביניים',
+            'success-apply' => 'קוד הקופון הוחל בהצלחה.',
+            'usage-limit-exceeded' => 'קוד קופון זה הגיע למגבלת השימוש שלו ואינו תקף יותר.',
+        ],
+
+        'login' => [
+            'email' => 'אימייל',
+            'password' => 'סיסמה',
+            'title' => 'התחברות',
+        ],
+    ],
+
+    'home' => [
+        'contact' => [
+            'about' => 'שלח לנו הודעה ונחזור אליך בהקדם האפשרי',
+            'desc' => 'מה על דעתך?',
+            'describe-here' => 'תיאור כאן',
+            'email' => 'אימייל',
+            'message' => 'הודעה',
+            'name' => 'שם',
+            'phone-number' => 'מספר טלפון',
+            'submit' => 'שלח',
+            'title' => 'צור קשר',
+        ],
+
+        'index' => [
+            'categories-carousel' => 'קרוסלת קטגוריות',
+            'image-carousel' => 'קרוסלת תמונות',
+            'offer' => 'קבל עד 40% הנחה על ההזמנה הראשונה שלך, קנה עכשיו',
+            'product-carousel' => 'קרוסלת מוצרים',
+            'resend-verify-email' => 'שלח מחדש את מייל האימות',
+            'verify-email' => 'אמת את חשבון האימייל שלך',
+        ],
+
+        'thanks-for-contact' => 'תודה על פנייתך אלינו עם הערות ושאלותיך. אנחנו נשיב לך בהקדם האפשרי.',
+    ],
+
+    'partials' => [
+        'pagination' => [
+            'next-page' => 'עמוד הבא',
+            'pagination-showing' => 'מציג :firstItem עד :lastItem מתוך :total רשומות',
+            'prev-page' => 'עמוד קודם',
+        ],
+    ],
+
+    'errors' => [
+        'go-to-home' => 'עבור לדף הבית',
+
+        '404' => [
+            'description' => 'אופס! הדף שאתה מחפש בחופשה. נראה שלא הצלחנו למצוא את מה שחיפשת.',
+            'title' => 'דף לא נמצא 404',
+        ],
+
+        '401' => [
+            'description' => 'אופס! נראה שאין לך הרשאה לגשת לדף זה. נראה שיש לך חוסר באישורים הנדרשים.',
+            'title' => 'אין אישור 401',
+        ],
+
+        '403' => [
+            'description' => 'אופס! דף זה אסור. נראה שאין לך הרשאות הדרושות להצגת התוכן הזה.',
+            'title' => 'הוגן 403',
+        ],
+
+        '500' => [
+            'description' => 'אופס! משהו השתבש. נראה שיש לנו בעיות בטעינת הדף שאתה מחפש.',
+            'title' => 'שגיאת שרת פנימית 500',
+        ],
+
+        '503' => [
+            'description' => 'אופס! נראה שאנחנו מועדפים למטה לתחזוקה זמנית. אנא נסה שוב מאוחר יותר.',
+            'title' => 'שירות לא זמין 503',
+        ],
+    ],
+
+    'layouts' => [
+        'address' => 'כתובת',
+        'downloadable-products' => 'מוצרים להורדה',
+        'gdpr-request' => 'בקשות GDPR',
+        'my-account' => 'החשבון שלי',
+        'orders' => 'הזמנות',
+        'profile' => 'פרופיל',
+        'reviews' => 'ביקורות',
+        'rma' => 'RMA',
+        'wishlist' => 'רשימת משאלות',
+    ],
+
+    'subscription' => [
+        'already' => 'כבר רשום לניוזלטר שלנו.',
+        'subscribe-success' => 'נרשמת בהצלחה לניוזלטר שלנו.',
+        'unsubscribe-success' => 'בוצע הסרה מהניוזלטר שלנו בהצלחה.',
+    ],
+
+    'emails' => [
+        'dear' => 'יקר :customer_name',
+        'thanks' => 'אם אתה זקוק לעזרה בכל סוג שהוא, אנא פנה אלינו ב-<a href=":link" style=":style">:email</a>.<br/>תודה!',
+
+        'customers' => [
+            'registration' => [
+                'credentials-description' => 'החשבון שלך נוצר. פרטי החשבון שלך מופיעים למטה:',
+                'description' => 'חשבונך נוצר כעת בהצלחה ואתה יכול להתחבר באמצעות כתובת האימייל ופרטי הסיסמה שלך. לאחר ההתחברות, תוכל לגשת לשירותים נוספים, כולל בדיקת הזמנות קודמות, רשימת המשאלות ועריכת פרטי החשבון שלך.',
+                'greeting' => 'ברוך הבא ותודה שנרשמת!',
+                'password' => 'סיסמה',
+                'sign-in' => 'התחבר',
+                'subject' => 'רישום לקוח חדש',
+                'username-email' => 'שם משתמש/אימייל',
+            ],
+
+            'forgot-password' => [
+                'description' => 'אתה מקבל אימייל זה מכיוון שקיבלנו בקשה לאיפוס סיסמה עבור החשבון שלך.',
+                'greeting' => 'שכחת סיסמה!',
+                'reset-password' => 'איפוס סיסמה',
+                'subject' => 'אימייל איפוס סיסמה',
+            ],
+
+            'update-password' => [
+                'description' => 'אתה מקבל אימייל זה מכיוון שעדכנת את הסיסמה שלך.',
+                'greeting' => 'סיסמה עודכנה בהצלחה!',
+                'subject' => 'עדכון סיסמה',
+            ],
+
+            'verification' => [
+                'description' => 'אנא לחץ על הלחצן למטה כדי לאמת את כתובת האימייל שלך.',
+                'greeting' => 'ברוך הבא!',
+                'subject' => 'אימייל אימות לחשבון',
+                'verify-email' => 'אמת כתובת אימייל',
+            ],
+
+            'commented' => [
+                'description' => 'ההודעה היא - :note',
+                'subject' => 'הוספת הערה חדשה',
+            ],
+
+            'subscribed' => [
+                'description' => 'מזל טוב וברוך הבא לקהילת הניוזלטר שלנו. תהנה מהעדכונים והדילים האחרונים שלנו!',
+                'greeting' => 'ברוך הבא לניוזלטר שלנו!',
+                'subject' => 'הצטרפת לניוזלטר שלנו',
+                'unsubscribe' => 'הסר מהרשימה',
+            ],
+
+            'gdpr' => [
+                'new-delete-request' => 'בקשה חדשה למחיקת נתונים',
+                'new-update-request' => 'בקשה חדשה לעדכון נתונים',
+
+                'new-request' => [
+                    'delete-summary' => 'סיכום בקשת המחיקה',
+                    'message' => 'הודעה : ',
+                    'request-status' => 'סטטוס הבקשה : ',
+                    'request-type' => 'סוג הבקשה : ',
+                    'update-summary' => 'סיכום בקשת העדכון',
+                ],
+
+                'status-update' => [
+                    'subject' => 'הבקשה GDPR שלך עודכנה',
+                    'summary' => 'סטטוס הבקשה GDPR שלך עודכן',
+                    'request-status' => 'סטטוס הבקשה:',
+                    'request-type' => 'סוג הבקשה:',
+                    'message' => 'הודעה:',
+                ],
+            ],
+
+            'reminder' => [
+                'already-paid' => 'אם כבר ביצעת את התשלום, אנא התעלם מהודעה זו.',
+                'invoice-overdue' => 'זוהי תזכורת ידידותית כי החשבונית שלך באיחור. אנו מבקשים ממך לבצע את התשלום בהקדם האפשרי.',
+                'subject' => 'תזכורת חשבונית',
+            ],
+        ],
+
+        'contact-us' => [
+            'contact-from' => 'באמצעות טופס יצירת קשר באתר',
+            'reply-to-mail' => 'אנא השב למייל זה.',
+            'reach-via-phone' => 'בנוסף, תוכל ליצור קשר איתנו בטלפון במספר',
+            'inquiry-from' => 'שאילתה מ',
+            'to' => 'כדי ליצור קשר עם',
+        ],
+
+        'orders' => [
+            'created' => [
+                'greeting' => 'תודה על ההזמנה שלך :order_id שנעשתה בתאריך :created_at',
+                'subject' => 'אישור הזמנה חדשה',
+                'summary' => 'סיכום ההזמנה',
+                'title' => 'אישור הזמנה!',
+            ],
+
+            'invoiced' => [
+                'greeting' => 'החשבונית שלך מס #:invoice_id עבור ההזמנה :order_id נוצרה בתאריך :created_at',
+                'subject' => 'אישור חשבונית חדשה',
+                'summary' => 'סיכום החשבונית',
+                'title' => 'אישור חשבונית!',
+            ],
+
+            'shipped' => [
+                'greeting' => 'ההזמנה שלך :order_id שנעשתה בתאריך :created_at נשלחה',
+                'subject' => 'אישור משלוח חדש',
+                'summary' => 'סיכום המשלוח',
+                'title' => 'הזמנה שנשלחה!',
+            ],
+
+            'refunded' => [
+                'greeting' => 'ההחזר נפתח עבור :order_id שנעשתה בתאריך :created_at',
+                'subject' => 'אישור החזר חדש',
+                'summary' => 'סיכום ההחזר',
+                'title' => 'הזמנה מוחזרת!',
+            ],
+
+            'canceled' => [
+                'greeting' => 'ההזמנה שלך :order_id שנעשתה בתאריך :created_at בוטלה',
+                'subject' => 'הזמנה מבוטלת חדשה',
+                'summary' => 'סיכום ההזמנה',
+                'title' => 'הזמנה בוטלה!',
+            ],
+
+            'commented' => [
+                'subject' => 'הוספת הערה חדשה',
+                'title' => 'הוספת הערה חדשה להזמנתך :order_id שנעשתה בתאריך :created_at',
+            ],
+
+            'billing-address' => 'כתובת לחיוב',
+            'carrier' => 'מוביל',
+            'contact' => 'צור קשר',
+            'discount' => 'הנחה',
+            'excl-tax' => 'לא כולל מס: ',
+            'grand-total' => 'סכום כולל',
+            'name' => 'שם',
+            'payment' => 'תשלום',
+            'price' => 'מחיר',
+            'qty' => 'כמות',
+            'shipping' => 'משלוח',
+            'shipping-address' => 'כתובת למשלוח',
+            'shipping-handling' => 'משלוח וטיפול',
+            'shipping-handling-excl-tax' => 'משלוח וטיפול (לא כולל מס)',
+            'shipping-handling-incl-tax' => 'משלוח וטיפול (כולל מס)',
+            'sku' => 'SKU',
+            'subtotal' => 'סיכום ביניים',
+            'subtotal-excl-tax' => 'סיכום ביניים (לא כולל מס)',
+            'subtotal-incl-tax' => 'סיכום ביניים (כולל מס)',
+            'tax' => 'מס',
+            'tracking-number' => 'מספר מעקב : :tracking_number',
+        ],
+    ],
+
+    'rma' => [
+        'customer' => [
+            'delivered' => 'נמסר',
+            'menu-name' => 'RMA',
+            'offer' => 'עד 40% הנחה ברכישת ההזמנה הראשונה שלך',
+            'rma-qty' => 'כמות RMA',
+            'shop-now' => 'קנה עכשיו',
+            'submit-req' => 'שלח בקשה',
+            'title' => 'RMA',
+            'undelivered' => 'לא נמסר',
+
+            'create' => [
+                'cancel' => 'בטל',
+                'create-btn' => 'שמור',
+                'enter-order-id' => 'הזן מזהה הזמנה',
+                'exchange-window' => 'חלון החלפה',
+                'heading' => 'בקשת RMA חדשה',
+                'image' => 'תמונה',
+                'images' => 'תמונות',
+                'information' => 'מידע נוסף',
+                'item-ordered' => 'פריט הוזמן',
+                'no-record' => 'לא נמצאו רשומות!',
+                'not-allowed' => 'RMA לא מותר עבור הזמנה בהמתנה',
+                'order-status' => 'מצב הזמנה',
+                'orders' => 'הזמנות',
+                'price' => 'מחיר',
+                'product' => 'מוצר',
+                'product-name' => 'שם המוצר',
+                'quantity' => 'כמות',
+                'reason' => 'סיבה',
+                'reopen-request' => 'פתח בקשה מחדש',
+                'resolution' => 'בחר פתרון',
+                'return-window' => 'חלון החזרה',
+                'rma-not-available-quotes' => 'הפריט לא זמין ל-RMA',
+                'save' => 'שמור',
+                'search-order' => 'חפש הזמנה',
+                'sku' => 'SKU',
+                'view' => 'צפה ב-RMA',
+            ],
+        ],
+
+        'guest' => [
+            'view' => [
+                'close-rma' => 'סגור RMA:',
+                'order-status' => 'מצב הזמנה:',
+                'rma-status' => 'מצב RMA:',
+                'title' => 'RMA',
+            ],
+
+            'create' => [
+                'cancel' => 'בטל',
+                'create-btn' => 'שמור',
+                'enter-order-id' => 'הזן מזהה הזמנה',
+                'heading' => 'בקשת RMA חדשה',
+                'image' => 'תמונה',
+                'images' => 'תמונות',
+                'information' => 'מידע נוסף',
+                'item-ordered' => 'פריט הוזמן',
+                'not-allowed' => 'RMA לא מותר עבור הזמנה בהמתנה',
+                'order-status' => 'מצב הזמנה',
+                'orders' => 'הזמנות',
+                'price' => 'מחיר',
+                'product-name' => 'שם המוצר',
+                'product' => 'מוצר',
+                'quantity' => 'כמות',
+                'reason' => 'סיבה',
+                'reopen-request' => 'פתח בקשה מחדש',
+                'resolution' => 'בחר פתרון',
+                'rma-not-available-quotes' => 'הפריט לא זמין ל-RMA',
+                'save' => 'שמור',
+                'search-order' => 'חפש הזמנה',
+                'sku' => 'SKU',
+                'title' => 'RMA',
+            ],
+
+            'index' => [
+                'create' => 'בקש RMA חדשה',
+                'delete' => 'מחק',
+                'edit' => 'ערוך',
+                'guest' => 'פאנל RMA לאורחים',
+                'heading' => 'פאנל RMA לאורחים',
+                'update' => 'עדכן',
+                'view' => 'צפה',
+            ],
+        ],
+
+        'customer-rma-index' => [
+            'cancel' => 'בטל',
+            'create' => 'צור',
+            'delete' => 'מחק',
+            'edit' => 'ערוך',
+            'guest' => 'פאנל RMA לאורחים',
+            'heading' => 'RMA',
+            'update' => 'עדכן',
+            'view' => 'צפה',
+        ],
+
+        'validation' => [
+            'close-rma' => 'אשר',
+            'information' => 'מידע נוסף',
+            'order-id' => 'בחירת הזמנה',
+            'order-status' => 'מצב הזמנה',
+            'orders' => 'הזמנות',
+            'resolution' => 'פתרון',
+            'select-orders' => 'בחר הזמנה',
+        ],
+
+        'conversation-texts' => [
+            'by' => 'על ידי',
+            'customer' => 'לקוח',
+            'no-record' => 'לא נמצאו רשומות!',
+            'on' => 'ב',
+            'seller' => 'מוכר',
+        ],
+
+        'default-option' => [
+            'others' => 'אחר',
+            'please-select-value' => 'בחר ערך',
+            'select-order-status' => 'בחר מצב הזמנה',
+            'select-order' => 'בחר הזמנה',
+            'select-quantity' => 'בחר כמות',
+            'select-reason' => 'בחר סיבה',
+            'select-resolution' => 'בחר פתרון',
+            'select-seller' => 'בחר מוכר',
+        ],
+
+        'view-customer-rma' => [
+            'additional-information' => 'מידע נוסף:',
+            'admin' => 'מנהל',
+            'cancel-order' => 'ביטול הזמנה',
+            'change-rma-status' => 'שנה מצב RMA',
+            'close-rma' => 'סגור RMA :',
+            'conversations' => 'שיחות',
+            'guest' => 'אורח',
+            'heading' => 'פרטי RMA',
+            'images' => 'תמונות:',
+            'items-request' => 'פריטים בקשת RMA',
+            'items-requested-for-rma' => 'פריטים בקשת RMA',
+            'order-id' => 'מספר הזמנה:',
+            'refund-details' => 'פרטי החזר',
+            'refund-offline-btn' => 'החזרה לא מקוונת',
+            'refundable-amount' => 'סכום המזומן הניתן להחזר',
+            'resolution-type' => 'סוג הפתרון:',
+            'rma' => 'RMA',
+            'save-btn' => 'שמור',
+            'send-message-btn' => 'שלח',
+            'send-message' => 'שלח הודעה',
+            'status-details' => 'פרטי המצב',
+            'status-quotes' => 'אנא אשר לסמן כפתור פתרון',
+            'status-reopen' => 'בדוק כדי לפתוח מחדש',
+            'status' => 'מצב',
+            'term' => 'אישור תחום המרקות נדרש',
+            'you' => 'מנהל',
+        ],
+
+        'view-guest-rma' => [
+            'additional-information' => 'מידע נוסף:',
+            'admin' => 'מנהל',
+            'close-rma' => 'סגור RMA',
+            'conversations' => 'שיחות',
+            'guest' => 'אתה',
+            'images' => 'תמונות',
+            'items-request' => 'פריטים בקשת RMA',
+            'order-id' => ' מספר הזמנה:',
+            'refund-offline-btn' => 'החזרה לא מקוונת',
+            'resolution-type' => 'סוג הפתרון:',
+            'rma' => 'RMA',
+            'save-btn' => 'שמור',
+            'send-message-btn' => 'שלח',
+            'send-message' => 'שלח הודעה',
+            'status-details' => 'פרטי המצב',
+            'status-quotes' => 'אנא אשר לסמן כפתור פתרון.',
+            'status' => 'מצב',
+            'term' => 'אישור תחום המרקות נדרש',
+        ],
+
+        'view-guest-rma-content' => [
+            'full-amount' => 'סכום מלא',
+            'order-status' => 'מצב הזמנה :',
+            'request-on' => 'בקשה ב :',
+            'rma-status' => 'מצב RMA :',
+        ],
+
+        'view-customer-rma-content' => [
+            'admin-status' => 'מצב מנהל:',
+            'close-rma' => 'סגור RMA',
+            'consignment-no' => 'מספר המשלוח:',
+            'enter-message' => 'הזן הודעה',
+            'full-amount' => 'סכום מלא',
+            'order-details' => 'פרטי הזמנה',
+            'order-status' => 'מצב הזמנה :',
+            'partial-amount' => 'סכום חלקי',
+            'refundable-amount' => 'סכום המזומן הניתן להחזר',
+            'request-on' => 'בקשה ב :',
+            'rma-status' => 'מצב RMA :',
+            'seller' => 'מוכר',
+            'total-refundable-amount' => 'סכום המזומן הכולל להחזרה:',
+        ],
+
+        'table-heading' => [
+            'image' => 'תמונה',
+            'order-qty' => 'כמות הזמנה',
+            'price' => 'מחיר',
+            'product-name' => 'שם מוצר',
+            'reason' => 'סיבה',
+            'resolution-type' => 'סוג פתרון',
+            'rma-qty' => 'כמות RMA',
+            'sku' => 'קוד מוצר',
+        ],
+
+        'guest-users' => [
+            'button-text' => 'התחבר',
+            'email' => 'אימייל',
+            'heading' => 'פאנל התחברות אורחים',
+            'logout' => 'התנתקות אורח',
+            'order-id' => 'מספר הזמנה',
+            'title' => 'התחברות אורחים',
+        ],
+
+        'mail' => [
+            'customer-rma-create' => [
+                'additional-information' => 'מידע נוסף :',
+                'greeting' => 'ביקשת RMA חדש להזמנה :order_id.',
+                'heading' => 'בקשת RMA',
+                'hello' => 'יקר :name',
+                'order-id' => 'מספר הזמנה :',
+                'order-status' => 'סטטוס הזמנה :',
+                'requested-rma-product' => 'מוצר RMA המבוקש:',
+                'resolution-type' => 'סוג פתרון :',
+                'rma-id' => 'מזהה RMA :',
+                'summary' => 'סיכום של RMA הזמנה',
+                'thank-you' => 'תודה',
+            ],
+
+            'customer-data-table-heading' => [
+                'product-name' => 'שם המוצר',
+                'qty' => 'כמות',
+                'reason' => 'סיבה',
+                'sku' => 'SKU',
+            ],
+
+            'customer-conversation' => [
+                'subject' => 'הודעה חדשה',
+                'heading' => 'יקר :name,',
+                'message' => 'הודעה',
+                'process' => 'בקשת ההחזרה שלך נמצאת בתהליך.',
+                'quotes' => 'יש הודעה חדשה מהקונה',
+                'solved' => 'סטטוס RMA שונה לפתרון על ידי הלקוח.',
+            ],
+
+            'seller-conversation' => [
+                'subject' => 'הודעה חדשה',
+                'heading' => 'יקר :name',
+                'message' => 'הודעה',
+                'quotes' => 'יש הודעה חדשה מהאדמין',
+                'title' => 'הודעה התקבלה!',
+            ],
+
+            'status' => [
+                'heading' => 'יקר :name',
+                'quotes' => 'הסטטוס של RMA שלך השתנה על ידי המוכר',
+                'rma-id' => 'מזהה RMA',
+                'status-change' => 'הסטטוס של :id השתנה על ידי המוכר',
+                'status' => 'סטטוס',
+                'title' => 'עדכון סטטוס!',
+                'your-rma-id' => 'המזהה שלך RMA',
+            ],
+        ],
+
+        'status' => [
+            'status-name' => [
+                'accept' => 'אושר',
+                'awaiting' => 'ממתין להחזרה',
+                'canceled' => 'הבקשה בוטלה',
+                'declined' => 'הבקשה נדחתה',
+                'dispatched-package' => 'ההחזרה בדרך',
+                'item-canceled' => 'פריט בוטל',
+                'not-received-package-yet' => 'טרם התקבלה החבילה',
+                'pending' => 'ממתין לבדיקה',
+                'processing' => 'מעבד',
+                'received-package' => 'הוחזר כספית',
+                'solved' => 'פתרון נמצא',
+            ],
+
+            'status-quotes' => [
+                'declined-admin' => 'RMA נדחה על ידי המנהל.',
+                'declined-buyer' => 'RMA נדחה על ידי הלקוח.',
+                'solved-by-admin' => 'RMA פתר על ידי המנהל.',
+                'solved' => 'RMA פתור.',
+            ],
+        ],
+
+        'response' => [
+            'already-cancel' => 'סטטוס RMA כבר בוטל.',
+            'cancel-success' => 'סטטוס RMA בוטל בהצלחה.',
+            'create-success' => 'הבקשה נוצרה בהצלחה.',
+            'creation-error' => 'לא ניתן לעדכן את סטטוס ה-RMA מכיוון שהחשבונית להזמנה זו לא נוצרה.',
+            'invalid-item' => 'פריט ההזמנה שנבחר אינו תקין.',
+            'invalid-order' => 'ההזמנה שנבחרה אינה תקינה.',
+            'permission-denied' => 'אתה מחובר',
+            'rma-disabled' => 'RMA מנוטרל עבור מוצר זה',
+            'reopen-not-allowed' => 'פתיחה מחדש של בקשת RMA זו אינה מותרת.',
+            'send-message' => ':name נשלח בהצלחה.',
+            'update-success' => ':name עודכן בהצלחה.',
+        ],
+    ],
+
+    'eu_withdrawal' => [
+        'button' => [
+            'withdraw' => 'ביטול חוזה',
+            'view_existing' => 'הצגת בקשת הביטול שלך',
+        ],
+
+        'guest_dropdown' => [
+            'link' => 'ביטול חוזה',
+        ],
+
+        'lookup' => [
+            'page_title' => 'ביטול חוזה',
+            'heading' => 'ביטול החוזה שלך',
+            'intro' => 'הזן את מספר ההזמנה ואת כתובת הדוא"ל שבה השתמשת בעת התשלום. נשלח לך קישור להגשת בקשת הביטול.',
+            'order_number' => 'מספר הזמנה',
+            'email' => 'כתובת דוא"ל',
+            'submit' => 'שלח לי את קישור הביטול',
+            'sent_notice' => 'אם קיימת הזמנה תואמת, שלחנו זה עתה את קישור הביטול לכתובת הדוא"ל. הקישור יהיה תקף למשך 24 שעות.',
+            'legal_note' => 'בהתאם לדירקטיבה האירופית 2011/83/EU (כפי שתוקנה), יש לך זכות סטטוטורית לבטל את החוזה תוך 14 ימים. דרכי ביטול נוספות — לרבות הצהרה בכתב אל שירות הלקוחות שלנו — נותרות בתוקף.',
+        ],
+
+        'form' => [
+            'page_title' => 'אישור בקשת הביטול שלך',
+            'heading' => 'אישור ביטול החוזה',
+            'legal_notice_title' => 'זוהי הצהרה מחייבת מבחינה משפטית',
+            'legal_effect' => 'בהגשת טופס זה אתה מממש את זכותך הסטטוטורית לבטל את הזמנה ‎#:order_id. ההצהרה תופסת תוקף משפטי ברגע ההגשה.',
+            'order_summary' => 'הזמנה',
+            'order_total' => 'סך הכל',
+            'order_items' => 'פריטים',
+            'placed_on' => 'בוצעה בתאריך :date',
+            'reason_label' => 'סיבה',
+            'reason_optional' => '(לא חובה)',
+            'reason_help' => 'אינך מחויב למסור סיבה. כל מה שתכתוב כאן יתועד ברישומי הביטול ויישלח לסוחר.',
+            'reason_placeholder' => 'לדוגמה: "שיניתי את דעתי", "הפריט אינו תואם לתיאור", או השאר ריק.',
+            'submit' => 'הגשת הביטול',
+            'cancel' => 'ביטול וחזרה',
+        ],
+
+        'confirmation' => [
+            'page_title' => 'אישור ביטול',
+            'heading' => 'בקשת הביטול שלך התקבלה',
+            'heading_received' => 'בקשת הביטול שלך התקבלה',
+            'heading_refunded' => 'ההחזר הכספי שלך בוצע',
+            'heading_declined' => 'בקשת הביטול שלך נדחתה',
+            'intro' => 'תיעדנו את הצהרתך. עמוד זה ודוא"ל האישור ששלחנו לך זה עתה משמשים שניהם כאישור על גבי אמצעי קבוע.',
+            'intro_received' => 'תיעדנו את הצהרתך. עמוד זה ודוא"ל האישור ששלחנו לך זה עתה משמשים שניהם כאישור על גבי אמצעי קבוע.',
+            'intro_refunded' => 'הסוחר עיבד את ההחזר הכספי שלך. ההחזר אמור להגיע בקרוב לאמצעי התשלום המקורי שלך.',
+            'intro_declined' => 'הסוחר חולק על זכאותך להחזר כספי על פי הצהרה זו. עיין בפרטים שלהלן לקבלת הסיבה שניתנה ולאפשרויות הנותרות לך.',
+            'received_at' => 'מועד קבלה',
+            'reference' => 'מספר אסמכתא',
+            'copy_reference' => 'העתקת מספר אסמכתא',
+            'reference_copied' => 'מספר האסמכתא הועתק ללוח.',
+            'order' => 'הזמנה',
+            'email' => 'דוא"ל',
+            'reason' => 'סיבה',
+            'status' => 'סטטוס',
+            'status_received' => 'התקבל',
+            'status_refunded' => 'הוחזר',
+            'status_declined' => 'נדחה',
+            'print' => 'הדפסה',
+            'next_steps_title' => 'מה קורה בהמשך',
+            'step_received' => 'הצהרתך התקבלה ותועדה.',
+            'step_email' => 'דוא"ל אישור נשלח לתיבת הדואר שלך.',
+            'step_refund' => 'ההחזר הכספי יבוצע תוך 14 ימים.',
+            'step_refund_done' => 'ההחזר הכספי בוצע.',
+            'step_declined' => 'בקשת הביטול נדחתה על ידי הסוחר.',
+            'declined_reason_label' => 'הסיבה שניתנה על ידי הסוחר',
+            'declined_notice' => 'יתר התרופות המשפטיות העומדות לרשותך לפי דיני הגנת הצרכן באיחוד האירופי שמורות לך. אם אינך מסכים עם החלטה זו, פנה ישירות לסוחר.',
+            'refund_notice' => 'ההחזר יבוצע באותו אמצעי תשלום שבו השתמשת בעסקה המקורית, אלא אם הסכמת במפורש אחרת.',
+            'email_sent' => 'דוא"ל האישור נשלח.',
+            'email_pending' => 'לא הצלחנו לשלוח את דוא"ל האישור באופן מיידי; הצוות שלנו יבצע מעקב. אנא שמור עמוד זה כקבלה.',
+            'durable_medium_notice' => 'עמוד זה הוא הקבלה שלך. ניתן לשמור או להדפיס אותו.',
+        ],
+
+        'emails' => [
+            'confirmation' => [
+                'subject' => 'אישור ביטול החוזה שלך — הזמנה :order_id',
+                'title' => 'בקשת ביטול התקבלה',
+                'title_received' => 'בקשת ביטול התקבלה',
+                'title_refunded' => 'בוצע החזר כספי',
+                'title_declined' => 'בקשת הביטול נדחתה',
+                'greeting' => 'שלום,',
+                'intro' => 'קיבלנו את הצהרתך על ביטול החוזה עבור הזמנה ‎#:order_id. חותמת הזמן של הקבלה התקפה משפטית מתועדת להלן.',
+                'intro_received' => 'קיבלנו את הצהרתך על ביטול החוזה עבור הזמנה ‎#:order_id. חותמת הזמן של הקבלה התקפה משפטית מתועדת להלן.',
+                'intro_refunded' => 'ההחזר הכספי עבור הזמנה ‎#:order_id בוצע. ההחזר אמור להגיע בקרוב לאמצעי התשלום המקורי שלך.',
+                'intro_declined' => 'הסוחר חולק על זכאותך להחזר כספי עבור הזמנה ‎#:order_id על פי הצהרה זו. הסיבה שניתנה מופיעה להלן.',
+                'summary' => 'סיכום הביטול',
+                'received_at' => 'מועד קבלה',
+                'reference' => 'מספר אסמכתא',
+                'order' => 'הזמנה',
+                'email' => 'דוא"ל',
+                'reason' => 'סיבה שניתנה',
+                'declined_reason' => 'סיבת הדחייה',
+                'refund_notice' => 'במקרים שבהם מגיע החזר, אנו מבצעים אותו באותו אמצעי תשלום שבו השתמשת בעסקה המקורית, תוך 14 ימים מהתאריך המצוין לעיל, אלא אם הסכמת במפורש אחרת.',
+                'footer' => 'הודעה זו מהווה את האישור על גבי אמצעי קבוע הנדרש על פי סעיף 11a לדירקטיבה 2011/83/EU (כפי שתוקנה בדירקטיבה (EU) 2023/2673). אנא שמור אותה לתיעודך.',
+            ],
+
+            'guest_link' => [
+                'subject' => 'קישור הביטול שלך',
+                'title' => 'קישור הביטול שלך',
+                'intro' => 'השתמש בקישור שלהלן כדי להגיש את בקשת הביטול עבור הזמנה :order_id. הקישור תקף למשך 24 שעות.',
+                'button' => 'פתיחת טופס הביטול',
+                'expiry' => 'הקישור יפוג תוך 24 שעות. אם לא ביקשת דוא"ל זה, ניתן להתעלם ממנו בבטחה.',
+            ],
+        ],
+    ],
+];
