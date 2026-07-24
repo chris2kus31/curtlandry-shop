@@ -18,6 +18,7 @@
         "ext-pdo_mysql": "*",
         "ext-tokenizer": "*",
         "astrotomic/laravel-translatable": "^11.16",
+        "bagisto/bagisto-api": "^2.4",
         "barryvdh/laravel-dompdf": "^2.0.0|^3.0",
         "diglactic/laravel-breadcrumbs": "^10.0",
         "elasticsearch/elasticsearch": "^8.10",
@@ -106,7 +107,8 @@
             "Webkul\\Stripe\\": "packages/Webkul/Stripe/src",
             "Webkul\\Tax\\": "packages/Webkul/Tax/src",
             "Webkul\\Theme\\": "packages/Webkul/Theme/src",
-            "Webkul\\User\\": "packages/Webkul/User/src"
+            "Webkul\\User\\": "packages/Webkul/User/src",
+            "Webkul\\GraphQL\\": "packages/Webkul/GraphQL/src"
         }
     },
     "autoload-dev": {
@@ -139,17 +141,20 @@
         "laravel": {
             "dont-discover": [
                 "intervention/image",
-                "laravel/socialite"
+                "laravel/socialite",
+                "api-platform/laravel"
             ]
         }
     },
-    "repositories": [{
-        "type": "path",
-        "url": "packages/*/*",
-        "options": {
-            "symlink": true
+    "repositories": [
+        {
+            "type": "path",
+            "url": "packages/*/*",
+            "options": {
+                "symlink": true
+            }
         }
-    }],
+    ],
     "config": {
         "optimize-autoloader": true,
         "preferred-install": "dist",

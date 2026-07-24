@@ -52,4 +52,10 @@ return Application::configure(basePath: dirname(__DIR__))
     })
     ->withExceptions(function (Exceptions $exceptions) {
         //
-    })->create();
+    })
+->withProviders([
+     \ApiPlatform\Laravel\ApiPlatformProvider::class,
+     \ApiPlatform\Laravel\ApiPlatformDeferredProvider::class,
+     \ApiPlatform\Laravel\Eloquent\ApiPlatformEventProvider::class,
+])
+->create();
