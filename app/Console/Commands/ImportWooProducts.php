@@ -47,6 +47,8 @@ class ImportWooProducts extends Command
         {--default-qty=1000 : Stock qty to use when Woo has no tracked stock but the item is "in stock"}
         {--skip-images : Do not download/attach product images}
         {--skip-files : Do not download/attach downloadable files}
+        {--max-file-mb=300 : Re-host downloadable files up to this size (MB); larger files are kept as URL links}
+        {--rehost-remote : Also re-host files on persistent hosts (e.g. S3) instead of keeping them as URL links}
         {--include-bundles : Import fixed-price WC Product Bundles as SIMPLE products (contents listed in the description)}
         {--dry-run : Parse, classify and report without writing anything}';
 
@@ -683,19 +685,50 @@ class ImportWooProducts extends Command
     /**
      * Download a remote file into Bagisto's private disk for downloadable links.
      *
+     * Streams to disk (constant memory — never buffers the body) and refuses to
+     * re-host files that are either (a) on a persistent host such as S3, or
+     * (b) larger than --max-file-mb. In those cases it returns null so the caller
+     * keeps the original URL as a `url`-type link instead. This is what prevents
+     * OOM on the multi-GB teaching MP4s that already live on S3.
+     *
      * @return array{path: string, name: string}|null
      */
     protected function storePrivateFile(string $url, int $productId): ?array
     {
-        $contents = $this->fetch($url);
+        $maxBytes = max(1, (int) $this->option('max-file-mb')) * 1024 * 1024;
 
-        if ($contents === null) {
+        // Files already on a persistent host (S3) stay as URL links — no re-host.
+        if ($this->isPersistentHost($url) && ! $this->option('rehost-remote')) {
+            $this->line("    keeping as URL link (persistent host): {$url}");
+
+            return null;
+        }
+
+        // Skip re-hosting oversized files up front (avoids pulling multi-GB blobs).
+        $size = $this->remoteSize($url);
+
+        if ($size !== null && $size > $maxBytes) {
+            $this->warn('    keeping as URL link ('.round($size / 1048576).' MB > '.$this->option('max-file-mb').' MB cap): '.$url);
+
             return null;
         }
 
         $name = basename(parse_url($url, PHP_URL_PATH) ?: 'file');
         $tmp = tempnam(sys_get_temp_dir(), 'woo_dl_');
-        file_put_contents($tmp, $contents);
+
+        if (! $this->streamDownload($url, $tmp)) {
+            @unlink($tmp);
+
+            return null;
+        }
+
+        // Guard for hosts that sent no Content-Length: drop if it blew the cap.
+        if (filesize($tmp) > $maxBytes) {
+            $this->warn('    keeping as URL link (downloaded '.round(filesize($tmp) / 1048576).' MB > cap): '.$url);
+            @unlink($tmp);
+
+            return null;
+        }
 
         $path = Storage::disk('private')->putFileAs(
             'product_downloadable_links/'.$productId,
@@ -706,6 +739,68 @@ class ImportWooProducts extends Command
         @unlink($tmp);
 
         return ['path' => $path, 'name' => $name];
+    }
+
+    /**
+     * True if the file is hosted somewhere that survives the WordPress
+     * decommission (e.g. S3) — such files are referenced by URL, not re-hosted.
+     */
+    protected function isPersistentHost(string $url): bool
+    {
+        $host = strtolower((string) parse_url($url, PHP_URL_HOST));
+
+        return str_contains($host, 'amazonaws.com')
+            || str_contains($host, 'cloudfront.net')
+            || str_contains($host, 'digitaloceanspaces.com');
+    }
+
+    /**
+     * Best-effort remote size via HEAD (Content-Length). Null if unknown.
+     */
+    protected function remoteSize(string $url): ?int
+    {
+        try {
+            $response = Http::withHeaders([
+                'User-Agent' => 'Mozilla/5.0 (compatible; CLM-Migration/1.0; +https://curtlandry.com)',
+                'Accept'     => '*/*',
+            ])->timeout(30)->head($url);
+
+            if (! $response->successful()) {
+                return null;
+            }
+
+            $len = $response->header('Content-Length');
+
+            return ($len === null || $len === '') ? null : (int) $len;
+        } catch (\Throwable) {
+            return null;
+        }
+    }
+
+    /**
+     * Stream a remote URL straight to a local path without buffering the body in
+     * memory (Guzzle `sink`). Returns true on a successful (2xx) download.
+     */
+    protected function streamDownload(string $url, string $path): bool
+    {
+        try {
+            $response = Http::withHeaders([
+                'User-Agent' => 'Mozilla/5.0 (compatible; CLM-Migration/1.0; +https://curtlandry.com)',
+                'Accept'     => '*/*',
+            ])->withOptions(['sink' => $path])->timeout(300)->get($url);
+
+            if (! $response->successful()) {
+                $this->warn("    download failed HTTP {$response->status()}: {$url}");
+
+                return false;
+            }
+
+            return true;
+        } catch (\Throwable $e) {
+            $this->warn("    download error: {$url} ({$e->getMessage()})");
+
+            return false;
+        }
     }
 
     /**
