@@ -1,0 +1,4 @@
+wp_user_id,email,password_hash,created_at,first_name,last_name,billing_first_name,billing_last_name,billing_company,billing_address_1,billing_address_2,billing_city,billing_state,billing_postcode,billing_country,billing_phone,shipping_first_name,shipping_last_name,shipping_company,shipping_address_1,shipping_address_2,shipping_city,shipping_state,shipping_postcode,shipping_country
+900001,migration-test-wp@curtlandry.com,$wp$2y$10$RB.Z2rSMJhO1MK4NZnv5K.F6FI4WiI/hYodq0IPV6bmczOJMsLUPe,"2020-01-15 10:00:00",Test,WpUser,Test,WpUser,,"100 Test St","Suite 1",Tulsa,OK,74136,US,9185551001,,,,,,,,,
+900002,migration-test-phpass@curtlandry.com,$P$BjxnoPoTz.9hd87lTmJ.I7pZc.4.Y31,"2016-05-10 09:30:00",Test,PhpassUser,Test,PhpassUser,,"200 Legacy Ave",,Fairland,OK,74343,US,9185551002,,,,,,,,,
+900003,migration-test-md5@curtlandry.com,ecc4208a7778c1d76e7e89c5253128c5,"2014-03-01 08:00:00",Test,Md5User,Test,Md5User,,"300 Old Rd",,Detroit,MI,48201,US,3135551003,,,,,,,,,

@@ -69,7 +69,7 @@ return [
 
     'providers' => [
         'customers' => [
-            'driver' => 'eloquent',
+            'driver' => 'wordpress',
             'model' => Customer::class,
         ],
 

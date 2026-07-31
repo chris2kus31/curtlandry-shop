@@ -2,8 +2,11 @@
 
 namespace App\Providers;
 
+use App\Auth\WordPressEloquentUserProvider;
+use App\Auth\WordPressHasher;
 use Barryvdh\Debugbar\Facades\Debugbar;
 use Illuminate\Support\Facades\Artisan;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\ParallelTesting;
 use Illuminate\Support\Facades\Request;
 use Illuminate\Support\ServiceProvider;
@@ -37,6 +40,15 @@ class AppServiceProvider extends ServiceProvider
     {
         ParallelTesting::setUpTestDatabase(function (string $database, int $token) {
             Artisan::call('db:seed');
+        });
+
+        /**
+         * Custom auth provider used by the "customer" guard. It verifies legacy
+         * WordPress/WooCommerce password hashes and upgrades them to Bagisto's
+         * native bcrypt format on first login (see config/auth.php).
+         */
+        Auth::provider('wordpress', function ($app, array $config) {
+            return new WordPressEloquentUserProvider(new WordPressHasher, $config['model']);
         });
     }
 }
