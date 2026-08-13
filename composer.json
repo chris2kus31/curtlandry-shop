@@ -48,6 +48,8 @@
         "simplesoftwareio/simple-qrcode": "^4.2",
         "spatie/laravel-responsecache": "^7.4",
         "spatie/laravel-sitemap": "^7.3",
+        "spiral/roadrunner-cli": "^2.7",
+        "spiral/roadrunner-http": "^4.1",
         "stevebauman/purify": "^6.3",
         "stripe/stripe-php": "^17.3"
     },

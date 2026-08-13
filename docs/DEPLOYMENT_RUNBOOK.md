@@ -624,6 +624,13 @@ crontab -l
 - **Digital files**: Woo stores downloadable files in `wp-content/uploads` (often protected). Files must be copied into Bagisto storage; access is then granted per customer via Bagisto's downloadable-link-purchased records generated from their migrated orders.
 - Each step gets its own idempotent `woo:import-*` artisan command mirroring the customer importer (dry-run, skip-existing, batched, direct DB inserts to avoid firing events/emails).
 
+> **✅ STAGING RUN COMPLETE (2026-08-13)** — executed on `clm-shop-staging` (CSVs scp'd to `/home/ubuntu/migration/`, code deployed via git pull):
+> 1. **Products:** dry-run matched local exactly (197 import / 375 unpub / 67 excl / 2 no-SKU / 46 deferred) → full import with `--include-bundles`: **205 products / 786 images / 111 re-hosted file links / 0 errors** → `catalog:finish-configurables`: **213 product rows** (2 configurables + 5 variants + Pressing Pause disabled). Large/S3-hosted media kept as **`url`-type links** (see Appendix A). Only failures: **4 Plumbline MP3s** (404 at source — list in `~/migration/products-import.log`; re-source or accept lost).
+> 2. **Customers:** **26,284 + 13,868 addresses** (2 invalid skipped) — matches local.
+> 3. **Orders:** **9,181 orders** (4,222 customer-linked / 4,959 guest), **15,654 items** (15,210 product-linked), **1,124 downloadable-access rows**, 10,210 failed skipped, **0 errors**. (Downloads 1,124 vs 1,195 dry-run projection = guest orders correctly get no per-customer access rows.)
+>
+> Storefront `shop-staging.curtlandry.com` confirmed serving the migrated catalog. **Pending verification:** one real-credential login on the Next.js storefront (`/customer/login`) → My Account → Orders + Downloadable Products (proves seamless password end-to-end).
+
 ---
 
 ### 21.1 Catalog foundation — categories, attributes, tax  `[~] categories auto-handled`
@@ -631,7 +638,7 @@ crontab -l
 - **Attributes + options** (size, color, language, …): only needed for **configurable** products → handled together with the configurable re-export (deferred, see §21.2).
 - **Tax**: Woo tax classes (`standard`, `zero-rate`, …) → Bagisto tax categories. v1 importer leaves `tax_category_id` empty (products import untaxed). **TODO:** create Bagisto tax categories + map before go-live if any catalog items are taxable.
 
-### 21.2 Products — full decommission map  `[x] core importer built · [ ] run · [ ] tickets/subs/configurable/bundle`
+### 21.2 Products — full decommission map  `[x] built · [x] run LOCALLY · [x] run on STAGING (213 rows) · [ ] tickets/subs (parked)`
 
 **Goal:** fully decommission WooCommerce — every Woo item gets a Bagisto-native or custom home. Verified against **Bagisto v2.4.3 (Apr 2026)**, which has seven native product types: simple, virtual, downloadable, grouped, **bundle**, configurable, **booking**.
 
@@ -724,7 +731,7 @@ Native fit: **Bagisto Booking product, "Event" sub-type** — supports Location,
 **⏸ Legacy subscriptions — parked, but here's the answer.**
 These 13 are already **billing live in Stripe** (migrated from Authorize.net). **Rule: do not recreate or re-charge them.** Recommended: a **custom lightweight module** that imports the 13 as records **linked to their existing Stripe subscription IDs** and syncs status via **Stripe webhooks** (`invoice.paid`, `customer.subscription.updated/deleted`) so customers can view/cancel in Bagisto while Stripe keeps billing. Alternative: the official **Laravel eCommerce Recurring Payments & Subscription** extension ($199, Bagisto 2.4.x, Stripe+PayPal) — but it's built for *new* subs on the Blade store, so it still needs a custom Stripe-link import and headless wiring. Net: **custom is the cleaner fit** for these legacy subs.
 
-### 21.3 Customers (+ addresses, seamless passwords)  `[x] built · [x] run LOCALLY · [ ] run on staging`
+### 21.3 Customers (+ addresses, seamless passwords)  `[x] built · [x] run LOCALLY · [x] run on STAGING (26,284)`
 
 **✅ LOCAL RUN DONE (2026-07-30):** 26,284 customers + 13,868 addresses imported from `wp_users.csv` (2 rows skipped for invalid email). Password formats preserved verbatim: **phpass 20,918 · `$wp$` bcrypt 5,366** (all upgrade to bcrypt on first login). Local dataset now = 197 products + 26,284 customers, ready for §21.4 Orders.
 
@@ -799,7 +806,7 @@ php artisan woo:import-customers /path/to/wp_users.csv --dry-run   # review coun
 php artisan woo:import-customers /path/to/wp_users.csv             # ~26k
 ```
 
-### 21.4 Orders — purchase history (orders, items, addresses, payment)  `[x] built · [x] run LOCALLY · [ ] run on staging`
+### 21.4 Orders — purchase history (orders, items, addresses, payment)  `[x] built · [x] run LOCALLY · [x] run on STAGING (9,181)`
 
 **Store is on HPOS** (`woocommerce_custom_orders_table_enabled = yes`) → orders live in `wp_wc_orders` (+ `wp_wc_order_addresses`), items in `wp_woocommerce_order_items(+itemmeta)`.
 
@@ -917,6 +924,38 @@ The store is **headless** (Next.js storefront ↔ Bagisto GraphQL API). Stock Ba
 - [ ] Keap / DW sync (backend event listeners → existing DW API).
 - [ ] QuickBooks (via DW).
 
+## 24. Performance — admin/API speed  `[x] diagnosed · [x] OPcache tuned · [~] Octane installed (cutover pending)`
+
+**Symptom (2026-08-13):** admin feels very slow. Measured on the box itself (no Cloudflare/network): warm TTFB for `/admin/login` ≈ **0.65s** under PHP-FPM.
+
+**Diagnosis — measured, not guessed:**
+
+| Layer | Result | Verdict |
+|---|---|---|
+| `artisan about` | production, debug OFF, config/routes/views cached, Redis for cache/session/queue | ✅ healthy |
+| CPU load / credits | idle (0.03) | ✅ |
+| OPcache (FPM) | was on stock defaults → tuned (below) | **no TTFB change → not the bottleneck** |
+| Profilers (xdebug…) | none loaded | ✅ |
+| Redis | local, ~0.3ms | ✅ |
+| RDS | ~0.9ms/query (first 1.2ms) | ✅ |
+| Composer autoloader | already optimized (13,987 classes) | ✅ |
+| **Octane floor** (`/up`) | **6ms** | framework/server are FAST |
+| Admin login via Octane, warm | **~0.5s** | ❌ cost = Bagisto's per-page admin render pipeline (CPU-bound) |
+| Themed 404 | ~1.3s every hit | same pipeline, uncached |
+| Blade storefront home | 6.9s first → 0.2s | response cache works (real storefront is Next.js anyway) |
+
+**Conclusion:** infra + framework are healthy. ~**0.5s/page is Bagisto admin render CPU** on slow t3 cores; FPM adds ~0.15s boot on top. Octane alone ≈ 25% win on admin, bigger win for the GraphQL API + concurrency.
+
+**Applied on staging:**
+- **OPcache tuning** → `/etc/php/8.3/fpm/conf.d/99-opcache-tuning.ini`: `opcache.enable=1 · memory_consumption=256 · interned_strings_buffer=32 · max_accelerated_files=30000 · validate_timestamps=0 · save_comments=1`. **⚠ Deploys must now `sudo systemctl reload php8.3-fpm`** (timestamps are no longer revalidated).
+- **Octane/RoadRunner completed** — was configured but the binary was never installed/running. `php artisan octane:install --server=roadrunner` → added `spiral/roadrunner-cli` + `spiral/roadrunner-http` to composer (synced to git), downloaded `rr` binary to project root (gitignored).
+
+**Pending:**
+- [ ] Octane as **systemd service** `clm-octane` (`127.0.0.1:8000`, `--workers=4 --max-requests=500`, run as `www-data`) + **nginx cutover** on `clm-shop-api`: `fastcgi_pass` → `proxy_pass http://127.0.0.1:8000` (nginx keeps serving static/storage directly). After cutover, deploys need **`php artisan octane:reload`**.
+- [ ] **Production instance type: m7i.large / c7i.large** (≈1.5–2× single-thread vs t3.large) → admin ≈0.25–0.3s/page. The biggest honest lever; zero code changes.
+- [ ] Optional deep-cut: profile the admin layout hot spots (menu/ACL/translation payload) and cache per role/locale.
+- [ ] `composer audit` — 21 advisories across 4 packages flagged during install; review before go-live.
+
 ---
 
 ## Appendix A — Gotchas & fixes (all encountered on staging)
@@ -947,6 +986,8 @@ The store is **headless** (Next.js storefront ↔ Bagisto GraphQL API). Stock Ba
 
 ## Appendix B — Deploy (subsequent code changes)
 
+> **RULE — one-way flow: LOCAL → git → SERVER.** Never run state-changing commands (`composer require`, `php artisan *:install`, `vendor:publish`, edits) **on the server** — that mutates `composer.json`/lock/config there and creates repo drift (happened once with `octane:install`, cost a cleanup — see §24). The server only ever runs: `git pull`, `composer install`, `migrate`, builds, cache reloads.
+
 🖥️ LOCAL: commit + push. ☁️ SERVER:
 ```bash
 cd /var/www/curtlandry-shop && git pull
@@ -954,6 +995,8 @@ COMPOSER_MEMORY_LIMIT=-1 composer install --no-dev --optimize-autoloader   # if 
 php artisan migrate                                                          # if new migrations
 cd packages/Webkul/Admin && npm run build && cd /var/www/curtlandry-shop    # if admin assets changed
 php artisan optimize
+sudo systemctl reload php8.3-fpm       # REQUIRED: OPcache validate_timestamps=0 (§24) — new code won't load without it
+# php artisan octane:reload            # once Octane serves traffic (§24 cutover)
 # storefront:
 cd /var/www/curtlandry-storefront && git pull && npm ci && npm run build && pm2 restart clm-storefront
 ```
@@ -974,4 +1017,4 @@ cd /var/www/curtlandry-storefront && git pull && npm ci && npm run build && pm2 
 
 ---
 
-_Last updated: after **§21.2 products** work + classification hardening — full **Woo→Bagisto decommission map** verified against Bagisto v2.4.3 (7 native types incl. Booking + Bundle). Built `woo:import-products` (official `ProductRepository`/`CategoryRepository`; simple/virtual/downloadable; images + downloadable files re-hosted; auto-creates categories; idempotent by SKU). **Classification proven locally (dry-run): 197 import** / 375 unpublished / 67 excluded / 46 deferred / 2 no-SKU. Fixed two false-positive exclusions (FooEvents/Tribe meta + `_subscription_price="no"`) that had wrongly dropped ~120 real products — see Appendix A. **Decisions captured:** donations = GiveWP (only stale posts remain, skipped); event tickets → Bagisto **Booking/Event** (parked — headless GraphQL add-to-cart blocked → needs custom cart resolver); legacy subs → **custom Stripe-linked module** (parked — never re-charge). **Blocker:** configurable needs a clean Woo re-export (117 variations: 102 missing attr value, 48 missing SKU; only 4 published parents). §21.3 Customers **RUN + PROVEN LOCALLY** (26,284 customers + 13,868 addresses; phpass/`$wp$` hashes preserved). **§21.2 products RUN + PROVEN LOCALLY** (197 products / 761 images / 0 errors; fixed 4 issues: 2 false-positive exclusions + missing index events + WAF User-Agent + 512M memory). **§21.4 orders + §21.5 digital access BUILT + RUN LOCALLY** (`woo:import-orders`; HPOS export; **9,082** product-orders / 15,547 items / 0 errors; scope = orders w/ a catalog product, failed excluded w/ archive plan; guest orders kept as guest — decided; idempotent; digital-access rows create on staging). **§21.2 BUNDLES DONE** — 8 fixed-price WC bundles imported as **simple products** at the fixed price (`--include-bundles`); catalog **205**. **§21.2 CONFIGURABLES DONE (2026-07-30)** — built via `catalog:finish-configurables` (official `ProductRepository`/`Configurable` code path; admin UI automation abandoned as impractical): Shabbat Box (3 variants, new `candle_holder_finish` attr) + MAPA Hat (2 variants, existing `color`, auto-generated SKUs) + Pressing Pause (simple, **disabled** placeholder — finish price/image/enable in admin). Catalog now **213 rows** (208 parents + 5 variants); orders re-run back-filled **+99 → 9,181 orders**. **Catalog migration complete** (only parked = tickets/subscriptions). **NEXT:** run the whole pipeline on **staging** in dependency order — §21.2 products **with files** → §21.3 customers → §21.4/§21.5 orders. Still to BUILD (parked, custom): tickets → Booking, legacy subs module. Before go-live: **bump order increment_id sequencer** (Appendix A). **§22 payments STRATEGY WRITTEN (2026-07-30):** headless Stripe + PayPal, **reuse GiveWP's existing merchant accounts** (tagged `source=bagisto-store`), both live at launch; thin custom Bagisto payment methods + Next.js Payment Element / PayPal JS SDK + signed idempotent webhooks; build/test on staging with **sandbox keys**, flip to **live only at cutover** (separate workstream — does not block the staging data run). Then §23 integrations._
+_Last updated: after **§21.2 products** work + classification hardening — full **Woo→Bagisto decommission map** verified against Bagisto v2.4.3 (7 native types incl. Booking + Bundle). Built `woo:import-products` (official `ProductRepository`/`CategoryRepository`; simple/virtual/downloadable; images + downloadable files re-hosted; auto-creates categories; idempotent by SKU). **Classification proven locally (dry-run): 197 import** / 375 unpublished / 67 excluded / 46 deferred / 2 no-SKU. Fixed two false-positive exclusions (FooEvents/Tribe meta + `_subscription_price="no"`) that had wrongly dropped ~120 real products — see Appendix A. **Decisions captured:** donations = GiveWP (only stale posts remain, skipped); event tickets → Bagisto **Booking/Event** (parked — headless GraphQL add-to-cart blocked → needs custom cart resolver); legacy subs → **custom Stripe-linked module** (parked — never re-charge). **Blocker:** configurable needs a clean Woo re-export (117 variations: 102 missing attr value, 48 missing SKU; only 4 published parents). §21.3 Customers **RUN + PROVEN LOCALLY** (26,284 customers + 13,868 addresses; phpass/`$wp$` hashes preserved). **§21.2 products RUN + PROVEN LOCALLY** (197 products / 761 images / 0 errors; fixed 4 issues: 2 false-positive exclusions + missing index events + WAF User-Agent + 512M memory). **§21.4 orders + §21.5 digital access BUILT + RUN LOCALLY** (`woo:import-orders`; HPOS export; **9,082** product-orders / 15,547 items / 0 errors; scope = orders w/ a catalog product, failed excluded w/ archive plan; guest orders kept as guest — decided; idempotent; digital-access rows create on staging). **§21.2 BUNDLES DONE** — 8 fixed-price WC bundles imported as **simple products** at the fixed price (`--include-bundles`); catalog **205**. **§21.2 CONFIGURABLES DONE (2026-07-30)** — built via `catalog:finish-configurables` (official `ProductRepository`/`Configurable` code path; admin UI automation abandoned as impractical): Shabbat Box (3 variants, new `candle_holder_finish` attr) + MAPA Hat (2 variants, existing `color`, auto-generated SKUs) + Pressing Pause (simple, **disabled** placeholder — finish price/image/enable in admin). Catalog now **213 rows** (208 parents + 5 variants); orders re-run back-filled **+99 → 9,181 orders**. **Catalog migration complete** (only parked = tickets/subscriptions). **NEXT:** run the whole pipeline on **staging** in dependency order — §21.2 products **with files** → §21.3 customers → §21.4/§21.5 orders. Still to BUILD (parked, custom): tickets → Booking, legacy subs module. Before go-live: **bump order increment_id sequencer** (Appendix A). **§22 payments STRATEGY WRITTEN (2026-07-30):** headless Stripe + PayPal, **reuse GiveWP's existing merchant accounts** (tagged `source=bagisto-store`), both live at launch; thin custom Bagisto payment methods + Next.js Payment Element / PayPal JS SDK + signed idempotent webhooks; build/test on staging with **sandbox keys**, flip to **live only at cutover** (separate workstream — does not block the staging data run). **✅ STAGING DATA RUN COMPLETE (2026-08-13)** — see §21.0 callout: 213 product rows / 26,284 customers / 9,181 orders / 1,124 download grants, 0 errors; only follow-ups = 4 Plumbline MP3s (404 at source), Pressing Pause admin finish, real-credential login test on Next.js. **§24 PERFORMANCE** diagnosed (admin ≈0.5s/page = Bagisto render CPU; framework floor 6ms via Octane) — OPcache tuned + RoadRunner installed; **pending: Octane systemd+nginx cutover, prod instance type m7i/c7i**. **PINNED:** staff Bagisto **admin accounts** (separate from customer logins — create in Admin → Settings → Users with same emails, fresh passwords; waiting on staff list). Then §23 integrations._
