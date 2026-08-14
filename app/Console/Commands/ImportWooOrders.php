@@ -536,7 +536,9 @@ class ImportWooOrders extends Command
             'tax_amount_invoiced'      => $paid ? $lineTax : 0,
             'base_tax_amount_invoiced' => $paid ? $lineTax : 0,
             'product_id'     => $product['id'] ?? null,
-            'product_type'   => $product ? $type : null,
+            // Morph CLASS column (what Bagisto's OrderItem->product morphTo resolves) —
+            // NOT the product type string; that lives in `type` above.
+            'product_type'   => $product ? \Webkul\Product\Models\Product::class : null,
             'order_id'       => $orderId,
             'additional'     => json_encode($additional),
             'created_at'     => $createdAt,
