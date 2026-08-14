@@ -4,11 +4,44 @@ namespace Webkul\Core\Eloquent;
 
 use Prettus\Repository\Contracts\CacheableInterface;
 use Prettus\Repository\Eloquent\BaseRepository;
+use Prettus\Repository\Helpers\CacheKeys;
 use Prettus\Repository\Traits\CacheableRepository;
 
 abstract class Repository extends BaseRepository implements CacheableInterface
 {
     use CacheableRepository;
+
+    /**
+     * Get the cache key for the given method.
+     *
+     * Overrides the prettus/l5-repository trait for two reasons (see runbook
+     * Appendix A — "payment methods page 30s hang"):
+     *
+     * 1. The trait includes $request->fullUrl() in the key, so every distinct
+     *    URL mints new keys forever even though these repositories' results
+     *    depend only on the query arguments. That grew the bookkeeping file
+     *    (storage/framework/cache/repository-cache-keys.json) without bound.
+     * 2. The trait rewrites that whole JSON file to disk on EVERY lookup (hit
+     *    or miss). With a large file, config-heavy admin pages exceeded the
+     *    30s worker timeout. We only persist a key the first time we see it;
+     *    CleanCacheRepository still reads the file to invalidate on writes.
+     *
+     * @param  string  $method
+     * @param  mixed  $args
+     * @return string
+     */
+    public function getCacheKey($method, $args = null)
+    {
+        $group = get_called_class();
+
+        $key = sprintf('%s@%s-%s', $group, $method, md5(serialize($args).$this->serializeCriteria()));
+
+        if (! in_array($key, CacheKeys::getKeys($group))) {
+            CacheKeys::putKey($group, $key);
+        }
+
+        return $key;
+    }
 
     /**
      * Cache only enabled.
